@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Ocean
 {
-	private const int MESH_RESOLUTION 										= 32; //max 255 (256*256 is too many verts per mesh in unity)
+	private const int MESH_RESOLUTION 										= 64; //max 255 (256*256 is too many verts per mesh in unity)
 
 	private static GameObject _gameObject 									= null;
 	public static GameObject gameObject

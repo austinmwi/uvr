@@ -90,7 +90,7 @@ public class ExampleAudioConcepts : MonoBehaviour
 		color.a					= 0.125f;
 		Vector3 ortho 			= Vector3.Cross(_direction_to_sound, -Vector3.up);
 		
-		Vector3 prior_position 	= position;
+		
 		for (int i = 0; i < _buffer_length; i++)
 		{
 			phase					+= theta;
@@ -104,8 +104,6 @@ public class ExampleAudioConcepts : MonoBehaviour
 			{
 				Debug.DrawLine(new_position, new_position + ortho * amplitude * 2.0f, color);
 			}
-
-			prior_position 			= new_position;
 		}
 	}
 

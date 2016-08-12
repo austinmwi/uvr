@@ -94,6 +94,7 @@
      <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Effects\EffectHilight.cs" />
      <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Effects\FadeEffect.cs" />
      <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Examples\ExampleEvent.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Examples\ExampleFlocking.cs" />
      <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Examples\ExampleLoopVisualization.cs" />
      <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Examples\ExampleParticles.cs" />
      <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Examples\ExampleRayCast.cs" />
@@ -127,11 +128,15 @@
      <Compile Include="Assets\Project Scenes\UdacityModernApartment\Scripts\CombineChildren.cs" />
      <Compile Include="Assets\Project Scenes\UdacityModernApartment\Scripts\MeshHelper.cs" />
      <Compile Include="Assets\Project Scenes\UdacityModernApartment\Scripts\TransformPreviewer.cs" />
+     <Compile Include="Assets\Scripts\displayFrames.cs" />
+     <Compile Include="Assets\Scripts\fadeMaterials.cs" />
+     <Compile Include="Assets\Scripts\furniturePlacement.cs" />
      <Compile Include="Assets\Scripts\lightsOff.cs" />
      <Compile Include="Assets\Scripts\lookAtPlayer.cs" />
      <Compile Include="Assets\Scripts\looseFollow.cs" />
      <Compile Include="Assets\Scripts\manualPlayerMovement.cs" />
      <Compile Include="Assets\Scripts\originalScale.cs" />
+     <Compile Include="Assets\Scripts\qualityAdjustment.cs" />
      <Compile Include="Assets\Scripts\revealMyTipset.cs" />
      <Compile Include="Assets\Scripts\revealTooltip.cs" />
      <Compile Include="Assets\Scripts\sceneLogic.cs" />
@@ -141,11 +146,7 @@
      <Compile Include="Assets\Scripts\stereoWebsiteTransfer.cs" />
      <Compile Include="Assets\Scripts\tempSwapper.cs" />
      <Compile Include="Assets\Scripts\touchInputFixer.cs" />
-     <Compile Include="Assets\displayFrames.cs" />
-     <Compile Include="Assets\fadeMaterials.cs" />
-     <Compile Include="Assets\furniturePlacement.cs" />
      <Compile Include="Assets\iTween.cs" />
-     <Compile Include="Assets\qualityAdjustment.cs" />
      <Compile Include="Assets\videoClipPlay.cs" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\derivatives.glslinc" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Fade.shader" />
@@ -165,6 +166,7 @@
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\decoders.glslinc" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\contours.glslinc" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\light.glslinc" />
+     <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Island_Ocean.shader" />
      <None Include="Assets\Models\Updated Apartment\UdacityModernApartment\Shaders\UnlitUndistorted.shader" />
      <None Include="Assets\Project Scenes\UdacityModernApartment\Shaders\CardboardDistortion.cginc" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\definitions.glslinc" />
@@ -201,7 +203,7 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Google.ProtocolBuffers">
- <HintPath>/Users/austinmccasland/Dropbox/Udacity/Unity Projects/Udacity VR/Assets/Project Scenes/Course3Draft_ForAustin/Assets/Plugins/Google.ProtocolBuffers.dll</HintPath>
+ <HintPath>/Users/austinmccasland/Desktop/uvr/Udacity VR/Assets/Project Scenes/Course3Draft_ForAustin/Assets/Plugins/Google.ProtocolBuffers.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

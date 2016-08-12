@@ -13,7 +13,6 @@ public class Navigation : MonoBehaviour
 	private Waypoint[]	_waypoint;
 
 	//the current waypoint
-	[SerializeField]
 	private Waypoint	_current;
 
 	void Start () 
@@ -94,11 +93,7 @@ public class Navigation : MonoBehaviour
 
 		if(distance > 0.05f)
 		{
-			Debug.Log("Moving to " + waypoint.name);
 			view_object.transform.position = Vector3.Lerp(view_object.transform.position, waypoint.position, speed);
-
-			//hide the waypoint we are moving to 
-			waypoint.gameObject.GetComponent<MeshRenderer>().enabled = false;
 		}
 		else
 		{
@@ -120,8 +115,6 @@ public class Navigation : MonoBehaviour
 		for(int i = 0; i < _waypoint.Length; i++)
 		{
 			float distance_to_waypoint = Vector3.Distance(view_object.transform.position, _waypoint[i].position);
-			
-			Debug.Log(_waypoint[i].name + "\tDistance: " + distance_to_waypoint);
 			
 			if(distance_to_waypoint < distance_to_nearest)
 			{

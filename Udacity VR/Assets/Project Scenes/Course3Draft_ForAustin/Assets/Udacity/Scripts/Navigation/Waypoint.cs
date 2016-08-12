@@ -27,7 +27,7 @@ public class Waypoint : MonoBehaviour
 
 	public Vector3		position							= Vector3.zero;
 
-	public Waypoint[]	neighbor;
+	public Waypoint[]	neighborhood;
 
 
 	void Awake()
@@ -65,9 +65,9 @@ public class Waypoint : MonoBehaviour
 	{
 		Deactivate();
 
-		for(int i = 0; i < neighbor.Length; i++)
+		for(int i = 0; i < neighborhood.Length; i++)
 		{
-			if(neighbor[i].occupied == true)
+			if(neighborhood[i].occupied == true)
 			{
 				Activate();
 			}
@@ -77,22 +77,18 @@ public class Waypoint : MonoBehaviour
 
 	public void Occupy()
 	{
-		Debug.Log(gameObject.name + " Occupied");
 		occupied	= true;
 	}
 
 
 	public void Depart()
 	{
-		Debug.Log(gameObject.name + " Departed");
-
 		occupied	= false;		
 	}
 
 
 	public void Activate()
 	{
-		Debug.Log(gameObject.name + " Activated");
 		_material.color			= active_color;
 		transform.localScale	= _origional_scale;
 		
@@ -102,7 +98,6 @@ public class Waypoint : MonoBehaviour
 
 	public void Deactivate()
 	{
-		Debug.Log(gameObject.name + " Deactivated");
 		_material.color			= disabled_color;
 		transform.localScale	= _origional_scale * 0.5f;
 		
@@ -113,7 +108,6 @@ public class Waypoint : MonoBehaviour
 
 	public void Trigger()
 	{
-		Debug.Log(gameObject.name + " Triggered");
 		if(focused && active && !occupied)
 		{
 			triggered	= true;
@@ -125,8 +119,6 @@ public class Waypoint : MonoBehaviour
 
 	public void Enter()
 	{
-		Debug.Log(gameObject.name + " Entered");
-
 		if(!focused && active)
 		{
 			focused		= true;
