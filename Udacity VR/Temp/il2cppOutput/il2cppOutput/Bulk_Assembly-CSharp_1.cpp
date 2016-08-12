@@ -20653,6 +20653,17 @@ extern "C"  void Scene_Example_Ocean_Shader_Start_m1820770317 (Scene_Example_Oce
 		Material_t1886596500 * L_3 = __this->get_ocean_material_2();
 		NullCheck(L_2);
 		Renderer_set_material_m1012580896(L_2, L_3, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_4 = Ocean_get_gameObject_m815786812(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_4);
+		Transform_t284553113 * L_5 = GameObject_get_transform_m1278640159(L_4, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_6 = Ocean_get_gameObject_m815786812(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_6);
+		Transform_t284553113 * L_7 = GameObject_get_transform_m1278640159(L_6, /*hidden argument*/NULL);
+		NullCheck(L_7);
+		Vector3_t3525329789  L_8 = Transform_get_localScale_m3886572677(L_7, /*hidden argument*/NULL);
+		Vector3_t3525329789  L_9 = Vector3_op_Multiply_m973638459(NULL /*static, unused*/, L_8, (10.0f), /*hidden argument*/NULL);
+		NullCheck(L_5);
+		Transform_set_localScale_m310756934(L_5, L_9, /*hidden argument*/NULL);
 		return;
 	}
 }

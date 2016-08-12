@@ -12,6 +12,7 @@
 			<method name="Swap"/>
 			<method name="Swap"/>
 			<method name="Swap"/>
+			<method name="Swap"/>
 		</type>
 		<type fullname="sceneTransition">
 			<method name="changeScene"/>

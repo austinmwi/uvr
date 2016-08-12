@@ -8,5 +8,7 @@ public class Scene_Example_Ocean_Shader : MonoBehaviour
 	{
 		Ocean.gameObject.SetActive(true);	
 		Ocean.gameObject.GetComponent<MeshRenderer>().material = ocean_material;
+		Ocean.gameObject.transform.localScale = Ocean.gameObject.transform.localScale * 10;
+
 	}
 }
