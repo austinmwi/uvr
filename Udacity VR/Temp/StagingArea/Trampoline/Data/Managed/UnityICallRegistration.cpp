@@ -1,6 +1,26 @@
-//Generated on : 8/12/2016 11:38:03 AM
+//Generated on : 8/12/2016 1:50:57 PM
 void RegisterAllStrippedInternalCalls()
 {
+	//Start Registrations for type : UnityEngine.Animation
+
+		//System.Int32 UnityEngine.Animation::GetStateCount()
+		void Register_UnityEngine_Animation_GetStateCount();
+		Register_UnityEngine_Animation_GetStateCount();
+
+		//UnityEngine.AnimationState UnityEngine.Animation::GetStateAtIndex(System.Int32)
+		void Register_UnityEngine_Animation_GetStateAtIndex();
+		Register_UnityEngine_Animation_GetStateAtIndex();
+
+	//End Registrations for type : UnityEngine.Animation
+
+	//Start Registrations for type : UnityEngine.AnimationClip
+
+		//System.Void UnityEngine.AnimationClip::set_wrapMode(UnityEngine.WrapMode)
+		void Register_UnityEngine_AnimationClip_set_wrapMode();
+		Register_UnityEngine_AnimationClip_set_wrapMode();
+
+	//End Registrations for type : UnityEngine.AnimationClip
+
 	//Start Registrations for type : UnityEngine.AnimationCurve
 
 		//System.Void UnityEngine.AnimationCurve::Cleanup()
@@ -22,6 +42,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Animator::ResetTriggerString(System.String)
 		void Register_UnityEngine_Animator_ResetTriggerString();
 		Register_UnityEngine_Animator_ResetTriggerString();
+
+		//System.Void UnityEngine.Animator::SetBoolString(System.String,System.Boolean)
+		void Register_UnityEngine_Animator_SetBoolString();
+		Register_UnityEngine_Animator_SetBoolString();
 
 		//System.Void UnityEngine.Animator::SetTriggerString(System.String)
 		void Register_UnityEngine_Animator_SetTriggerString();
@@ -776,6 +800,14 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_Event_get_keyCode();
 
 	//End Registrations for type : UnityEngine.Event
+
+	//Start Registrations for type : UnityEngine.Experimental.Director.DirectorPlayer
+
+		//System.Void UnityEngine.Experimental.Director.DirectorPlayer::Stop()
+		void Register_UnityEngine_Experimental_Director_DirectorPlayer_Stop();
+		Register_UnityEngine_Experimental_Director_DirectorPlayer_Stop();
+
+	//End Registrations for type : UnityEngine.Experimental.Director.DirectorPlayer
 
 	//Start Registrations for type : UnityEngine.Experimental.Director.Playable
 

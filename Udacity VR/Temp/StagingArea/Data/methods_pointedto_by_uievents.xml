@@ -29,22 +29,6 @@
 			<method name="goToWebsite"/>
 			<method name="goToWebsite"/>
 		</type>
-		<type fullname="sceneLogic">
-			<method name="beginManualMovement"/>
-			<method name="beginManualMovement"/>
-			<method name="beginManualMovement"/>
-			<method name="beginManualMovement"/>
-			<method name="beginManualMovement"/>
-			<method name="beginManualMovement"/>
-			<method name="beginManualMovement"/>
-			<method name="beginManualMovement"/>
-			<method name="beginManualMovement"/>
-			<method name="beginManualMovement"/>
-			<method name="beginManualMovement"/>
-			<method name="beginManualMovement"/>
-			<method name="changeScene"/>
-			<method name="goToWebsite"/>
-		</type>
 		<type fullname="revealTooltip">
 			<method name="showTooltip"/>
 			<method name="hideTooltip"/>
@@ -66,6 +50,22 @@
 			<method name="hideTooltip"/>
 			<method name="showTooltip"/>
 			<method name="hideTooltip"/>
+		</type>
+		<type fullname="sceneLogic">
+			<method name="beginManualMovement"/>
+			<method name="beginManualMovement"/>
+			<method name="beginManualMovement"/>
+			<method name="beginManualMovement"/>
+			<method name="beginManualMovement"/>
+			<method name="beginManualMovement"/>
+			<method name="beginManualMovement"/>
+			<method name="beginManualMovement"/>
+			<method name="beginManualMovement"/>
+			<method name="beginManualMovement"/>
+			<method name="beginManualMovement"/>
+			<method name="beginManualMovement"/>
+			<method name="changeScene"/>
+			<method name="goToWebsite"/>
 		</type>
 		<type fullname="lightsOff">
 			<method name="turnLightsOff"/>

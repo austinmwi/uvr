@@ -13,7 +13,7 @@ public class revealMyTipset : MonoBehaviour {
 	public bool smoothTransitions = false; //Whether or not we tween
 	public GameObject[] animatedObjects; //All of the objects with animations we want to turn on when this tipset is revealed
 
-
+	//public AnimationClip testAnim;
 	void Start () {
 
 
@@ -26,9 +26,9 @@ public class revealMyTipset : MonoBehaviour {
 		}
 		hideToolTipManual ();
 
-		foreach (GameObject thing in animatedObjects) {
+		/*foreach (GameObject thing in animatedObjects) {
 			thing.GetComponent<Animator>().enabled = false;
-		}
+		}*/
 	}
 
 	// Update is called once per frame
@@ -50,7 +50,7 @@ public class revealMyTipset : MonoBehaviour {
 		foreach(Transform child in this.transform) {
 			revealTooltip (child.gameObject);
 		}
-		activateObjectAnimations ();
+		//activateObjectAnimations ();
 	}
 
 	public void hideToolTipManual() {
@@ -62,7 +62,7 @@ public class revealMyTipset : MonoBehaviour {
 				child.gameObject.SetActive (false);
 			}
 		}
-		deactivateObjectAnimations ();
+		//deactivateObjectAnimations ();
 
 	}
 
@@ -80,23 +80,19 @@ public class revealMyTipset : MonoBehaviour {
 
 	public void activateObjectAnimations() { //Turns on the animations associated with this tipset.  
 		foreach (GameObject thing in animatedObjects) {
-			thing.GetComponent<Animator>().enabled = true;
+			//thing.GetComponent<Animator>().enabled = true;
 
-			//AnimationClip test = thing.GetComponent<Animator>().runtimeAnimatorController.animationClips[0];
-			//test.wrapMode = WrapMode.Once;
-			//thing.GetComponent<Animator> ().StartPlayback ();
 
+			Animator anim = thing.GetComponent<Animator> ();
+			anim.SetBool ("isPlaying", true);
 		}
 	}
 	public void deactivateObjectAnimations() { //Turns off the animations associated with this tipset.  
 		foreach (GameObject thing in animatedObjects) {
-			
-			thing.GetComponent<Animator>().enabled = false; //This just stops the animation right in the middle instead of finishing it out.  Need to fix.
+			Animator anim = thing.GetComponent<Animator> ();
 
-			//AnimationClip test = thing.GetComponent<Animator>().runtimeAnimatorController.animationClips[0];
-			//thing.GetComponent<Animator>().runtimeAnimatorController.animationClips[0].wrapMode = WrapMode.Once;
-			//test.wrapMode = WrapMode.Once;
-			//thing.GetComponent<Animation>().wrapMode = WrapMode.Once;
+			anim.SetBool ("isPlaying", false);
+
 		}
 	}
 }

@@ -78,7 +78,9 @@
 <type fullname="stereoWebsiteTransfer" preserve="all"/>
 <type fullname="tempSwapper" preserve="all"/>
 <type fullname="touchInputFixer" preserve="all"/>
+<type fullname="cubeScript" preserve="all"/>
 <type fullname="iTween" preserve="all"/>
+<type fullname="testAnimationControl" preserve="all"/>
 <type fullname="videoClipPlay" preserve="all"/>
 </assembly>
 <assembly fullname="UnityEngine.UI">

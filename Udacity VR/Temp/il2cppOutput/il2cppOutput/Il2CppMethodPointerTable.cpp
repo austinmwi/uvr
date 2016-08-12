@@ -7743,6 +7743,14 @@ extern "C" void X509Stores_get_TrustedRoot_m4006515680 ();
 extern "C" void X509Stores_Open_m3798926259 ();
 extern "C" void AddComponentMenu__ctor_m1521317712 ();
 extern "C" void AddComponentMenu__ctor_m3281913735 ();
+extern "C" void Animation_GetEnumerator_m3015582503 ();
+extern "C" void Animation_GetStateAtIndex_m513456147 ();
+extern "C" void Animation_GetStateCount_m3537607527 ();
+extern "C" void Enumerator__ctor_m1213159655 ();
+extern "C" void Enumerator_get_Current_m1033634519 ();
+extern "C" void Enumerator_MoveNext_m1178545744 ();
+extern "C" void Enumerator_Reset_m1014152875 ();
+extern "C" void AnimationClip_set_wrapMode_m3209139749 ();
 extern "C" void AnimationCurve__ctor_m2436282331 ();
 extern "C" void AnimationCurve__ctor_m4037844610 ();
 extern "C" void AnimationCurve_Cleanup_m386995588 ();
@@ -7771,10 +7779,12 @@ extern "C" void AnimationEvent_get_animationState_m2712753230 ();
 extern "C" void AnimationEvent_get_animatorStateInfo_m194903218 ();
 extern "C" void AnimationEvent_get_animatorClipInfo_m493861262 ();
 extern "C" void AnimationEvent_GetHash_m2586883417 ();
+extern "C" void Animator_SetBool_m2336836203 ();
 extern "C" void Animator_SetTrigger_m514363822 ();
 extern "C" void Animator_ResetTrigger_m4152421915 ();
 extern "C" void Animator_get_runtimeAnimatorController_m1822082727 ();
 extern "C" void Animator_StringToHash_m4020897098 ();
+extern "C" void Animator_SetBoolString_m275475356 ();
 extern "C" void Animator_SetTriggerString_m1378271133 ();
 extern "C" void Animator_ResetTriggerString_m1817269834 ();
 extern "C" void AnimatorStateInfo_IsName_m1653922768 ();
@@ -8257,6 +8267,7 @@ extern "C" void UnityEventBase_Invoke_m3681078084 ();
 extern "C" void UnityEventBase_ToString_m249191135 ();
 extern "C" void UnityEventBase_GetValidMethodInfo_m2325301202 ();
 extern "C" void ExecuteInEditMode__ctor_m1394231890 ();
+extern "C" void DirectorPlayer_Stop_m2743856354 ();
 extern "C" void Playable__ctor_m2241556995 ();
 extern "C" void Playable__ctor_m3752126010 ();
 extern "C" void Playable_Dispose_m2747727607 ();
@@ -11394,6 +11405,9 @@ extern "C" void ControllerDemoManager_SetSelectedObject_m973459535 ();
 extern "C" void ControllerDemoManager_StartDragging_m964285676 ();
 extern "C" void ControllerDemoManager_EndDragging_m730555557 ();
 extern "C" void ControllerDemoManager_UpdateStatusMessage_m114672711 ();
+extern "C" void cubeScript__ctor_m2304958267 ();
+extern "C" void cubeScript_Start_m1252096059 ();
+extern "C" void cubeScript_Update_m166124338 ();
 extern "C" void Cypher__ctor_m2465557696 ();
 extern "C" void Cypher_Encode_m2865862482 ();
 extern "C" void Debugging__ctor_m882908765 ();
@@ -13043,6 +13057,11 @@ extern "C" void tempSwapper__ctor_m594831349 ();
 extern "C" void tempSwapper_Start_m3836936437 ();
 extern "C" void tempSwapper_Update_m2986764728 ();
 extern "C" void tempSwapper_Swap_m2481843074 ();
+extern "C" void testAnimationControl__ctor_m462850320 ();
+extern "C" void testAnimationControl_Start_m3704955408 ();
+extern "C" void testAnimationControl_Update_m3190320125 ();
+extern "C" void testAnimationControl_startAnimation_m1054922518 ();
+extern "C" void testAnimationControl_stopAnimation_m263843440 ();
 extern "C" void Textures_BlitShader_m3759189801 ();
 extern "C" void touchInputFixer__ctor_m2426812116 ();
 extern "C" void touchInputFixer_Start_m1373949908 ();
@@ -13093,7 +13112,7 @@ extern "C" void RotateSample__ctor_m328697322 ();
 extern "C" void RotateSample_Start_m3570802410 ();
 extern "C" void SampleInfo__ctor_m3206060983 ();
 extern "C" void SampleInfo_OnGUI_m2701459633 ();
-extern const methodPointerType g_MethodPointers[13082] = 
+extern const methodPointerType g_MethodPointers[13101] = 
 {
 	Locale_GetText_m2389348044,
 	Locale_GetText_m2218462520,
@@ -20827,6 +20846,14 @@ extern const methodPointerType g_MethodPointers[13082] =
 	X509Stores_Open_m3798926259,
 	AddComponentMenu__ctor_m1521317712,
 	AddComponentMenu__ctor_m3281913735,
+	Animation_GetEnumerator_m3015582503,
+	Animation_GetStateAtIndex_m513456147,
+	Animation_GetStateCount_m3537607527,
+	Enumerator__ctor_m1213159655,
+	Enumerator_get_Current_m1033634519,
+	Enumerator_MoveNext_m1178545744,
+	Enumerator_Reset_m1014152875,
+	AnimationClip_set_wrapMode_m3209139749,
 	AnimationCurve__ctor_m2436282331,
 	AnimationCurve__ctor_m4037844610,
 	AnimationCurve_Cleanup_m386995588,
@@ -20855,10 +20882,12 @@ extern const methodPointerType g_MethodPointers[13082] =
 	AnimationEvent_get_animatorStateInfo_m194903218,
 	AnimationEvent_get_animatorClipInfo_m493861262,
 	AnimationEvent_GetHash_m2586883417,
+	Animator_SetBool_m2336836203,
 	Animator_SetTrigger_m514363822,
 	Animator_ResetTrigger_m4152421915,
 	Animator_get_runtimeAnimatorController_m1822082727,
 	Animator_StringToHash_m4020897098,
+	Animator_SetBoolString_m275475356,
 	Animator_SetTriggerString_m1378271133,
 	Animator_ResetTriggerString_m1817269834,
 	AnimatorStateInfo_IsName_m1653922768,
@@ -21341,6 +21370,7 @@ extern const methodPointerType g_MethodPointers[13082] =
 	UnityEventBase_ToString_m249191135,
 	UnityEventBase_GetValidMethodInfo_m2325301202,
 	ExecuteInEditMode__ctor_m1394231890,
+	DirectorPlayer_Stop_m2743856354,
 	Playable__ctor_m2241556995,
 	Playable__ctor_m3752126010,
 	Playable_Dispose_m2747727607,
@@ -24478,6 +24508,9 @@ extern const methodPointerType g_MethodPointers[13082] =
 	ControllerDemoManager_StartDragging_m964285676,
 	ControllerDemoManager_EndDragging_m730555557,
 	ControllerDemoManager_UpdateStatusMessage_m114672711,
+	cubeScript__ctor_m2304958267,
+	cubeScript_Start_m1252096059,
+	cubeScript_Update_m166124338,
 	Cypher__ctor_m2465557696,
 	Cypher_Encode_m2865862482,
 	Debugging__ctor_m882908765,
@@ -26127,6 +26160,11 @@ extern const methodPointerType g_MethodPointers[13082] =
 	tempSwapper_Start_m3836936437,
 	tempSwapper_Update_m2986764728,
 	tempSwapper_Swap_m2481843074,
+	testAnimationControl__ctor_m462850320,
+	testAnimationControl_Start_m3704955408,
+	testAnimationControl_Update_m3190320125,
+	testAnimationControl_startAnimation_m1054922518,
+	testAnimationControl_stopAnimation_m263843440,
 	Textures_BlitShader_m3759189801,
 	touchInputFixer__ctor_m2426812116,
 	touchInputFixer_Start_m1373949908,

@@ -41,6 +41,10 @@ struct ControllerDebugInfo_t2979127621;
 struct Text_t3286458198;
 // ControllerDemoManager
 struct ControllerDemoManager_t1306021614;
+// cubeScript
+struct cubeScript_t1912653152;
+// UnityEngine.Animator
+struct Animator_t792326996;
 // Cypher
 struct Cypher_t2033338939;
 // System.String
@@ -305,8 +309,6 @@ struct ApplyTween_t2072814525;
 struct CRSpline_t3048008992;
 // iTween/EasingFunction
 struct EasingFunction_t3158869571;
-// KeyboardMovement
-struct KeyboardMovement_t185877974;
 
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
@@ -381,6 +383,10 @@ struct KeyboardMovement_t185877974;
 #include "UnityEngine_UnityEngine_Color1588175760MethodDeclarations.h"
 #include "UnityEngine_UI_UnityEngine_UI_Graphic933884113MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Color1588175760.h"
+#include "AssemblyU2DCSharp_cubeScript1912653152.h"
+#include "AssemblyU2DCSharp_cubeScript1912653152MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Animator792326996MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Animator792326996.h"
 #include "AssemblyU2DCSharp_Cypher2033338939.h"
 #include "AssemblyU2DCSharp_Cypher2033338939MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Random3963434288MethodDeclarations.h"
@@ -778,8 +784,6 @@ struct KeyboardMovement_t185877974;
 #include "AssemblyU2DCSharp_iTween_EaseType3571590248MethodDeclarations.h"
 #include "AssemblyU2DCSharp_iTween_LoopType2322152478MethodDeclarations.h"
 #include "AssemblyU2DCSharp_iTween_NamedValueColor2770953323MethodDeclarations.h"
-#include "AssemblyU2DCSharp_KeyboardMovement185877974.h"
-#include "AssemblyU2DCSharp_KeyboardMovement185877974MethodDeclarations.h"
 
 // !!0 UnityEngine.GameObject::GetComponent<System.Object>()
 extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m3652735468_gshared (GameObject_t4012695102 * __this, const MethodInfo* method);
@@ -814,6 +818,8 @@ extern "C"  Il2CppObject * GameObject_AddComponent_TisIl2CppObject_m337943659_gs
 #define Component_GetComponent_TisText_t3286458198_m1610753993(__this, method) ((  Text_t3286458198 * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<UnityEngine.Renderer>()
 #define GameObject_GetComponent_TisRenderer_t1092684080_m4102086307(__this, method) ((  Renderer_t1092684080 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m3652735468_gshared)(__this, method)
+// !!0 UnityEngine.Component::GetComponent<UnityEngine.Animator>()
+#define Component_GetComponent_TisAnimator_t792326996_m4147395588(__this, method) ((  Animator_t792326996 * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponent<UnityEngine.GUIText>()
 #define Component_GetComponent_TisGUIText_t2614635829_m3958564776(__this, method) ((  GUIText_t2614635829 * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
 // !!0 UnityEngine.Object::Instantiate<System.Object>(!!0)
@@ -2643,6 +2649,42 @@ IL_0104:
 	}
 
 IL_0122:
+	{
+		return;
+	}
+}
+// System.Void cubeScript::.ctor()
+extern "C"  void cubeScript__ctor_m2304958267 (cubeScript_t1912653152 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2022291967(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void cubeScript::Start()
+extern const MethodInfo* Component_GetComponent_TisAnimator_t792326996_m4147395588_MethodInfo_var;
+extern Il2CppCodeGenString* _stringLiteral971005237;
+extern const uint32_t cubeScript_Start_m1252096059_MetadataUsageId;
+extern "C"  void cubeScript_Start_m1252096059 (cubeScript_t1912653152 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (cubeScript_Start_m1252096059_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		Animator_t792326996 * L_0 = Component_GetComponent_TisAnimator_t792326996_m4147395588(__this, /*hidden argument*/Component_GetComponent_TisAnimator_t792326996_m4147395588_MethodInfo_var);
+		__this->set_anim_2(L_0);
+		Animator_t792326996 * L_1 = __this->get_anim_2();
+		NullCheck(L_1);
+		Animator_SetBool_m2336836203(L_1, _stringLiteral971005237, (bool)0, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void cubeScript::Update()
+extern "C"  void cubeScript_Update_m166124338 (cubeScript_t1912653152 * __this, const MethodInfo* method)
+{
 	{
 		return;
 	}
@@ -53089,418 +53131,6 @@ extern "C"  float EasingFunction_EndInvoke_m2764881035 (EasingFunction_t31588695
 {
 	Il2CppObject *__result = il2cpp_delegate_end_invoke((Il2CppAsyncResult*) ___result, 0);
 	return *(float*)UnBox ((Il2CppCodeGenObject*)__result);
-}
-// System.Void KeyboardMovement::.ctor()
-extern "C"  void KeyboardMovement__ctor_m346231173 (KeyboardMovement_t185877974 * __this, const MethodInfo* method)
-{
-	{
-		__this->set_speed_2((0.05f));
-		MonoBehaviour__ctor_m2022291967(__this, /*hidden argument*/NULL);
-		return;
-	}
-}
-// System.Void KeyboardMovement::LateUpdate()
-extern "C"  void KeyboardMovement_LateUpdate_m3077137390 (KeyboardMovement_t185877974 * __this, const MethodInfo* method)
-{
-	{
-		bool L_0 = Application_get_isEditor_m1279348309(NULL /*static, unused*/, /*hidden argument*/NULL);
-		if (!L_0)
-		{
-			goto IL_0021;
-		}
-	}
-	{
-		KeyboardMovement_UpdateInput_m3953745252(__this, /*hidden argument*/NULL);
-		bool L_1 = __this->get_move_3();
-		if (!L_1)
-		{
-			goto IL_0021;
-		}
-	}
-	{
-		KeyboardMovement_UpdatePosition_m889170481(__this, /*hidden argument*/NULL);
-	}
-
-IL_0021:
-	{
-		return;
-	}
-}
-// System.Void KeyboardMovement::UpdateInput()
-extern TypeInfo* Input_t1593691127_il2cpp_TypeInfo_var;
-extern TypeInfo* KeyboardMovement_t185877974_il2cpp_TypeInfo_var;
-extern const uint32_t KeyboardMovement_UpdateInput_m3953745252_MetadataUsageId;
-extern "C"  void KeyboardMovement_UpdateInput_m3953745252 (KeyboardMovement_t185877974 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (KeyboardMovement_UpdateInput_m3953745252_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	KeyboardMovement_t185877974 * G_B8_0 = NULL;
-	KeyboardMovement_t185877974 * G_B3_0 = NULL;
-	KeyboardMovement_t185877974 * G_B4_0 = NULL;
-	KeyboardMovement_t185877974 * G_B5_0 = NULL;
-	KeyboardMovement_t185877974 * G_B6_0 = NULL;
-	KeyboardMovement_t185877974 * G_B7_0 = NULL;
-	int32_t G_B9_0 = 0;
-	KeyboardMovement_t185877974 * G_B9_1 = NULL;
-	{
-		IL2CPP_RUNTIME_CLASS_INIT(Input_t1593691127_il2cpp_TypeInfo_var);
-		bool L_0 = Input_GetKey_m1349175653(NULL /*static, unused*/, ((int32_t)101), /*hidden argument*/NULL);
-		((KeyboardMovement_t185877974_StaticFields*)KeyboardMovement_t185877974_il2cpp_TypeInfo_var->static_fields)->set_forward_5(L_0);
-		bool L_1 = Input_GetKey_m1349175653(NULL /*static, unused*/, ((int32_t)100), /*hidden argument*/NULL);
-		((KeyboardMovement_t185877974_StaticFields*)KeyboardMovement_t185877974_il2cpp_TypeInfo_var->static_fields)->set_back_6(L_1);
-		bool L_2 = Input_GetKey_m1349175653(NULL /*static, unused*/, ((int32_t)115), /*hidden argument*/NULL);
-		((KeyboardMovement_t185877974_StaticFields*)KeyboardMovement_t185877974_il2cpp_TypeInfo_var->static_fields)->set_left_7(L_2);
-		bool L_3 = Input_GetKey_m1349175653(NULL /*static, unused*/, ((int32_t)102), /*hidden argument*/NULL);
-		((KeyboardMovement_t185877974_StaticFields*)KeyboardMovement_t185877974_il2cpp_TypeInfo_var->static_fields)->set_right_8(L_3);
-		bool L_4 = Input_GetKey_m1349175653(NULL /*static, unused*/, ((int32_t)113), /*hidden argument*/NULL);
-		((KeyboardMovement_t185877974_StaticFields*)KeyboardMovement_t185877974_il2cpp_TypeInfo_var->static_fields)->set_up_9(L_4);
-		bool L_5 = Input_GetKey_m1349175653(NULL /*static, unused*/, ((int32_t)97), /*hidden argument*/NULL);
-		((KeyboardMovement_t185877974_StaticFields*)KeyboardMovement_t185877974_il2cpp_TypeInfo_var->static_fields)->set_down_10(L_5);
-		int32_t L_6 = Input_get_touchCount_m1430909390(NULL /*static, unused*/, /*hidden argument*/NULL);
-		if ((((int32_t)L_6) < ((int32_t)1)))
-		{
-			goto IL_0059;
-		}
-	}
-	{
-		((KeyboardMovement_t185877974_StaticFields*)KeyboardMovement_t185877974_il2cpp_TypeInfo_var->static_fields)->set_forward_5((bool)1);
-	}
-
-IL_0059:
-	{
-		bool L_7 = ((KeyboardMovement_t185877974_StaticFields*)KeyboardMovement_t185877974_il2cpp_TypeInfo_var->static_fields)->get_forward_5();
-		G_B3_0 = __this;
-		if (L_7)
-		{
-			G_B8_0 = __this;
-			goto IL_0093;
-		}
-	}
-	{
-		bool L_8 = ((KeyboardMovement_t185877974_StaticFields*)KeyboardMovement_t185877974_il2cpp_TypeInfo_var->static_fields)->get_back_6();
-		G_B4_0 = G_B3_0;
-		if (L_8)
-		{
-			G_B8_0 = G_B3_0;
-			goto IL_0093;
-		}
-	}
-	{
-		bool L_9 = ((KeyboardMovement_t185877974_StaticFields*)KeyboardMovement_t185877974_il2cpp_TypeInfo_var->static_fields)->get_left_7();
-		G_B5_0 = G_B4_0;
-		if (L_9)
-		{
-			G_B8_0 = G_B4_0;
-			goto IL_0093;
-		}
-	}
-	{
-		bool L_10 = ((KeyboardMovement_t185877974_StaticFields*)KeyboardMovement_t185877974_il2cpp_TypeInfo_var->static_fields)->get_right_8();
-		G_B6_0 = G_B5_0;
-		if (L_10)
-		{
-			G_B8_0 = G_B5_0;
-			goto IL_0093;
-		}
-	}
-	{
-		bool L_11 = ((KeyboardMovement_t185877974_StaticFields*)KeyboardMovement_t185877974_il2cpp_TypeInfo_var->static_fields)->get_up_9();
-		G_B7_0 = G_B6_0;
-		if (L_11)
-		{
-			G_B8_0 = G_B6_0;
-			goto IL_0093;
-		}
-	}
-	{
-		bool L_12 = ((KeyboardMovement_t185877974_StaticFields*)KeyboardMovement_t185877974_il2cpp_TypeInfo_var->static_fields)->get_down_10();
-		G_B9_0 = ((int32_t)(L_12));
-		G_B9_1 = G_B7_0;
-		goto IL_0094;
-	}
-
-IL_0093:
-	{
-		G_B9_0 = 1;
-		G_B9_1 = G_B8_0;
-	}
-
-IL_0094:
-	{
-		NullCheck(G_B9_1);
-		G_B9_1->set_move_3((bool)G_B9_0);
-		return;
-	}
-}
-// System.Void KeyboardMovement::UpdatePosition()
-extern TypeInfo* KeyboardMovement_t185877974_il2cpp_TypeInfo_var;
-extern const uint32_t KeyboardMovement_UpdatePosition_m889170481_MetadataUsageId;
-extern "C"  void KeyboardMovement_UpdatePosition_m889170481 (KeyboardMovement_t185877974 * __this, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (KeyboardMovement_UpdatePosition_m889170481_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	Vector3_t3525329789  V_0;
-	memset(&V_0, 0, sizeof(V_0));
-	Vector3_t3525329789  G_B2_0;
-	memset(&G_B2_0, 0, sizeof(G_B2_0));
-	Vector3_t3525329789  G_B1_0;
-	memset(&G_B1_0, 0, sizeof(G_B1_0));
-	Vector3_t3525329789  G_B3_0;
-	memset(&G_B3_0, 0, sizeof(G_B3_0));
-	Vector3_t3525329789  G_B3_1;
-	memset(&G_B3_1, 0, sizeof(G_B3_1));
-	Vector3_t3525329789  G_B5_0;
-	memset(&G_B5_0, 0, sizeof(G_B5_0));
-	Vector3_t3525329789  G_B4_0;
-	memset(&G_B4_0, 0, sizeof(G_B4_0));
-	Vector3_t3525329789  G_B6_0;
-	memset(&G_B6_0, 0, sizeof(G_B6_0));
-	Vector3_t3525329789  G_B6_1;
-	memset(&G_B6_1, 0, sizeof(G_B6_1));
-	Vector3_t3525329789  G_B8_0;
-	memset(&G_B8_0, 0, sizeof(G_B8_0));
-	Vector3_t3525329789  G_B7_0;
-	memset(&G_B7_0, 0, sizeof(G_B7_0));
-	Vector3_t3525329789  G_B9_0;
-	memset(&G_B9_0, 0, sizeof(G_B9_0));
-	Vector3_t3525329789  G_B9_1;
-	memset(&G_B9_1, 0, sizeof(G_B9_1));
-	Vector3_t3525329789  G_B11_0;
-	memset(&G_B11_0, 0, sizeof(G_B11_0));
-	Vector3_t3525329789  G_B10_0;
-	memset(&G_B10_0, 0, sizeof(G_B10_0));
-	Vector3_t3525329789  G_B12_0;
-	memset(&G_B12_0, 0, sizeof(G_B12_0));
-	Vector3_t3525329789  G_B12_1;
-	memset(&G_B12_1, 0, sizeof(G_B12_1));
-	Vector3_t3525329789  G_B14_0;
-	memset(&G_B14_0, 0, sizeof(G_B14_0));
-	Vector3_t3525329789  G_B13_0;
-	memset(&G_B13_0, 0, sizeof(G_B13_0));
-	Vector3_t3525329789  G_B15_0;
-	memset(&G_B15_0, 0, sizeof(G_B15_0));
-	Vector3_t3525329789  G_B15_1;
-	memset(&G_B15_1, 0, sizeof(G_B15_1));
-	Vector3_t3525329789  G_B17_0;
-	memset(&G_B17_0, 0, sizeof(G_B17_0));
-	Vector3_t3525329789  G_B16_0;
-	memset(&G_B16_0, 0, sizeof(G_B16_0));
-	Vector3_t3525329789  G_B18_0;
-	memset(&G_B18_0, 0, sizeof(G_B18_0));
-	Vector3_t3525329789  G_B18_1;
-	memset(&G_B18_1, 0, sizeof(G_B18_1));
-	{
-		Vector3_t3525329789  L_0 = Vector3_get_zero_m2017759730(NULL /*static, unused*/, /*hidden argument*/NULL);
-		V_0 = L_0;
-		Vector3_t3525329789  L_1 = V_0;
-		bool L_2 = ((KeyboardMovement_t185877974_StaticFields*)KeyboardMovement_t185877974_il2cpp_TypeInfo_var->static_fields)->get_forward_5();
-		G_B1_0 = L_1;
-		if (!L_2)
-		{
-			G_B2_0 = L_1;
-			goto IL_0025;
-		}
-	}
-	{
-		Camera_t3533968274 * L_3 = Camera_get_main_m671815697(NULL /*static, unused*/, /*hidden argument*/NULL);
-		NullCheck(L_3);
-		Transform_t284553113 * L_4 = Component_get_transform_m4257140443(L_3, /*hidden argument*/NULL);
-		NullCheck(L_4);
-		Vector3_t3525329789  L_5 = Transform_get_forward_m877665793(L_4, /*hidden argument*/NULL);
-		G_B3_0 = L_5;
-		G_B3_1 = G_B1_0;
-		goto IL_002a;
-	}
-
-IL_0025:
-	{
-		Vector3_t3525329789  L_6 = Vector3_get_zero_m2017759730(NULL /*static, unused*/, /*hidden argument*/NULL);
-		G_B3_0 = L_6;
-		G_B3_1 = G_B2_0;
-	}
-
-IL_002a:
-	{
-		Vector3_t3525329789  L_7 = Vector3_op_Addition_m695438225(NULL /*static, unused*/, G_B3_1, G_B3_0, /*hidden argument*/NULL);
-		V_0 = L_7;
-		Vector3_t3525329789  L_8 = V_0;
-		bool L_9 = ((KeyboardMovement_t185877974_StaticFields*)KeyboardMovement_t185877974_il2cpp_TypeInfo_var->static_fields)->get_back_6();
-		G_B4_0 = L_8;
-		if (!L_9)
-		{
-			G_B5_0 = L_8;
-			goto IL_004f;
-		}
-	}
-	{
-		Camera_t3533968274 * L_10 = Camera_get_main_m671815697(NULL /*static, unused*/, /*hidden argument*/NULL);
-		NullCheck(L_10);
-		Transform_t284553113 * L_11 = Component_get_transform_m4257140443(L_10, /*hidden argument*/NULL);
-		NullCheck(L_11);
-		Vector3_t3525329789  L_12 = Transform_get_forward_m877665793(L_11, /*hidden argument*/NULL);
-		G_B6_0 = L_12;
-		G_B6_1 = G_B4_0;
-		goto IL_0054;
-	}
-
-IL_004f:
-	{
-		Vector3_t3525329789  L_13 = Vector3_get_zero_m2017759730(NULL /*static, unused*/, /*hidden argument*/NULL);
-		G_B6_0 = L_13;
-		G_B6_1 = G_B5_0;
-	}
-
-IL_0054:
-	{
-		Vector3_t3525329789  L_14 = Vector3_op_Subtraction_m2842958165(NULL /*static, unused*/, G_B6_1, G_B6_0, /*hidden argument*/NULL);
-		V_0 = L_14;
-		Vector3_t3525329789  L_15 = V_0;
-		bool L_16 = ((KeyboardMovement_t185877974_StaticFields*)KeyboardMovement_t185877974_il2cpp_TypeInfo_var->static_fields)->get_right_8();
-		G_B7_0 = L_15;
-		if (!L_16)
-		{
-			G_B8_0 = L_15;
-			goto IL_0079;
-		}
-	}
-	{
-		Camera_t3533968274 * L_17 = Camera_get_main_m671815697(NULL /*static, unused*/, /*hidden argument*/NULL);
-		NullCheck(L_17);
-		Transform_t284553113 * L_18 = Component_get_transform_m4257140443(L_17, /*hidden argument*/NULL);
-		NullCheck(L_18);
-		Vector3_t3525329789  L_19 = Transform_get_right_m2070836824(L_18, /*hidden argument*/NULL);
-		G_B9_0 = L_19;
-		G_B9_1 = G_B7_0;
-		goto IL_007e;
-	}
-
-IL_0079:
-	{
-		Vector3_t3525329789  L_20 = Vector3_get_zero_m2017759730(NULL /*static, unused*/, /*hidden argument*/NULL);
-		G_B9_0 = L_20;
-		G_B9_1 = G_B8_0;
-	}
-
-IL_007e:
-	{
-		Vector3_t3525329789  L_21 = Vector3_op_Addition_m695438225(NULL /*static, unused*/, G_B9_1, G_B9_0, /*hidden argument*/NULL);
-		V_0 = L_21;
-		Vector3_t3525329789  L_22 = V_0;
-		bool L_23 = ((KeyboardMovement_t185877974_StaticFields*)KeyboardMovement_t185877974_il2cpp_TypeInfo_var->static_fields)->get_left_7();
-		G_B10_0 = L_22;
-		if (!L_23)
-		{
-			G_B11_0 = L_22;
-			goto IL_00a3;
-		}
-	}
-	{
-		Camera_t3533968274 * L_24 = Camera_get_main_m671815697(NULL /*static, unused*/, /*hidden argument*/NULL);
-		NullCheck(L_24);
-		Transform_t284553113 * L_25 = Component_get_transform_m4257140443(L_24, /*hidden argument*/NULL);
-		NullCheck(L_25);
-		Vector3_t3525329789  L_26 = Transform_get_right_m2070836824(L_25, /*hidden argument*/NULL);
-		G_B12_0 = L_26;
-		G_B12_1 = G_B10_0;
-		goto IL_00a8;
-	}
-
-IL_00a3:
-	{
-		Vector3_t3525329789  L_27 = Vector3_get_zero_m2017759730(NULL /*static, unused*/, /*hidden argument*/NULL);
-		G_B12_0 = L_27;
-		G_B12_1 = G_B11_0;
-	}
-
-IL_00a8:
-	{
-		Vector3_t3525329789  L_28 = Vector3_op_Subtraction_m2842958165(NULL /*static, unused*/, G_B12_1, G_B12_0, /*hidden argument*/NULL);
-		V_0 = L_28;
-		Vector3_t3525329789  L_29 = V_0;
-		bool L_30 = ((KeyboardMovement_t185877974_StaticFields*)KeyboardMovement_t185877974_il2cpp_TypeInfo_var->static_fields)->get_up_9();
-		G_B13_0 = L_29;
-		if (!L_30)
-		{
-			G_B14_0 = L_29;
-			goto IL_00cd;
-		}
-	}
-	{
-		Camera_t3533968274 * L_31 = Camera_get_main_m671815697(NULL /*static, unused*/, /*hidden argument*/NULL);
-		NullCheck(L_31);
-		Transform_t284553113 * L_32 = Component_get_transform_m4257140443(L_31, /*hidden argument*/NULL);
-		NullCheck(L_32);
-		Vector3_t3525329789  L_33 = Transform_get_up_m297874561(L_32, /*hidden argument*/NULL);
-		G_B15_0 = L_33;
-		G_B15_1 = G_B13_0;
-		goto IL_00d2;
-	}
-
-IL_00cd:
-	{
-		Vector3_t3525329789  L_34 = Vector3_get_zero_m2017759730(NULL /*static, unused*/, /*hidden argument*/NULL);
-		G_B15_0 = L_34;
-		G_B15_1 = G_B14_0;
-	}
-
-IL_00d2:
-	{
-		Vector3_t3525329789  L_35 = Vector3_op_Addition_m695438225(NULL /*static, unused*/, G_B15_1, G_B15_0, /*hidden argument*/NULL);
-		V_0 = L_35;
-		Vector3_t3525329789  L_36 = V_0;
-		bool L_37 = ((KeyboardMovement_t185877974_StaticFields*)KeyboardMovement_t185877974_il2cpp_TypeInfo_var->static_fields)->get_down_10();
-		G_B16_0 = L_36;
-		if (!L_37)
-		{
-			G_B17_0 = L_36;
-			goto IL_00f7;
-		}
-	}
-	{
-		Camera_t3533968274 * L_38 = Camera_get_main_m671815697(NULL /*static, unused*/, /*hidden argument*/NULL);
-		NullCheck(L_38);
-		Transform_t284553113 * L_39 = Component_get_transform_m4257140443(L_38, /*hidden argument*/NULL);
-		NullCheck(L_39);
-		Vector3_t3525329789  L_40 = Transform_get_up_m297874561(L_39, /*hidden argument*/NULL);
-		G_B18_0 = L_40;
-		G_B18_1 = G_B16_0;
-		goto IL_00fc;
-	}
-
-IL_00f7:
-	{
-		Vector3_t3525329789  L_41 = Vector3_get_zero_m2017759730(NULL /*static, unused*/, /*hidden argument*/NULL);
-		G_B18_0 = L_41;
-		G_B18_1 = G_B17_0;
-	}
-
-IL_00fc:
-	{
-		Vector3_t3525329789  L_42 = Vector3_op_Subtraction_m2842958165(NULL /*static, unused*/, G_B18_1, G_B18_0, /*hidden argument*/NULL);
-		V_0 = L_42;
-		Vector3_t3525329789  L_43 = V_0;
-		Vector3_t3525329789  L_44 = Vector3_Normalize_m3047997355(NULL /*static, unused*/, L_43, /*hidden argument*/NULL);
-		V_0 = L_44;
-		GameObject_t4012695102 * L_45 = Component_get_gameObject_m1170635899(__this, /*hidden argument*/NULL);
-		NullCheck(L_45);
-		Transform_t284553113 * L_46 = GameObject_get_transform_m1278640159(L_45, /*hidden argument*/NULL);
-		Transform_t284553113 * L_47 = L_46;
-		NullCheck(L_47);
-		Vector3_t3525329789  L_48 = Transform_get_position_m2211398607(L_47, /*hidden argument*/NULL);
-		Vector3_t3525329789  L_49 = V_0;
-		Vector3_t3525329789  L_50 = Vector3_op_Addition_m695438225(NULL /*static, unused*/, L_48, L_49, /*hidden argument*/NULL);
-		NullCheck(L_47);
-		Transform_set_position_m3111394108(L_47, L_50, /*hidden argument*/NULL);
-		return;
-	}
 }
 #ifdef __clang__
 #pragma clang diagnostic pop

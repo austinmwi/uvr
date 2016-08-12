@@ -146,7 +146,9 @@
      <Compile Include="Assets\Scripts\stereoWebsiteTransfer.cs" />
      <Compile Include="Assets\Scripts\tempSwapper.cs" />
      <Compile Include="Assets\Scripts\touchInputFixer.cs" />
+     <Compile Include="Assets\cubeScript.cs" />
      <Compile Include="Assets\iTween.cs" />
+     <Compile Include="Assets\testAnimationControl.cs" />
      <Compile Include="Assets\videoClipPlay.cs" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\derivatives.glslinc" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Fade.shader" />

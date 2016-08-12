@@ -1,7 +1,11 @@
+UnityEngine.Animation::GetStateCount
+UnityEngine.Animation::GetStateAtIndex
+UnityEngine.AnimationClip::set_wrapMode
 UnityEngine.AnimationCurve::Cleanup
 UnityEngine.AnimationCurve::Init
 UnityEngine.Animator::StringToHash
 UnityEngine.Animator::ResetTriggerString
+UnityEngine.Animator::SetBoolString
 UnityEngine.Animator::SetTriggerString
 UnityEngine.Animator::get_runtimeAnimatorController
 UnityEngine.Application::get_isEditor
@@ -168,6 +172,7 @@ UnityEngine.Event::get_modifiers
 UnityEngine.Event::get_rawType
 UnityEngine.Event::get_type
 UnityEngine.Event::get_keyCode
+UnityEngine.Experimental.Director.DirectorPlayer::Stop
 UnityEngine.Experimental.Director.Playable::ConnectInternal
 UnityEngine.Experimental.Director.Playable::SetInputWeightInternal
 UnityEngine.Experimental.Director.Playable::get_time

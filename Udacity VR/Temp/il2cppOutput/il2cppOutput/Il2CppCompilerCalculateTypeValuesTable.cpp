@@ -884,8 +884,10 @@
 #include "UnityEngine_UnityEngine_AudioSettings1824070214.h"
 #include "UnityEngine_UnityEngine_AudioClip3714538611.h"
 #include "UnityEngine_UnityEngine_AudioRolloffMode3071838028.h"
+#include "UnityEngine_UnityEngine_WrapMode3802599802.h"
 #include "UnityEngine_UnityEngine_AnimationEventSource2022798750.h"
 #include "UnityEngine_UnityEngine_AnimationEvent3344771555.h"
+#include "UnityEngine_UnityEngine_Animation_Enumerator1072804836.h"
 #include "UnityEngine_UnityEngine_AnimatorClipInfo4255364242.h"
 #include "UnityEngine_UnityEngine_AnimatorStateInfo4162640357.h"
 #include "UnityEngine_UnityEngine_AnimatorTransitionInfo2791832279.h"
@@ -1238,6 +1240,7 @@
 #include "AssemblyU2DCSharp_stereoWebsiteTransfer_U3Cwebsite3546155373.h"
 #include "AssemblyU2DCSharp_tempSwapper1669525558.h"
 #include "AssemblyU2DCSharp_touchInputFixer3878151799.h"
+#include "AssemblyU2DCSharp_cubeScript1912653152.h"
 #include "AssemblyU2DCSharp_iTween3087282050.h"
 #include "AssemblyU2DCSharp_iTween_EaseType3571590248.h"
 #include "AssemblyU2DCSharp_iTween_LoopType2322152478.h"
@@ -1247,6 +1250,7 @@
 #include "AssemblyU2DCSharp_iTween_U3CTweenDelayU3Ec__Iterat1384169934.h"
 #include "AssemblyU2DCSharp_iTween_U3CTweenRestartU3Ec__Iter1621025027.h"
 #include "AssemblyU2DCSharp_iTween_U3CStartU3Ec__Iterator74138896574.h"
+#include "AssemblyU2DCSharp_testAnimationControl613337579.h"
 #include "AssemblyU2DCSharp_U3CPrivateImplementationDetailsU3053238933.h"
 #include "mscorlib_U3CModuleU3E86524790.h"
 #include "mscorlib_System_Object837106420.h"
@@ -1603,6 +1607,7 @@
 #include "UnityEngine_UnityEngine_Time1525492538.h"
 #include "UnityEngine_UnityEngine_Random3963434288.h"
 #include "UnityEngine_UnityEngine_YieldInstruction3557331758.h"
+#include "UnityEngine_UnityEngine_Motion3833401379.h"
 #include "UnityEngine_UnityEngine_iOS_ADBannerView_BannerWas1325188367.h"
 #include "UnityEngine_UnityEngine_iOS_ADBannerView_BannerWasLo69910023.h"
 #include "UnityEngine_UnityEngine_iOS_ADBannerView_BannerFai2071786927.h"
@@ -1626,6 +1631,8 @@
 #include "UnityEngine_UnityEngine_AudioSource3628549054.h"
 #include "UnityEngine_UnityEngine_Audio_AudioMixer2872434200.h"
 #include "UnityEngine_UnityEngine_Audio_AudioMixerGroup1736867953.h"
+#include "UnityEngine_UnityEngine_AnimationClip57566497.h"
+#include "UnityEngine_UnityEngine_Animation350396337.h"
 #include "UnityEngine_UnityEngine_AnimationState3357637594.h"
 #include "UnityEngine_UnityEngine_Animator792326996.h"
 #include "UnityEngine_UnityEngine_RuntimeAnimatorController3860414472.h"
@@ -1732,7 +1739,7 @@
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const int32_t g_FieldOffsetTable[9848] = 
+extern const int32_t g_FieldOffsetTable[9861] = 
 {
 	0,
 	0,
@@ -8790,6 +8797,13 @@ extern const int32_t g_FieldOffsetTable[9848] =
 	0,
 	0,
 	0,
+	WrapMode_t3802599802::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
 	AnimationEventSource_t2022798750::get_offset_of_value___1() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	0,
 	0,
@@ -8805,6 +8819,8 @@ extern const int32_t g_FieldOffsetTable[9848] =
 	AnimationEvent_t3344771555::get_offset_of_m_StateSender_8(),
 	AnimationEvent_t3344771555::get_offset_of_m_AnimatorStateInfo_9(),
 	AnimationEvent_t3344771555::get_offset_of_m_AnimatorClipInfo_10(),
+	Enumerator_t1072804842::get_offset_of_m_Outer_0(),
+	Enumerator_t1072804842::get_offset_of_m_CurrentIndex_1(),
 	AnimatorClipInfo_t4255364242::get_offset_of_m_ClipInstanceID_0() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	AnimatorClipInfo_t4255364242::get_offset_of_m_Weight_1() + static_cast<int32_t>(sizeof(Il2CppObject)),
 	AnimatorStateInfo_t4162640357::get_offset_of_m_Name_0() + static_cast<int32_t>(sizeof(Il2CppObject)),
@@ -11439,11 +11455,11 @@ extern const int32_t g_FieldOffsetTable[9848] =
 	stereoWebsiteTransfer_t3888997006::get_offset_of_transferPanel_2(),
 	stereoWebsiteTransfer_t3888997006::get_offset_of_normalPanels_3(),
 	stereoWebsiteTransfer_t3888997006::get_offset_of_timeToTransition_4(),
-	U3CwebsiteTransitionU3Ec__Iterator4_t3546155373::get_offset_of_U3CU24s_33U3E__0_0(),
-	U3CwebsiteTransitionU3Ec__Iterator4_t3546155373::get_offset_of_U3CU24s_34U3E__1_1(),
+	U3CwebsiteTransitionU3Ec__Iterator4_t3546155373::get_offset_of_U3CU24s_31U3E__0_0(),
+	U3CwebsiteTransitionU3Ec__Iterator4_t3546155373::get_offset_of_U3CU24s_32U3E__1_1(),
 	U3CwebsiteTransitionU3Ec__Iterator4_t3546155373::get_offset_of_U3CoriginalPanelObjectU3E__2_2(),
-	U3CwebsiteTransitionU3Ec__Iterator4_t3546155373::get_offset_of_U3CU24s_35U3E__3_3(),
-	U3CwebsiteTransitionU3Ec__Iterator4_t3546155373::get_offset_of_U3CU24s_36U3E__4_4(),
+	U3CwebsiteTransitionU3Ec__Iterator4_t3546155373::get_offset_of_U3CU24s_33U3E__3_3(),
+	U3CwebsiteTransitionU3Ec__Iterator4_t3546155373::get_offset_of_U3CU24s_34U3E__4_4(),
 	U3CwebsiteTransitionU3Ec__Iterator4_t3546155373::get_offset_of_U3CoriginalPanelObjectU3E__5_5(),
 	U3CwebsiteTransitionU3Ec__Iterator4_t3546155373::get_offset_of_url_6(),
 	U3CwebsiteTransitionU3Ec__Iterator4_t3546155373::get_offset_of_U24PC_7(),
@@ -11456,6 +11472,7 @@ extern const int32_t g_FieldOffsetTable[9848] =
 	tempSwapper_t1669525558::get_offset_of_startInVR_5(),
 	tempSwapper_t1669525558_StaticFields::get_offset_of_VRModeOn_6(),
 	touchInputFixer_t3878151799::get_offset_of__module_2(),
+	cubeScript_t1912653152::get_offset_of_anim_2(),
 	iTween_t3087282050_StaticFields::get_offset_of_tweens_2(),
 	iTween_t3087282050_StaticFields::get_offset_of_cameraFade_3(),
 	iTween_t3087282050::get_offset_of_id_4(),
@@ -11576,6 +11593,9 @@ extern const int32_t g_FieldOffsetTable[9848] =
 	U3CStartU3Ec__Iterator7_t4138896574::get_offset_of_U24PC_0(),
 	U3CStartU3Ec__Iterator7_t4138896574::get_offset_of_U24current_1(),
 	U3CStartU3Ec__Iterator7_t4138896574::get_offset_of_U3CU3Ef__this_2(),
+	testAnimationControl_t613337579::get_offset_of_animatedObject_2(),
+	testAnimationControl_t613337579::get_offset_of_clip_3(),
+	testAnimationControl_t613337579::get_offset_of_test_4(),
 	U3CPrivateImplementationDetailsU3E_t3053238938_StaticFields::get_offset_of_U24U24fieldU2D0_0(),
 	U3CPrivateImplementationDetailsU3E_t3053238938_StaticFields::get_offset_of_U24U24fieldU2D1_1(),
 	U3CPrivateImplementationDetailsU3E_t3053238938_StaticFields::get_offset_of_U24U24fieldU2D2_2(),
@@ -11586,7 +11606,7 @@ extern const int32_t g_FieldOffsetTable[9848] =
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1950] = 
+extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1957] = 
 {
 	sizeof (U3CModuleU3E_t86524790), -1, 0, 0,
 	sizeof (Il2CppObject), -1, 0, 0,
@@ -12938,6 +12958,7 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1950] =
 	sizeof (Time_t1525492538), -1, 0, 0,
 	sizeof (Random_t3963434288), -1, 0, 0,
 	sizeof (YieldInstruction_t3557331758), sizeof(YieldInstruction_t3557331758_marshaled_pinvoke), 0, 0,
+	sizeof (Motion_t3833401379), -1, 0, 0,
 	sizeof (ADBannerView_t2458921414), -1, sizeof(ADBannerView_t2458921414_StaticFields), 0,
 	sizeof (BannerWasClickedDelegate_t1325188367), sizeof(methodPointerType), 0, 0,
 	sizeof (BannerWasLoadedDelegate_t69910023), sizeof(methodPointerType), 0, 0,
@@ -12989,8 +13010,12 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1950] =
 	sizeof (AudioSource_t3628549054), -1, 0, 0,
 	sizeof (AudioMixer_t2872434200), -1, 0, 0,
 	sizeof (AudioMixerGroup_t1736867953), -1, 0, 0,
+	sizeof (WrapMode_t3802599802)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (AnimationEventSource_t2022798750)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (AnimationEvent_t3344771555), -1, 0, 0,
+	sizeof (AnimationClip_t57566497), -1, 0, 0,
+	sizeof (Animation_t350396337), -1, 0, 0,
+	sizeof (Enumerator_t1072804842), -1, 0, 0,
 	sizeof (AnimationState_t3357637594), -1, 0, 0,
 	sizeof (AnimatorClipInfo_t4255364242)+ sizeof (Il2CppObject), sizeof(AnimatorClipInfo_t4255364242_marshaled_pinvoke), 0, 0,
 	sizeof (AnimatorStateInfo_t4162640357)+ sizeof (Il2CppObject), sizeof(AnimatorStateInfo_t4162640357_marshaled_pinvoke), 0, 0,
@@ -13518,6 +13543,7 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1950] =
 	sizeof (U3CwebsiteTransitionU3Ec__Iterator4_t3546155373), -1, 0, 0,
 	sizeof (tempSwapper_t1669525558), -1, sizeof(tempSwapper_t1669525558_StaticFields), 0,
 	sizeof (touchInputFixer_t3878151799), -1, 0, 0,
+	sizeof (cubeScript_t1912653152), -1, 0, 0,
 	sizeof (iTween_t3087282050), -1, sizeof(iTween_t3087282050_StaticFields), 0,
 	sizeof (EaseType_t3571590248)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (LoopType_t2322152478)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
@@ -13529,6 +13555,7 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1950] =
 	sizeof (U3CTweenDelayU3Ec__Iterator5_t1384169934), -1, 0, 0,
 	sizeof (U3CTweenRestartU3Ec__Iterator6_t1621025027), -1, 0, 0,
 	sizeof (U3CStartU3Ec__Iterator7_t4138896574), -1, 0, 0,
+	sizeof (testAnimationControl_t613337579), -1, 0, 0,
 	sizeof (videoClipPlay_t650790975), -1, 0, 0,
 	sizeof (U3CPrivateImplementationDetailsU3E_t3053238938), -1, sizeof(U3CPrivateImplementationDetailsU3E_t3053238938_StaticFields), 0,
 	sizeof (U24ArrayTypeU2428_t214874523)+ sizeof (Il2CppObject), sizeof(U24ArrayTypeU2428_t214874523_marshaled_pinvoke), 0, 0,
