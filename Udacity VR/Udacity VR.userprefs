@@ -1,0 +1,18 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/sceneTransition.cs">
+    <Files>
+      <File FileName="Assets/Scripts/sceneTransition.cs" Line="1" Column="1" />
+      <File FileName="Assets/tempSwapper.cs" Line="1" Column="1" />
+      <File FileName="Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/UI/PhysicsInteraction.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/sceneLogic.cs" Line="42" Column="1" />
+      <File FileName="Assets/Scripts/revealTooltip.cs" Line="58" Column="4" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/austinmccasland/Dropbox/Udacity/Unity Projects/Udacity VR/Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/Scene/Scene3.cs" line="13" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
