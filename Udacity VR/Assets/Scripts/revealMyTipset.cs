@@ -13,6 +13,8 @@ public class revealMyTipset : MonoBehaviour {
 	public bool smoothTransitions = false; //Whether or not we tween
 	public GameObject[] animatedObjects; //All of the objects with animations we want to turn on when this tipset is revealed
 
+
+	private bool animationsHaveFired = false;
 	//public AnimationClip testAnim;
 	void Start () {
 
@@ -38,11 +40,18 @@ public class revealMyTipset : MonoBehaviour {
 
 		if (distanceFromPlayer <= .5) {
 			showToolTipManual ();
+			if (!animationsHaveFired) {
+				activateObjectAnimations ();
+				animationsHaveFired = true;
+				Debug.Log ("fired animations");
+			}
 		} else {
 			hideToolTipManual ();
+			if (animationsHaveFired) {
+				deactivateObjectAnimations ();
+				Debug.Log ("stopped animations");
+			}
 		}
-			
-
 	}
 	public void showToolTipManual() {
 		//If the player is near the tooltip hotspot
@@ -82,7 +91,6 @@ public class revealMyTipset : MonoBehaviour {
 		foreach (GameObject thing in animatedObjects) {
 			//thing.GetComponent<Animator>().enabled = true;
 
-
 			Animator anim = thing.GetComponent<Animator> ();
 			anim.SetBool ("isPlaying", true);
 		}
@@ -92,7 +100,6 @@ public class revealMyTipset : MonoBehaviour {
 			Animator anim = thing.GetComponent<Animator> ();
 
 			anim.SetBool ("isPlaying", false);
-
 		}
 	}
 }

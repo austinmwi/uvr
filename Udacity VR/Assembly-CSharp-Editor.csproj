@@ -81,6 +81,7 @@
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\ambient_occlusion.glslinc" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Shore.shader" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\matrices.glslinc" />
+     <None Include="Assets\fadeBetween.shader" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Clouds.shader" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\UI.shader" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Plugins\Android\AndroidManifest.xml" />

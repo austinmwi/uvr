@@ -53,6 +53,8 @@ struct Ocean_t76007646;
 struct MeshRenderer_t1217738301;
 // UnityEngine.AudioSource
 struct AudioSource_t3628549054;
+// onboardingScreenController
+struct onboardingScreenController_t3301330275;
 // originalScale
 struct originalScale_t1851787769;
 // PhysicsStuff
@@ -241,6 +243,8 @@ struct View_t2666181;
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
 #include "mscorlib_System_Array2840145358.h"
+#include "AssemblyU2DCSharp_iTween_NamedValueColor2770953323.h"
+#include "AssemblyU2DCSharp_iTween_NamedValueColor2770953323MethodDeclarations.h"
 #include "AssemblyU2DCSharp_KeyboardMovement185877974.h"
 #include "AssemblyU2DCSharp_KeyboardMovement185877974MethodDeclarations.h"
 #include "mscorlib_System_Void2779279689.h"
@@ -336,6 +340,8 @@ struct View_t2666181;
 #include "UnityEngine_UnityEngine_Rendering_ReflectionProbeUs852358867.h"
 #include "UnityEngine_UnityEngine_AudioSource3628549054MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Debug1588791936MethodDeclarations.h"
+#include "AssemblyU2DCSharp_onboardingScreenController3301330275.h"
+#include "AssemblyU2DCSharp_onboardingScreenController3301330275MethodDeclarations.h"
 #include "AssemblyU2DCSharp_originalScale1851787769.h"
 #include "AssemblyU2DCSharp_originalScale1851787769MethodDeclarations.h"
 #include "AssemblyU2DCSharp_PhysicsStuff3477757965.h"
@@ -2500,6 +2506,70 @@ extern "C"  void Ocean_SetSoundPositionRelativeToViewer_m3926256166 (Il2CppObjec
 		Vector3_t3525329789  L_15 = V_1;
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1588791936_il2cpp_TypeInfo_var);
 		Debug_DrawRay_m719556002(NULL /*static, unused*/, L_14, L_15, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void onboardingScreenController::.ctor()
+extern "C"  void onboardingScreenController__ctor_m2969533080 (onboardingScreenController_t3301330275 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_screenCount_3(5);
+		__this->set_currentScreen_4(1);
+		MonoBehaviour__ctor_m2022291967(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void onboardingScreenController::Start()
+extern "C"  void onboardingScreenController_Start_m1916670872 (onboardingScreenController_t3301330275 * __this, const MethodInfo* method)
+{
+	{
+		return;
+	}
+}
+// System.Void onboardingScreenController::Update()
+extern "C"  void onboardingScreenController_Update_m3588074357 (onboardingScreenController_t3301330275 * __this, const MethodInfo* method)
+{
+	{
+		return;
+	}
+}
+// System.Void onboardingScreenController::progressForwards()
+extern "C"  void onboardingScreenController_progressForwards_m18681831 (onboardingScreenController_t3301330275 * __this, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = __this->get_currentScreen_4();
+		__this->set_currentScreen_4(((int32_t)((int32_t)L_0+(int32_t)1)));
+		int32_t L_1 = __this->get_scrollLine_5();
+		__this->set_scrollLine_5(((int32_t)((int32_t)L_1-(int32_t)((int32_t)375))));
+		GameObject_t4012695102 * L_2 = __this->get_screenCanvas_2();
+		NullCheck(L_2);
+		Transform_t284553113 * L_3 = GameObject_get_transform_m1278640159(L_2, /*hidden argument*/NULL);
+		int32_t L_4 = __this->get_scrollLine_5();
+		Vector3_t3525329789  L_5;
+		memset(&L_5, 0, sizeof(L_5));
+		Vector3__ctor_m2926210380(&L_5, (46.0f), (((float)((float)L_4))), (0.0f), /*hidden argument*/NULL);
+		NullCheck(L_3);
+		Transform_set_localPosition_m3504330903(L_3, L_5, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void onboardingScreenController::progressBackwards()
+extern "C"  void onboardingScreenController_progressBackwards_m1407425753 (onboardingScreenController_t3301330275 * __this, const MethodInfo* method)
+{
+	{
+		int32_t L_0 = __this->get_currentScreen_4();
+		__this->set_currentScreen_4(((int32_t)((int32_t)L_0-(int32_t)1)));
+		int32_t L_1 = __this->get_scrollLine_5();
+		__this->set_scrollLine_5(((int32_t)((int32_t)L_1+(int32_t)((int32_t)375))));
+		GameObject_t4012695102 * L_2 = __this->get_screenCanvas_2();
+		NullCheck(L_2);
+		Transform_t284553113 * L_3 = GameObject_get_transform_m1278640159(L_2, /*hidden argument*/NULL);
+		int32_t L_4 = __this->get_scrollLine_5();
+		Vector3_t3525329789  L_5;
+		memset(&L_5, 0, sizeof(L_5));
+		Vector3__ctor_m2926210380(&L_5, (46.0f), (((float)((float)L_4))), (0.0f), /*hidden argument*/NULL);
+		NullCheck(L_3);
+		Transform_set_localPosition_m3504330903(L_3, L_5, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -20321,8 +20391,18 @@ IL_007f:
 	}
 }
 // System.Void revealMyTipset::Update()
+extern TypeInfo* Debug_t1588791936_il2cpp_TypeInfo_var;
+extern Il2CppCodeGenString* _stringLiteral440769505;
+extern Il2CppCodeGenString* _stringLiteral2485905826;
+extern const uint32_t revealMyTipset_Update_m1504099186_MetadataUsageId;
 extern "C"  void revealMyTipset_Update_m1504099186 (revealMyTipset_t3928271264 * __this, const MethodInfo* method)
 {
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (revealMyTipset_Update_m1504099186_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
 	{
 		GameObject_t4012695102 * L_0 = __this->get_player_2();
 		NullCheck(L_0);
@@ -20337,20 +20417,45 @@ extern "C"  void revealMyTipset_Update_m1504099186 (revealMyTipset_t3928271264 *
 		float L_6 = __this->get_distanceFromPlayer_4();
 		if ((!(((double)(((double)((double)L_6)))) <= ((double)(0.5)))))
 		{
-			goto IL_0046;
+			goto IL_0068;
 		}
 	}
 	{
 		revealMyTipset_showToolTipManual_m4214672069(__this, /*hidden argument*/NULL);
-		goto IL_004c;
+		bool L_7 = __this->get_animationsHaveFired_8();
+		if (L_7)
+		{
+			goto IL_0063;
+		}
+	}
+	{
+		revealMyTipset_activateObjectAnimations_m3948669866(__this, /*hidden argument*/NULL);
+		__this->set_animationsHaveFired_8((bool)1);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1588791936_il2cpp_TypeInfo_var);
+		Debug_Log_m1731103628(NULL /*static, unused*/, _stringLiteral440769505, /*hidden argument*/NULL);
 	}
 
-IL_0046:
+IL_0063:
+	{
+		goto IL_0089;
+	}
+
+IL_0068:
 	{
 		revealMyTipset_hideToolTipManual_m2515031520(__this, /*hidden argument*/NULL);
+		bool L_8 = __this->get_animationsHaveFired_8();
+		if (!L_8)
+		{
+			goto IL_0089;
+		}
+	}
+	{
+		revealMyTipset_deactivateObjectAnimations_m723785451(__this, /*hidden argument*/NULL);
+		IL2CPP_RUNTIME_CLASS_INIT(Debug_t1588791936_il2cpp_TypeInfo_var);
+		Debug_Log_m1731103628(NULL /*static, unused*/, _stringLiteral2485905826, /*hidden argument*/NULL);
 	}
 
-IL_004c:
+IL_0089:
 	{
 		return;
 	}
@@ -22565,7 +22670,7 @@ extern "C"  void Seagulls__cctor_m336235880 (Il2CppObject * __this /* static, un
 		s_Il2CppMethodIntialized = true;
 	}
 	{
-		((Seagulls_t943671414_StaticFields*)Seagulls_t943671414_il2cpp_TypeInfo_var->static_fields)->set_seagull_object_4(((GameObjectU5BU5D_t3499186955*)SZArrayNew(GameObjectU5BU5D_t3499186955_il2cpp_TypeInfo_var, (uint32_t)((int32_t)32))));
+		((Seagulls_t943671414_StaticFields*)Seagulls_t943671414_il2cpp_TypeInfo_var->static_fields)->set_seagull_object_4(((GameObjectU5BU5D_t3499186955*)SZArrayNew(GameObjectU5BU5D_t3499186955_il2cpp_TypeInfo_var, (uint32_t)((int32_t)10))));
 		return;
 	}
 }

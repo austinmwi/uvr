@@ -11496,6 +11496,7 @@ extern "C" void FlockRenderer_Lines_m391600628 ();
 extern "C" void FPS__ctor_m3522929858 ();
 extern "C" void FPS_Awake_m3760535077 ();
 extern "C" void FPS_LateUpdate_m3515633361 ();
+extern "C" void framefix__ctor_m2506745875 ();
 extern "C" void furniturePlacement__ctor_m677518056 ();
 extern "C" void furniturePlacement_Start_m3919623144 ();
 extern "C" void furniturePlacement_Update_m1255085349 ();
@@ -12330,6 +12331,11 @@ extern "C" void Ocean_get_gameObject_m815786812 ();
 extern "C" void Ocean_get_audio_source_m3927070123 ();
 extern "C" void Ocean_AdjustPitch_m1669794972 ();
 extern "C" void Ocean_SetSoundPositionRelativeToViewer_m3926256166 ();
+extern "C" void onboardingScreenController__ctor_m2969533080 ();
+extern "C" void onboardingScreenController_Start_m1916670872 ();
+extern "C" void onboardingScreenController_Update_m3588074357 ();
+extern "C" void onboardingScreenController_progressForwards_m18681831 ();
+extern "C" void onboardingScreenController_progressBackwards_m1407425753 ();
 extern "C" void originalScale__ctor_m3569581970 ();
 extern "C" void originalScale_Start_m2516719762 ();
 extern "C" void originalScale_Update_m714753467 ();
@@ -13112,7 +13118,7 @@ extern "C" void RotateSample__ctor_m328697322 ();
 extern "C" void RotateSample_Start_m3570802410 ();
 extern "C" void SampleInfo__ctor_m3206060983 ();
 extern "C" void SampleInfo_OnGUI_m2701459633 ();
-extern const methodPointerType g_MethodPointers[13101] = 
+extern const methodPointerType g_MethodPointers[13107] = 
 {
 	Locale_GetText_m2389348044,
 	Locale_GetText_m2218462520,
@@ -24599,6 +24605,7 @@ extern const methodPointerType g_MethodPointers[13101] =
 	FPS__ctor_m3522929858,
 	FPS_Awake_m3760535077,
 	FPS_LateUpdate_m3515633361,
+	framefix__ctor_m2506745875,
 	furniturePlacement__ctor_m677518056,
 	furniturePlacement_Start_m3919623144,
 	furniturePlacement_Update_m1255085349,
@@ -25433,6 +25440,11 @@ extern const methodPointerType g_MethodPointers[13101] =
 	Ocean_get_audio_source_m3927070123,
 	Ocean_AdjustPitch_m1669794972,
 	Ocean_SetSoundPositionRelativeToViewer_m3926256166,
+	onboardingScreenController__ctor_m2969533080,
+	onboardingScreenController_Start_m1916670872,
+	onboardingScreenController_Update_m3588074357,
+	onboardingScreenController_progressForwards_m18681831,
+	onboardingScreenController_progressBackwards_m1407425753,
 	originalScale__ctor_m3569581970,
 	originalScale_Start_m2516719762,
 	originalScale_Update_m714753467,

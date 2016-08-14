@@ -147,7 +147,10 @@
      <Compile Include="Assets\Scripts\tempSwapper.cs" />
      <Compile Include="Assets\Scripts\touchInputFixer.cs" />
      <Compile Include="Assets\cubeScript.cs" />
+     <Compile Include="Assets\framefix.cs" />
      <Compile Include="Assets\iTween.cs" />
+     <Compile Include="Assets\onboardingScreenController.cs" />
+     <Compile Include="Assets\playmov.cs" />
      <Compile Include="Assets\testAnimationControl.cs" />
      <Compile Include="Assets\videoClipPlay.cs" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\derivatives.glslinc" />
@@ -176,6 +179,7 @@
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\ambient_occlusion.glslinc" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Shore.shader" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\matrices.glslinc" />
+     <None Include="Assets\fadeBetween.shader" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Clouds.shader" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\UI.shader" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Plugins\Android\AndroidManifest.xml" />

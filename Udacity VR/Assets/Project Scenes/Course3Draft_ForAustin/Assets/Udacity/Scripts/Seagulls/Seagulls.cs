@@ -5,7 +5,7 @@ public class Seagulls : MonoBehaviour
 {
 	public GameObject seagull_prefab;
 	
-	private const int SEAGULL_COUNT 			= 32;
+	private const int SEAGULL_COUNT 			= 10;
 
 	private static GameObject[] seagull_object	= new GameObject[SEAGULL_COUNT];
 	private GameObject _seagulls_object;

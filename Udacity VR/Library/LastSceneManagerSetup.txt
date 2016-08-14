@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/apartment.unity
+- path: Assets/Scenes/Opening Scenes/OpeningScreenPhotosphere.unity
   isLoaded: 1
   isActive: 1

@@ -1250,6 +1250,7 @@
 #include "AssemblyU2DCSharp_iTween_U3CTweenDelayU3Ec__Iterat1384169934.h"
 #include "AssemblyU2DCSharp_iTween_U3CTweenRestartU3Ec__Iter1621025027.h"
 #include "AssemblyU2DCSharp_iTween_U3CStartU3Ec__Iterator74138896574.h"
+#include "AssemblyU2DCSharp_onboardingScreenController3301330275.h"
 #include "AssemblyU2DCSharp_testAnimationControl613337579.h"
 #include "AssemblyU2DCSharp_U3CPrivateImplementationDetailsU3053238933.h"
 #include "mscorlib_U3CModuleU3E86524790.h"
@@ -1721,6 +1722,7 @@
 #include "AssemblyU2DCSharp_furniturePlacement195537683.h"
 #include "AssemblyU2DCSharp_looseFollow213796847.h"
 #include "AssemblyU2DCSharp_startTour2165678554.h"
+#include "AssemblyU2DCSharp_framefix2650001288.h"
 #include "AssemblyU2DCSharp_iTween_EasingFunction3158869571.h"
 #include "AssemblyU2DCSharp_iTween_ApplyTween2072814525.h"
 #include "AssemblyU2DCSharp_videoClipPlay650790975.h"
@@ -1739,7 +1741,7 @@
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const int32_t g_FieldOffsetTable[9861] = 
+extern const int32_t g_FieldOffsetTable[9868] = 
 {
 	0,
 	0,
@@ -11399,8 +11401,10 @@ extern const int32_t g_FieldOffsetTable[9861] =
 	displayFrames_t2111008776::get_offset_of_guiText_6(),
 	displayFrames_t2111008776::get_offset_of_displayText_7(),
 	fadeMaterials_t484381968::get_offset_of_fadeObject_2(),
-	fadeMaterials_t484381968::get_offset_of_originalColor_3(),
-	fadeMaterials_t484381968::get_offset_of_currentColor_4(),
+	fadeMaterials_t484381968::get_offset_of_material1_3(),
+	fadeMaterials_t484381968::get_offset_of_material2_4(),
+	fadeMaterials_t484381968::get_offset_of_originalColor_5(),
+	fadeMaterials_t484381968::get_offset_of_currentColor_6(),
 	lightsOff_t686568978::get_offset_of_mainLights_2(),
 	lightsOff_t686568978::get_offset_of_specialLight_3(),
 	lookAtPlayer_t2578480307::get_offset_of_player_2(),
@@ -11418,6 +11422,7 @@ extern const int32_t g_FieldOffsetTable[9861] =
 	revealMyTipset_t3928271264::get_offset_of_enlargeTime_5(),
 	revealMyTipset_t3928271264::get_offset_of_smoothTransitions_6(),
 	revealMyTipset_t3928271264::get_offset_of_animatedObjects_7(),
+	revealMyTipset_t3928271264::get_offset_of_animationsHaveFired_8(),
 	revealTooltip_t1644466038::get_offset_of_player_2(),
 	revealTooltip_t1644466038::get_offset_of_minDistance_3(),
 	revealTooltip_t1644466038::get_offset_of_maxDistance_4(),
@@ -11593,6 +11598,10 @@ extern const int32_t g_FieldOffsetTable[9861] =
 	U3CStartU3Ec__Iterator7_t4138896574::get_offset_of_U24PC_0(),
 	U3CStartU3Ec__Iterator7_t4138896574::get_offset_of_U24current_1(),
 	U3CStartU3Ec__Iterator7_t4138896574::get_offset_of_U3CU3Ef__this_2(),
+	onboardingScreenController_t3301330275::get_offset_of_screenCanvas_2(),
+	onboardingScreenController_t3301330275::get_offset_of_screenCount_3(),
+	onboardingScreenController_t3301330275::get_offset_of_currentScreen_4(),
+	onboardingScreenController_t3301330275::get_offset_of_scrollLine_5(),
 	testAnimationControl_t613337579::get_offset_of_animatedObject_2(),
 	testAnimationControl_t613337579::get_offset_of_clip_3(),
 	testAnimationControl_t613337579::get_offset_of_test_4(),
@@ -11606,7 +11615,7 @@ extern const int32_t g_FieldOffsetTable[9861] =
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1957] = 
+extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1959] = 
 {
 	sizeof (U3CModuleU3E_t86524790), -1, 0, 0,
 	sizeof (Il2CppObject), -1, 0, 0,
@@ -13544,6 +13553,7 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1957] =
 	sizeof (tempSwapper_t1669525558), -1, sizeof(tempSwapper_t1669525558_StaticFields), 0,
 	sizeof (touchInputFixer_t3878151799), -1, 0, 0,
 	sizeof (cubeScript_t1912653152), -1, 0, 0,
+	sizeof (framefix_t2650001288), -1, 0, 0,
 	sizeof (iTween_t3087282050), -1, sizeof(iTween_t3087282050_StaticFields), 0,
 	sizeof (EaseType_t3571590248)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
 	sizeof (LoopType_t2322152478)+ sizeof (Il2CppObject), sizeof(int32_t), 0, 0,
@@ -13555,6 +13565,7 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1957] =
 	sizeof (U3CTweenDelayU3Ec__Iterator5_t1384169934), -1, 0, 0,
 	sizeof (U3CTweenRestartU3Ec__Iterator6_t1621025027), -1, 0, 0,
 	sizeof (U3CStartU3Ec__Iterator7_t4138896574), -1, 0, 0,
+	sizeof (onboardingScreenController_t3301330275), -1, 0, 0,
 	sizeof (testAnimationControl_t613337579), -1, 0, 0,
 	sizeof (videoClipPlay_t650790975), -1, 0, 0,
 	sizeof (U3CPrivateImplementationDetailsU3E_t3053238938), -1, sizeof(U3CPrivateImplementationDetailsU3E_t3053238938_StaticFields), 0,

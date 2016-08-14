@@ -97,6 +97,8 @@ struct Flocking_t2076345297;
 struct FlockRenderer_t1565251156;
 // FPS
 struct FPS_t69833;
+// framefix
+struct framefix_t2650001288;
 // furniturePlacement
 struct furniturePlacement_t195537683;
 // GazeInputModule
@@ -470,6 +472,8 @@ struct EasingFunction_t3158869571;
 #include "AssemblyU2DCSharp_GvrViewer_DistortionCorrectionMe3847017660.h"
 #include "AssemblyU2DCSharp_StereoController1637909972.h"
 #include "AssemblyU2DCSharp_GvrViewer671349045.h"
+#include "AssemblyU2DCSharp_framefix2650001288.h"
+#include "AssemblyU2DCSharp_framefix2650001288MethodDeclarations.h"
 #include "AssemblyU2DCSharp_furniturePlacement195537683.h"
 #include "AssemblyU2DCSharp_furniturePlacement195537683MethodDeclarations.h"
 #include "AssemblyU2DCSharp_GazeInputModule2064533489.h"
@@ -783,7 +787,6 @@ struct EasingFunction_t3158869571;
 #include "UnityEngine_UnityEngine_WaitForSeconds1291133240.h"
 #include "AssemblyU2DCSharp_iTween_EaseType3571590248MethodDeclarations.h"
 #include "AssemblyU2DCSharp_iTween_LoopType2322152478MethodDeclarations.h"
-#include "AssemblyU2DCSharp_iTween_NamedValueColor2770953323MethodDeclarations.h"
 
 // !!0 UnityEngine.GameObject::GetComponent<System.Object>()
 extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m3652735468_gshared (GameObject_t4012695102 * __this, const MethodInfo* method);
@@ -5164,9 +5167,9 @@ extern "C"  void fadeMaterials_Start_m3772290907 (fadeMaterials_t484381968 * __t
 		Material_t1886596500 * L_2 = Renderer_get_material_m2720864603(L_1, /*hidden argument*/NULL);
 		NullCheck(L_2);
 		Color_t1588175760  L_3 = Material_get_color_m2268945527(L_2, /*hidden argument*/NULL);
-		__this->set_originalColor_3(L_3);
-		Color_t1588175760  L_4 = __this->get_originalColor_3();
-		__this->set_currentColor_4(L_4);
+		__this->set_originalColor_5(L_3);
+		Color_t1588175760  L_4 = __this->get_originalColor_5();
+		__this->set_currentColor_6(L_4);
 		return;
 	}
 }
@@ -5179,25 +5182,9 @@ extern "C"  void fadeMaterials_Update_m982753298 (fadeMaterials_t484381968 * __t
 	}
 }
 // System.Void fadeMaterials::fadeOut()
-extern const MethodInfo* GameObject_GetComponent_TisRenderer_t1092684080_m4102086307_MethodInfo_var;
-extern const uint32_t fadeMaterials_fadeOut_m3742138443_MetadataUsageId;
 extern "C"  void fadeMaterials_fadeOut_m3742138443 (fadeMaterials_t484381968 * __this, const MethodInfo* method)
 {
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
 	{
-		il2cpp_codegen_initialize_method (fadeMaterials_fadeOut_m3742138443_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	{
-		GameObject_t4012695102 * L_0 = __this->get_fadeObject_2();
-		NullCheck(L_0);
-		Renderer_t1092684080 * L_1 = GameObject_GetComponent_TisRenderer_t1092684080_m4102086307(L_0, /*hidden argument*/GameObject_GetComponent_TisRenderer_t1092684080_m4102086307_MethodInfo_var);
-		NullCheck(L_1);
-		Material_t1886596500 * L_2 = Renderer_get_material_m2720864603(L_1, /*hidden argument*/NULL);
-		Color_t1588175760  L_3 = __this->get_currentColor_4();
-		NullCheck(L_2);
-		Material_set_color_m3296857020(L_2, L_3, /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -6929,6 +6916,14 @@ IL_009d:
 		String_t* L_33 = V_0;
 		NullCheck(L_32);
 		VirtActionInvoker1< String_t* >::Invoke(65 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_32, L_33);
+		return;
+	}
+}
+// System.Void framefix::.ctor()
+extern "C"  void framefix__ctor_m2506745875 (framefix_t2650001288 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2022291967(__this, /*hidden argument*/NULL);
 		return;
 	}
 }

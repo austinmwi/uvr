@@ -1,9 +1,29 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
-		<type fullname="stereoWebsiteTransfer">
-			<method name="goToWebsite"/>
-			<method name="goToWebsite"/>
-			<method name="goToWebsite"/>
+		<type fullname="sceneTransition">
+			<method name="changeScene"/>
+			<method name="changeScene"/>
+			<method name="changeScene"/>
+			<method name="changeScene"/>
+			<method name="changeScene"/>
+			<method name="changeScene"/>
+			<method name="changeScene"/>
+		</type>
+		<type fullname="onboardingScreenController">
+			<method name="progressForwards"/>
+			<method name="progressForwards"/>
+			<method name="progressBackwards"/>
+			<method name="progressForwards"/>
+			<method name="progressBackwards"/>
+			<method name="progressForwards"/>
+			<method name="progressBackwards"/>
+			<method name="progressForwards"/>
+			<method name="progressForwards"/>
+			<method name="progressForwards"/>
+			<method name="progressBackwards"/>
+			<method name="progressForwards"/>
+			<method name="progressBackwards"/>
+			<method name="progressBackwards"/>
 		</type>
 		<type fullname="tempSwapper">
 			<method name="Swap"/>
@@ -14,18 +34,12 @@
 			<method name="Swap"/>
 			<method name="Swap"/>
 		</type>
-		<type fullname="sceneTransition">
-			<method name="changeScene"/>
-			<method name="changeScene"/>
-			<method name="changeScene"/>
-			<method name="changeScene"/>
-			<method name="changeScene"/>
-			<method name="changeScene"/>
-			<method name="changeScene"/>
-		</type>
 		<type fullname="startTour">
 			<method name="goToWebsite"/>
 			<method name="goToWebsite"/>
+			<method name="goToWebsite"/>
+		</type>
+		<type fullname="stereoWebsiteTransfer">
 			<method name="goToWebsite"/>
 			<method name="goToWebsite"/>
 		</type>
@@ -70,25 +84,6 @@
 		<type fullname="lightsOff">
 			<method name="turnLightsOff"/>
 			<method name="turnLightsOn"/>
-		</type>
-		<type fullname="EffectHilight">
-			<method name="Enter"/>
-			<method name="Exit"/>
-			<method name="Enter"/>
-			<method name="Exit"/>
-			<method name="Enter"/>
-			<method name="Exit"/>
-		</type>
-		<type fullname="Interaction">
-			<method name="Enter"/>
-			<method name="Exit"/>
-			<method name="Clicked"/>
-			<method name="Enter"/>
-			<method name="Exit"/>
-			<method name="Clicked"/>
-			<method name="Enter"/>
-			<method name="Exit"/>
-			<method name="Clicked"/>
 		</type>
 	</assembly>
 </linker>

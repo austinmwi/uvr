@@ -40,6 +40,8 @@ public:
 	bool ___smoothTransitions_6;
 	// UnityEngine.GameObject[] revealMyTipset::animatedObjects
 	GameObjectU5BU5D_t3499186955* ___animatedObjects_7;
+	// System.Boolean revealMyTipset::animationsHaveFired
+	bool ___animationsHaveFired_8;
 
 public:
 	inline static int32_t get_offset_of_player_2() { return static_cast<int32_t>(offsetof(revealMyTipset_t3928271264, ___player_2)); }
@@ -90,6 +92,14 @@ public:
 	{
 		___animatedObjects_7 = value;
 		Il2CppCodeGenWriteBarrier(&___animatedObjects_7, value);
+	}
+
+	inline static int32_t get_offset_of_animationsHaveFired_8() { return static_cast<int32_t>(offsetof(revealMyTipset_t3928271264, ___animationsHaveFired_8)); }
+	inline bool get_animationsHaveFired_8() const { return ___animationsHaveFired_8; }
+	inline bool* get_address_of_animationsHaveFired_8() { return &___animationsHaveFired_8; }
+	inline void set_animationsHaveFired_8(bool value)
+	{
+		___animationsHaveFired_8 = value;
 	}
 };
 

@@ -34,7 +34,7 @@ void RegisterStaticallyLinkedModulesGranular()
 
 void RegisterAllClasses()
 {
-	//Total: 85 classes
+	//Total: 86 classes
 	//0. RenderSettings
 	void RegisterClass_RenderSettings();
 	RegisterClass_RenderSettings();
@@ -343,35 +343,39 @@ void RegisterAllClasses()
 	void RegisterClass_SphereCollider();
 	RegisterClass_SphereCollider();
 
-	//77. BuildSettings
+	//77. CapsuleCollider
+	void RegisterClass_CapsuleCollider();
+	RegisterClass_CapsuleCollider();
+
+	//78. BuildSettings
 	void RegisterClass_BuildSettings();
 	RegisterClass_BuildSettings();
 
-	//78. ResourceManager
+	//79. ResourceManager
 	void RegisterClass_ResourceManager();
 	RegisterClass_ResourceManager();
 
-	//79. NetworkManager
+	//80. NetworkManager
 	void RegisterClass_NetworkManager();
 	RegisterClass_NetworkManager();
 
-	//80. MasterServerInterface
+	//81. MasterServerInterface
 	void RegisterClass_MasterServerInterface();
 	RegisterClass_MasterServerInterface();
 
-	//81. LightmapSettings
+	//82. LightmapSettings
 	void RegisterClass_LightmapSettings();
 	RegisterClass_LightmapSettings();
 
-	//82. LightProbes
+	//83. LightProbes
 	void RegisterClass_LightProbes();
 	RegisterClass_LightProbes();
 
-	//83. AudioMixerSnapshot
+	//84. AudioMixerSnapshot
 	void RegisterClass_AudioMixerSnapshot();
 	RegisterClass_AudioMixerSnapshot();
 
-	//84. RuntimeInitializeOnLoadManager
+	//85. RuntimeInitializeOnLoadManager
 	void RegisterClass_RuntimeInitializeOnLoadManager();
 	RegisterClass_RuntimeInitializeOnLoadManager();
 
