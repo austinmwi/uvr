@@ -12342,6 +12342,8 @@ extern "C" void originalScale_Update_m714753467 ();
 extern "C" void PhysicsStuff__ctor_m1038373166 ();
 extern "C" void PhysicsStuff_Start_m4280478254 ();
 extern "C" void PhysicsStuff_Clicked_m3422007795 ();
+extern "C" void playmov__ctor_m187276299 ();
+extern "C" void playmov_Update_m3237460066 ();
 extern "C" void Pose3D__ctor_m184997881 ();
 extern "C" void Pose3D__ctor_m2222637201 ();
 extern "C" void Pose3D__ctor_m3211564577 ();
@@ -13118,7 +13120,7 @@ extern "C" void RotateSample__ctor_m328697322 ();
 extern "C" void RotateSample_Start_m3570802410 ();
 extern "C" void SampleInfo__ctor_m3206060983 ();
 extern "C" void SampleInfo_OnGUI_m2701459633 ();
-extern const methodPointerType g_MethodPointers[13107] = 
+extern const methodPointerType g_MethodPointers[13109] = 
 {
 	Locale_GetText_m2389348044,
 	Locale_GetText_m2218462520,
@@ -25451,6 +25453,8 @@ extern const methodPointerType g_MethodPointers[13107] =
 	PhysicsStuff__ctor_m1038373166,
 	PhysicsStuff_Start_m4280478254,
 	PhysicsStuff_Clicked_m3422007795,
+	playmov__ctor_m187276299,
+	playmov_Update_m3237460066,
 	Pose3D__ctor_m184997881,
 	Pose3D__ctor_m2222637201,
 	Pose3D__ctor_m3211564577,

@@ -1,10 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/startTour.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/playmov.cs">
     <Files>
+      <File FileName="Assets/playmov.cs" Line="8" Column="5" />
       <File FileName="Assets/Scripts/startTour.cs" Line="6" Column="27" />
       <File FileName="Assets/videoClipPlay.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/sceneTransition.cs" Line="16" Column="3" />
+      <File FileName="Assets/Scripts/sceneTransition.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/sceneLogic.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/revealTooltip.cs" Line="1" Column="1" />
       <File FileName="Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/Scene/Scene_Example_Ocean_Shader.cs" Line="1" Column="1" />

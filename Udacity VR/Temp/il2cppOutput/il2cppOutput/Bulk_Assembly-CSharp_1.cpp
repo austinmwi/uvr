@@ -61,6 +61,10 @@ struct originalScale_t1851787769;
 struct PhysicsStuff_t3477757965;
 // UnityEngine.Rigidbody
 struct Rigidbody_t1972007546;
+// playmov
+struct playmov_t3801407328;
+// UnityEngine.Texture
+struct Texture_t1769722184;
 // Pose3D
 struct Pose3D_t2396367586;
 // ProceduralMesh
@@ -348,6 +352,10 @@ struct View_t2666181;
 #include "AssemblyU2DCSharp_PhysicsStuff3477757965MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Rigidbody1972007546.h"
 #include "UnityEngine_UnityEngine_Rigidbody1972007546MethodDeclarations.h"
+#include "AssemblyU2DCSharp_playmov3801407328.h"
+#include "AssemblyU2DCSharp_playmov3801407328MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_Texture1769722184.h"
+#include "UnityEngine_UnityEngine_Component2126946602.h"
 #include "UnityEngine_UnityEngine_Vector43525329790MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Vector43525329790.h"
 #include "AssemblyU2DCSharp_ProceduralMesh3051431722.h"
@@ -358,7 +366,6 @@ struct View_t2666181;
 #include "UnityEngine_UnityEngine_Color1588175760MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Color1588175760.h"
 #include "UnityEngine_UnityEngine_Texture1769722184MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_Texture1769722184.h"
 #include "AssemblyU2DCSharp_proto_PhoneEvent2801000292.h"
 #include "AssemblyU2DCSharp_proto_PhoneEvent2801000292MethodDeclarations.h"
 #include "Google_ProtocolBuffers_Google_ProtocolBuffers_Gene1737966428MethodDeclarations.h"
@@ -515,7 +522,6 @@ struct View_t2666181;
 #include "AssemblyU2DCSharp_sceneLogic2062900786MethodDeclarations.h"
 #include "AssemblyU2DCSharp_sceneTransition3970179841MethodDeclarations.h"
 #include "AssemblyU2DCSharp_sceneTransition3970179841.h"
-#include "UnityEngine_UnityEngine_Component2126946602.h"
 #include "UnityEngine_UnityEngine_GUI1522956648MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Screen3994030297MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Rect1525428817MethodDeclarations.h"
@@ -624,6 +630,11 @@ extern "C"  Il2CppObject * GameObject_AddComponent_TisIl2CppObject_m337943659_gs
 #define GameObject_AddComponent_TisAudioSource_t3628549054_m4077318770(__this, method) ((  AudioSource_t3628549054 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m337943659_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<UnityEngine.Rigidbody>()
 #define GameObject_GetComponent_TisRigidbody_t1972007546_m2158183595(__this, method) ((  Rigidbody_t1972007546 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m3652735468_gshared)(__this, method)
+// !!0 UnityEngine.Component::GetComponent<System.Object>()
+extern "C"  Il2CppObject * Component_GetComponent_TisIl2CppObject_m267839954_gshared (Component_t2126946602 * __this, const MethodInfo* method);
+#define Component_GetComponent_TisIl2CppObject_m267839954(__this, method) ((  Il2CppObject * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
+// !!0 UnityEngine.Component::GetComponent<UnityEngine.Texture>()
+#define Component_GetComponent_TisTexture_t1769722184_m1644521141(__this, method) ((  Texture_t1769722184 * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::AddComponent<UnityEngine.MeshRenderer>()
 #define GameObject_AddComponent_TisMeshRenderer_t1217738301_m3074975883(__this, method) ((  MeshRenderer_t1217738301 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m337943659_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::AddComponent<UnityEngine.MeshFilter>()
@@ -669,9 +680,6 @@ extern "C"  void ICodedInputStream_ReadMessageArray_TisIl2CppObject_m76733358_gs
 #define GameObject_GetComponent_TisCamera_t3533968274_m1791303361(__this, method) ((  Camera_t3533968274 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m3652735468_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::AddComponent<FlockRenderer>()
 #define GameObject_AddComponent_TisFlockRenderer_t1565251156_m24768536(__this, method) ((  FlockRenderer_t1565251156 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_AddComponent_TisIl2CppObject_m337943659_gshared)(__this, method)
-// !!0 UnityEngine.Component::GetComponent<System.Object>()
-extern "C"  Il2CppObject * Component_GetComponent_TisIl2CppObject_m267839954_gshared (Component_t2126946602 * __this, const MethodInfo* method);
-#define Component_GetComponent_TisIl2CppObject_m267839954(__this, method) ((  Il2CppObject * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
 // !!0 UnityEngine.Component::GetComponent<sceneTransition>()
 #define Component_GetComponent_TissceneTransition_t3970179841_m3878101912(__this, method) ((  sceneTransition_t3970179841 * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
 // !!0 UnityEngine.Object::Instantiate<System.Object>(!!0)
@@ -2652,6 +2660,32 @@ extern "C"  void PhysicsStuff_Clicked_m3422007795 (PhysicsStuff_t3477757965 * __
 		float L_10 = __this->get_radius_4();
 		NullCheck(L_7);
 		Rigidbody_AddExplosionForce_m2719328546(L_7, L_8, L_9, L_10, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void playmov::.ctor()
+extern "C"  void playmov__ctor_m187276299 (playmov_t3801407328 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2022291967(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void playmov::Update()
+extern const MethodInfo* Component_GetComponent_TisTexture_t1769722184_m1644521141_MethodInfo_var;
+extern const uint32_t playmov_Update_m3237460066_MetadataUsageId;
+extern "C"  void playmov_Update_m3237460066 (playmov_t3801407328 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (playmov_Update_m3237460066_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	Texture_t1769722184 * V_0 = NULL;
+	{
+		Texture_t1769722184 * L_0 = Component_GetComponent_TisTexture_t1769722184_m1644521141(__this, /*hidden argument*/Component_GetComponent_TisTexture_t1769722184_m1644521141_MethodInfo_var);
+		V_0 = L_0;
 		return;
 	}
 }
@@ -20828,7 +20862,7 @@ extern "C"  void revealMyTipset_deactivateObjectAnimations_m723785451 (revealMyT
 		GameObjectU5BU5D_t3499186955* L_0 = __this->get_animatedObjects_7();
 		V_1 = L_0;
 		V_2 = 0;
-		goto IL_0029;
+		goto IL_0030;
 	}
 
 IL_000e:
@@ -20846,11 +20880,12 @@ IL_000e:
 		Animator_t792326996 * L_6 = V_3;
 		NullCheck(L_6);
 		Animator_SetBool_m2336836203(L_6, _stringLiteral3221624740, (bool)0, /*hidden argument*/NULL);
+		__this->set_animationsHaveFired_8((bool)0);
 		int32_t L_7 = V_2;
 		V_2 = ((int32_t)((int32_t)L_7+(int32_t)1));
 	}
 
-IL_0029:
+IL_0030:
 	{
 		int32_t L_8 = V_2;
 		GameObjectU5BU5D_t3499186955* L_9 = V_1;
@@ -21155,14 +21190,18 @@ extern "C"  void Scene_Example_Ocean_Shader_Start_m1820770317 (Scene_Example_Oce
 		GameObject_t4012695102 * L_4 = Ocean_get_gameObject_m815786812(NULL /*static, unused*/, /*hidden argument*/NULL);
 		NullCheck(L_4);
 		Transform_t284553113 * L_5 = GameObject_get_transform_m1278640159(L_4, /*hidden argument*/NULL);
-		GameObject_t4012695102 * L_6 = Ocean_get_gameObject_m815786812(NULL /*static, unused*/, /*hidden argument*/NULL);
-		NullCheck(L_6);
-		Transform_t284553113 * L_7 = GameObject_get_transform_m1278640159(L_6, /*hidden argument*/NULL);
-		NullCheck(L_7);
-		Vector3_t3525329789  L_8 = Transform_get_localScale_m3886572677(L_7, /*hidden argument*/NULL);
-		Vector3_t3525329789  L_9 = Vector3_op_Multiply_m973638459(NULL /*static, unused*/, L_8, (10.0f), /*hidden argument*/NULL);
+		Vector3_t3525329789  L_6 = Vector3_get_one_m886467710(NULL /*static, unused*/, /*hidden argument*/NULL);
+		Vector3_t3525329789  L_7 = Vector3_op_Multiply_m973638459(NULL /*static, unused*/, L_6, (64.0f), /*hidden argument*/NULL);
 		NullCheck(L_5);
-		Transform_set_localScale_m310756934(L_5, L_9, /*hidden argument*/NULL);
+		Transform_set_localScale_m310756934(L_5, L_7, /*hidden argument*/NULL);
+		GameObject_t4012695102 * L_8 = Ocean_get_gameObject_m815786812(NULL /*static, unused*/, /*hidden argument*/NULL);
+		NullCheck(L_8);
+		Transform_t284553113 * L_9 = GameObject_get_transform_m1278640159(L_8, /*hidden argument*/NULL);
+		Vector3_t3525329789  L_10;
+		memset(&L_10, 0, sizeof(L_10));
+		Vector3__ctor_m2926210380(&L_10, (0.0f), (-3.0f), (0.0f), /*hidden argument*/NULL);
+		NullCheck(L_9);
+		Transform_set_position_m3111394108(L_9, L_10, /*hidden argument*/NULL);
 		return;
 	}
 }

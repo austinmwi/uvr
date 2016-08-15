@@ -1775,6 +1775,9 @@ extern const Il2CppGenericInst GenInst_Light_t1596303683_0_0_0 = { 1, GenInst_Li
 extern const Il2CppType iTween_t3087282050_0_0_0;
 static const Il2CppType* GenInst_iTween_t3087282050_0_0_0_Types[] = { &iTween_t3087282050_0_0_0 };
 extern const Il2CppGenericInst GenInst_iTween_t3087282050_0_0_0 = { 1, GenInst_iTween_t3087282050_0_0_0_Types };
+extern const Il2CppType Texture_t1769722184_0_0_0;
+static const Il2CppType* GenInst_Texture_t1769722184_0_0_0_Types[] = { &Texture_t1769722184_0_0_0 };
+extern const Il2CppGenericInst GenInst_Texture_t1769722184_0_0_0 = { 1, GenInst_Texture_t1769722184_0_0_0_Types };
 extern const Il2CppType Type_t2622299_0_0_0;
 static const Il2CppType* GenInst_Type_t2622299_0_0_0_Types[] = { &Type_t2622299_0_0_0 };
 extern const Il2CppGenericInst GenInst_Type_t2622299_0_0_0 = { 1, GenInst_Type_t2622299_0_0_0_Types };
@@ -1846,7 +1849,7 @@ static const Il2CppType* GenInst_KeyValuePair_2_t3150375597_0_0_0_KeyValuePair_2
 extern const Il2CppGenericInst GenInst_KeyValuePair_2_t3150375597_0_0_0_KeyValuePair_2_t3150375597_0_0_0 = { 2, GenInst_KeyValuePair_2_t3150375597_0_0_0_KeyValuePair_2_t3150375597_0_0_0_Types };
 static const Il2CppType* GenInst_KeyValuePair_2_t3150375597_0_0_0_Il2CppObject_0_0_0_Types[] = { &KeyValuePair_2_t3150375597_0_0_0, &Il2CppObject_0_0_0 };
 extern const Il2CppGenericInst GenInst_KeyValuePair_2_t3150375597_0_0_0_Il2CppObject_0_0_0 = { 2, GenInst_KeyValuePair_2_t3150375597_0_0_0_Il2CppObject_0_0_0_Types };
-extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[641] = 
+extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[642] = 
 {
 	&GenInst_Il2CppObject_0_0_0,
 	&GenInst_Int32_t2847414787_0_0_0,
@@ -2456,6 +2459,7 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[641] =
 	&GenInst_GUITexture_t63494093_0_0_0,
 	&GenInst_Light_t1596303683_0_0_0,
 	&GenInst_iTween_t3087282050_0_0_0,
+	&GenInst_Texture_t1769722184_0_0_0,
 	&GenInst_Type_t2622299_0_0_0,
 	&GenInst_sceneLogic_t2062900786_0_0_0,
 	&GenInst_FlockRenderer_t1565251156_0_0_0,

@@ -12,6 +12,7 @@ public class revealMyTipset : MonoBehaviour {
 
 	public bool smoothTransitions = false; //Whether or not we tween
 	public GameObject[] animatedObjects; //All of the objects with animations we want to turn on when this tipset is revealed
+	public GameObject[] toggledObjects;
 
 
 	private bool animationsHaveFired = false;
@@ -71,6 +72,7 @@ public class revealMyTipset : MonoBehaviour {
 				child.gameObject.SetActive (false);
 			}
 		}
+
 		//deactivateObjectAnimations ();
 
 	}
@@ -78,6 +80,7 @@ public class revealMyTipset : MonoBehaviour {
 	public void revealTooltip(GameObject tooltip) {
 		
 		tooltip.gameObject.SetActive (true); //Get us active
+
 
 		//activeSize = tooltip.GetComponent<originalScale>().myOriginalScale; //Set the size we want to display at.  Could make this dynamic based on distance from player, or manually adjust sizes
 		if (smoothTransitions == true) {
@@ -100,6 +103,12 @@ public class revealMyTipset : MonoBehaviour {
 			Animator anim = thing.GetComponent<Animator> ();
 
 			anim.SetBool ("isPlaying", false);
+			animationsHaveFired = false;
+		}
+	}
+	public void toggleElements() {
+		foreach (GameObject thing in toggledObjects) {
+			thing.SetActive (!thing.activeSelf);
 		}
 	}
 }

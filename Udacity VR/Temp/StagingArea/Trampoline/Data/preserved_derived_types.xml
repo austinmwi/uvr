@@ -82,6 +82,7 @@
 <type fullname="framefix" preserve="all"/>
 <type fullname="iTween" preserve="all"/>
 <type fullname="onboardingScreenController" preserve="all"/>
+<type fullname="playmov" preserve="all"/>
 <type fullname="testAnimationControl" preserve="all"/>
 <type fullname="videoClipPlay" preserve="all"/>
 </assembly>

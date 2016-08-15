@@ -1725,6 +1725,7 @@
 #include "AssemblyU2DCSharp_framefix2650001288.h"
 #include "AssemblyU2DCSharp_iTween_EasingFunction3158869571.h"
 #include "AssemblyU2DCSharp_iTween_ApplyTween2072814525.h"
+#include "AssemblyU2DCSharp_playmov3801407328.h"
 #include "AssemblyU2DCSharp_videoClipPlay650790975.h"
 #include "AssemblyU2DCSharp_U3CPrivateImplementationDetailsU3214874523.h"
 #include "AssemblyU2DCSharp_U3CPrivateImplementationDetailsU3214874490.h"
@@ -11615,7 +11616,7 @@ extern const int32_t g_FieldOffsetTable[9868] =
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1959] = 
+extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1960] = 
 {
 	sizeof (U3CModuleU3E_t86524790), -1, 0, 0,
 	sizeof (Il2CppObject), -1, 0, 0,
@@ -13566,6 +13567,7 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1959] =
 	sizeof (U3CTweenRestartU3Ec__Iterator6_t1621025027), -1, 0, 0,
 	sizeof (U3CStartU3Ec__Iterator7_t4138896574), -1, 0, 0,
 	sizeof (onboardingScreenController_t3301330275), -1, 0, 0,
+	sizeof (playmov_t3801407328), -1, 0, 0,
 	sizeof (testAnimationControl_t613337579), -1, 0, 0,
 	sizeof (videoClipPlay_t650790975), -1, 0, 0,
 	sizeof (U3CPrivateImplementationDetailsU3E_t3053238938), -1, sizeof(U3CPrivateImplementationDetailsU3E_t3053238938_StaticFields), 0,

@@ -69,6 +69,7 @@
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\editor.glslinc" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\GoogleVR\Resources\UnlitTexture.shader" />
      <None Include="Assets\Models\Updated Apartment\UdacityModernApartment\Shaders\CardboardDistortion.cginc" />
+     <None Include="Assets\Materials\Ocean.shader" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\fields.glslinc" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\decoders.glslinc" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\contours.glslinc" />
@@ -91,6 +92,7 @@
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\hmd.glslinc" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\shadows.glslinc" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Line.shader" />
+     <None Include="Assets\Materials\Island_Ocean.shader" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\header.glslinc" />
      <None Include="Assets\Plugins\iTween\ReadMe!\ReadMe!.txt" />
      <None Include="Assets\Project Scenes\UdacityModernApartment\Shaders\UnlitUndistorted.shader" />
