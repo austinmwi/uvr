@@ -281,6 +281,12 @@ struct CanvasRendererU5BU5D_t2901501369;
 struct TextU5BU5D_t4157799059;
 // UnityEngine.Rigidbody
 struct Rigidbody_t1972007546;
+// instructToTurn
+struct instructToTurn_t1387286386;
+// instructToTurn/<tourTransition>c__Iterator8
+struct U3CtourTransitionU3Ec__Iterator8_t632071708;
+// sceneTransition
+struct sceneTransition_t3970179841;
 // Interaction
 struct Interaction_t3511973362;
 // UnityEngine.SpringJoint
@@ -309,8 +315,6 @@ struct U3CTweenRestartU3Ec__Iterator6_t1621025027;
 struct ApplyTween_t2072814525;
 // iTween/CRSpline
 struct CRSpline_t3048008992;
-// iTween/EasingFunction
-struct EasingFunction_t3158869571;
 
 #include "class-internals.h"
 #include "codegen/il2cpp-codegen.h"
@@ -728,6 +732,14 @@ struct EasingFunction_t3158869571;
 #include "UnityEngine_UnityEngine_CanvasRenderer3626201768.h"
 #include "UnityEngine_UnityEngine_Rigidbody1972007546.h"
 #include "UnityEngine_UnityEngine_CanvasRenderer3626201768MethodDeclarations.h"
+#include "AssemblyU2DCSharp_instructToTurn1387286386.h"
+#include "AssemblyU2DCSharp_instructToTurn1387286386MethodDeclarations.h"
+#include "AssemblyU2DCSharp_instructToTurn_U3CtourTransitionU632071708MethodDeclarations.h"
+#include "AssemblyU2DCSharp_instructToTurn_U3CtourTransitionU632071708.h"
+#include "UnityEngine_UnityEngine_WaitForSeconds1291133240MethodDeclarations.h"
+#include "AssemblyU2DCSharp_sceneTransition3970179841MethodDeclarations.h"
+#include "UnityEngine_UnityEngine_WaitForSeconds1291133240.h"
+#include "AssemblyU2DCSharp_sceneTransition3970179841.h"
 #include "AssemblyU2DCSharp_Interaction3511973362.h"
 #include "AssemblyU2DCSharp_Interaction3511973362MethodDeclarations.h"
 #include "UnityEngine_UnityEngine_Joint1594637495MethodDeclarations.h"
@@ -783,10 +795,7 @@ struct EasingFunction_t3158869571;
 #include "mscorlib_System_Collections_Generic_List_1_Enumera2758005691MethodDeclarations.h"
 #include "mscorlib_System_Collections_Generic_List_1_Enumera2758005691.h"
 #include "UnityEngine_UnityEngine_SendMessageOptions2623293100.h"
-#include "UnityEngine_UnityEngine_WaitForSeconds1291133240MethodDeclarations.h"
-#include "UnityEngine_UnityEngine_WaitForSeconds1291133240.h"
 #include "AssemblyU2DCSharp_iTween_EaseType3571590248MethodDeclarations.h"
-#include "AssemblyU2DCSharp_iTween_LoopType2322152478MethodDeclarations.h"
 
 // !!0 UnityEngine.GameObject::GetComponent<System.Object>()
 extern "C"  Il2CppObject * GameObject_GetComponent_TisIl2CppObject_m3652735468_gshared (GameObject_t4012695102 * __this, const MethodInfo* method);
@@ -936,6 +945,8 @@ extern "C"  ObjectU5BU5D_t11523773* GameObject_GetComponentsInChildren_TisIl2Cpp
 #define GameObject_GetComponentsInChildren_TisText_t3286458198_m4188861324(__this, method) ((  TextU5BU5D_t4157799059* (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponentsInChildren_TisIl2CppObject_m3418406430_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<UnityEngine.Rigidbody>()
 #define GameObject_GetComponent_TisRigidbody_t1972007546_m2158183595(__this, method) ((  Rigidbody_t1972007546 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m3652735468_gshared)(__this, method)
+// !!0 UnityEngine.Component::GetComponent<sceneTransition>()
+#define Component_GetComponent_TissceneTransition_t3970179841_m3878101912(__this, method) ((  sceneTransition_t3970179841 * (*) (Component_t2126946602 *, const MethodInfo*))Component_GetComponent_TisIl2CppObject_m267839954_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<UnityEngine.SpringJoint>()
 #define GameObject_GetComponent_TisSpringJoint_t2446926506_m989936699(__this, method) ((  SpringJoint_t2446926506 * (*) (GameObject_t4012695102 *, const MethodInfo*))GameObject_GetComponent_TisIl2CppObject_m3652735468_gshared)(__this, method)
 // !!0 UnityEngine.GameObject::GetComponent<UnityEngine.GUITexture>()
@@ -27199,6 +27210,223 @@ IL_0071:
 		return;
 	}
 }
+// System.Void instructToTurn::.ctor()
+extern "C"  void instructToTurn__ctor_m2348989801 (instructToTurn_t1387286386 * __this, const MethodInfo* method)
+{
+	{
+		MonoBehaviour__ctor_m2022291967(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void instructToTurn::Start()
+extern "C"  void instructToTurn_Start_m1296127593 (instructToTurn_t1387286386 * __this, const MethodInfo* method)
+{
+	{
+		return;
+	}
+}
+// System.Void instructToTurn::Update()
+extern "C"  void instructToTurn_Update_m1531101892 (instructToTurn_t1387286386 * __this, const MethodInfo* method)
+{
+	{
+		return;
+	}
+}
+// System.Void instructToTurn::gotToTour(System.String)
+extern "C"  void instructToTurn_gotToTour_m245146044 (instructToTurn_t1387286386 * __this, String_t* ___scene, const MethodInfo* method)
+{
+	{
+		String_t* L_0 = ___scene;
+		Il2CppObject * L_1 = instructToTurn_tourTransition_m2282235410(__this, L_0, /*hidden argument*/NULL);
+		MonoBehaviour_StartCoroutine_m2135303124(__this, L_1, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Collections.IEnumerator instructToTurn::tourTransition(System.String)
+extern TypeInfo* U3CtourTransitionU3Ec__Iterator8_t632071708_il2cpp_TypeInfo_var;
+extern const uint32_t instructToTurn_tourTransition_m2282235410_MetadataUsageId;
+extern "C"  Il2CppObject * instructToTurn_tourTransition_m2282235410 (instructToTurn_t1387286386 * __this, String_t* ___scene, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (instructToTurn_tourTransition_m2282235410_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	U3CtourTransitionU3Ec__Iterator8_t632071708 * V_0 = NULL;
+	{
+		U3CtourTransitionU3Ec__Iterator8_t632071708 * L_0 = (U3CtourTransitionU3Ec__Iterator8_t632071708 *)il2cpp_codegen_object_new(U3CtourTransitionU3Ec__Iterator8_t632071708_il2cpp_TypeInfo_var);
+		U3CtourTransitionU3Ec__Iterator8__ctor_m2637316082(L_0, /*hidden argument*/NULL);
+		V_0 = L_0;
+		U3CtourTransitionU3Ec__Iterator8_t632071708 * L_1 = V_0;
+		String_t* L_2 = ___scene;
+		NullCheck(L_1);
+		L_1->set_scene_3(L_2);
+		U3CtourTransitionU3Ec__Iterator8_t632071708 * L_3 = V_0;
+		String_t* L_4 = ___scene;
+		NullCheck(L_3);
+		L_3->set_U3CU24U3Escene_6(L_4);
+		U3CtourTransitionU3Ec__Iterator8_t632071708 * L_5 = V_0;
+		NullCheck(L_5);
+		L_5->set_U3CU3Ef__this_7(__this);
+		U3CtourTransitionU3Ec__Iterator8_t632071708 * L_6 = V_0;
+		return L_6;
+	}
+}
+// System.Void instructToTurn/<tourTransition>c__Iterator8::.ctor()
+extern "C"  void U3CtourTransitionU3Ec__Iterator8__ctor_m2637316082 (U3CtourTransitionU3Ec__Iterator8_t632071708 * __this, const MethodInfo* method)
+{
+	{
+		Object__ctor_m1772956182(__this, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Object instructToTurn/<tourTransition>c__Iterator8::System.Collections.Generic.IEnumerator<object>.get_Current()
+extern "C"  Il2CppObject * U3CtourTransitionU3Ec__Iterator8_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2083520032 (U3CtourTransitionU3Ec__Iterator8_t632071708 * __this, const MethodInfo* method)
+{
+	{
+		Il2CppObject * L_0 = __this->get_U24current_5();
+		return L_0;
+	}
+}
+// System.Object instructToTurn/<tourTransition>c__Iterator8::System.Collections.IEnumerator.get_Current()
+extern "C"  Il2CppObject * U3CtourTransitionU3Ec__Iterator8_System_Collections_IEnumerator_get_Current_m6439348 (U3CtourTransitionU3Ec__Iterator8_t632071708 * __this, const MethodInfo* method)
+{
+	{
+		Il2CppObject * L_0 = __this->get_U24current_5();
+		return L_0;
+	}
+}
+// System.Boolean instructToTurn/<tourTransition>c__Iterator8::MoveNext()
+extern TypeInfo* WaitForSeconds_t1291133240_il2cpp_TypeInfo_var;
+extern const MethodInfo* Component_GetComponent_TissceneTransition_t3970179841_m3878101912_MethodInfo_var;
+extern const uint32_t U3CtourTransitionU3Ec__Iterator8_MoveNext_m3824987842_MetadataUsageId;
+extern "C"  bool U3CtourTransitionU3Ec__Iterator8_MoveNext_m3824987842 (U3CtourTransitionU3Ec__Iterator8_t632071708 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (U3CtourTransitionU3Ec__Iterator8_MoveNext_m3824987842_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	uint32_t V_0 = 0;
+	bool V_1 = false;
+	{
+		int32_t L_0 = __this->get_U24PC_4();
+		V_0 = L_0;
+		__this->set_U24PC_4((-1));
+		uint32_t L_1 = V_0;
+		if (L_1 == 0)
+		{
+			goto IL_0021;
+		}
+		if (L_1 == 1)
+		{
+			goto IL_00b1;
+		}
+	}
+	{
+		goto IL_00ce;
+	}
+
+IL_0021:
+	{
+		instructToTurn_t1387286386 * L_2 = __this->get_U3CU3Ef__this_7();
+		NullCheck(L_2);
+		GameObjectU5BU5D_t3499186955* L_3 = L_2->get_normalPanels_3();
+		__this->set_U3CU24s_90U3E__0_0(L_3);
+		__this->set_U3CU24s_91U3E__1_1(0);
+		goto IL_006b;
+	}
+
+IL_003e:
+	{
+		GameObjectU5BU5D_t3499186955* L_4 = __this->get_U3CU24s_90U3E__0_0();
+		int32_t L_5 = __this->get_U3CU24s_91U3E__1_1();
+		NullCheck(L_4);
+		IL2CPP_ARRAY_BOUNDS_CHECK(L_4, L_5);
+		int32_t L_6 = L_5;
+		__this->set_U3CoriginalPanelObjectU3E__2_2(((L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6))));
+		GameObject_t4012695102 * L_7 = __this->get_U3CoriginalPanelObjectU3E__2_2();
+		NullCheck(L_7);
+		GameObject_SetActive_m3538205401(L_7, (bool)0, /*hidden argument*/NULL);
+		int32_t L_8 = __this->get_U3CU24s_91U3E__1_1();
+		__this->set_U3CU24s_91U3E__1_1(((int32_t)((int32_t)L_8+(int32_t)1)));
+	}
+
+IL_006b:
+	{
+		int32_t L_9 = __this->get_U3CU24s_91U3E__1_1();
+		GameObjectU5BU5D_t3499186955* L_10 = __this->get_U3CU24s_90U3E__0_0();
+		NullCheck(L_10);
+		if ((((int32_t)L_9) < ((int32_t)(((int32_t)((int32_t)(((Il2CppArray *)L_10)->max_length)))))))
+		{
+			goto IL_003e;
+		}
+	}
+	{
+		instructToTurn_t1387286386 * L_11 = __this->get_U3CU3Ef__this_7();
+		NullCheck(L_11);
+		GameObject_t4012695102 * L_12 = L_11->get_transferPanel_2();
+		NullCheck(L_12);
+		GameObject_SetActive_m3538205401(L_12, (bool)1, /*hidden argument*/NULL);
+		instructToTurn_t1387286386 * L_13 = __this->get_U3CU3Ef__this_7();
+		NullCheck(L_13);
+		float L_14 = L_13->get_timeToTransition_4();
+		WaitForSeconds_t1291133240 * L_15 = (WaitForSeconds_t1291133240 *)il2cpp_codegen_object_new(WaitForSeconds_t1291133240_il2cpp_TypeInfo_var);
+		WaitForSeconds__ctor_m3184996201(L_15, L_14, /*hidden argument*/NULL);
+		__this->set_U24current_5(L_15);
+		__this->set_U24PC_4(1);
+		goto IL_00d0;
+	}
+
+IL_00b1:
+	{
+		instructToTurn_t1387286386 * L_16 = __this->get_U3CU3Ef__this_7();
+		NullCheck(L_16);
+		sceneTransition_t3970179841 * L_17 = Component_GetComponent_TissceneTransition_t3970179841_m3878101912(L_16, /*hidden argument*/Component_GetComponent_TissceneTransition_t3970179841_m3878101912_MethodInfo_var);
+		String_t* L_18 = __this->get_scene_3();
+		NullCheck(L_17);
+		sceneTransition_changeScene_m2516555838(L_17, L_18, /*hidden argument*/NULL);
+		__this->set_U24PC_4((-1));
+	}
+
+IL_00ce:
+	{
+		return (bool)0;
+	}
+
+IL_00d0:
+	{
+		return (bool)1;
+	}
+	// Dead block : IL_00d2: ldloc.1
+}
+// System.Void instructToTurn/<tourTransition>c__Iterator8::Dispose()
+extern "C"  void U3CtourTransitionU3Ec__Iterator8_Dispose_m328333231 (U3CtourTransitionU3Ec__Iterator8_t632071708 * __this, const MethodInfo* method)
+{
+	{
+		__this->set_U24PC_4((-1));
+		return;
+	}
+}
+// System.Void instructToTurn/<tourTransition>c__Iterator8::Reset()
+extern TypeInfo* NotSupportedException_t1374155497_il2cpp_TypeInfo_var;
+extern const uint32_t U3CtourTransitionU3Ec__Iterator8_Reset_m283749023_MetadataUsageId;
+extern "C"  void U3CtourTransitionU3Ec__Iterator8_Reset_m283749023 (U3CtourTransitionU3Ec__Iterator8_t632071708 * __this, const MethodInfo* method)
+{
+	static bool s_Il2CppMethodIntialized;
+	if (!s_Il2CppMethodIntialized)
+	{
+		il2cpp_codegen_initialize_method (U3CtourTransitionU3Ec__Iterator8_Reset_m283749023_MetadataUsageId);
+		s_Il2CppMethodIntialized = true;
+	}
+	{
+		NotSupportedException_t1374155497 * L_0 = (NotSupportedException_t1374155497 *)il2cpp_codegen_object_new(NotSupportedException_t1374155497_il2cpp_TypeInfo_var);
+		NotSupportedException__ctor_m149930845(L_0, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0);
+	}
+}
 // System.Void Interaction::.ctor()
 extern "C"  void Interaction__ctor_m1048024505 (Interaction_t3511973362 * __this, const MethodInfo* method)
 {
@@ -53055,77 +53283,6 @@ extern "C"  void Defaults__cctor_m1061724481 (Il2CppObject * __this /* static, u
 		((Defaults_t708925042_StaticFields*)Defaults_t708925042_il2cpp_TypeInfo_var->static_fields)->set_up_15(L_2);
 		return;
 	}
-}
-// System.Void iTween/EasingFunction::.ctor(System.Object,System.IntPtr)
-extern "C"  void EasingFunction__ctor_m2836055111 (EasingFunction_t3158869571 * __this, Il2CppObject * ___object, IntPtr_t ___method, const MethodInfo* method)
-{
-	__this->set_method_ptr_0((methodPointerType)((MethodInfo*)___method.get_m_value_0())->method);
-	__this->set_method_3(___method);
-	__this->set_m_target_2(___object);
-}
-// System.Single iTween/EasingFunction::Invoke(System.Single,System.Single,System.Single)
-extern "C"  float EasingFunction_Invoke_m3820272320 (EasingFunction_t3158869571 * __this, float ___start, float ___end, float ___Value, const MethodInfo* method)
-{
-	if(__this->get_prev_9() != NULL)
-	{
-		EasingFunction_Invoke_m3820272320((EasingFunction_t3158869571 *)__this->get_prev_9(),___start, ___end, ___Value, method);
-	}
-	il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found((MethodInfo*)(__this->get_method_3().get_m_value_0()));
-	bool ___methodIsStatic = MethodIsStatic((MethodInfo*)(__this->get_method_3().get_m_value_0()));
-	if (__this->get_m_target_2() != NULL && ___methodIsStatic)
-	{
-		typedef float (*FunctionPointerType) (Il2CppObject *, void* __this, float ___start, float ___end, float ___Value, const MethodInfo* method);
-		return ((FunctionPointerType)__this->get_method_ptr_0())(NULL,il2cpp_codegen_get_delegate_this(__this),___start, ___end, ___Value,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
-	}
-	else
-	{
-		typedef float (*FunctionPointerType) (void* __this, float ___start, float ___end, float ___Value, const MethodInfo* method);
-		return ((FunctionPointerType)__this->get_method_ptr_0())(il2cpp_codegen_get_delegate_this(__this),___start, ___end, ___Value,(MethodInfo*)(__this->get_method_3().get_m_value_0()));
-	}
-}
-extern "C" float pinvoke_delegate_wrapper_EasingFunction_t3158869571(Il2CppObject* delegate, float ___start, float ___end, float ___Value)
-{
-	typedef float (STDCALL *native_function_ptr_type)(float, float, float);
-	native_function_ptr_type _il2cpp_pinvoke_func = ((native_function_ptr_type)((Il2CppDelegate*)delegate)->method->method);
-	// Marshaling of parameter '___start' to native representation
-
-	// Marshaling of parameter '___end' to native representation
-
-	// Marshaling of parameter '___Value' to native representation
-
-	// Native function invocation and marshaling of return value back from native representation
-	float _return_value = _il2cpp_pinvoke_func(___start, ___end, ___Value);
-
-	// Marshaling cleanup of parameter '___start' native representation
-
-	// Marshaling cleanup of parameter '___end' native representation
-
-	// Marshaling cleanup of parameter '___Value' native representation
-
-	return _return_value;
-}
-// System.IAsyncResult iTween/EasingFunction::BeginInvoke(System.Single,System.Single,System.Single,System.AsyncCallback,System.Object)
-extern TypeInfo* Single_t958209021_il2cpp_TypeInfo_var;
-extern const uint32_t EasingFunction_BeginInvoke_m3544781627_MetadataUsageId;
-extern "C"  Il2CppObject * EasingFunction_BeginInvoke_m3544781627 (EasingFunction_t3158869571 * __this, float ___start, float ___end, float ___Value, AsyncCallback_t1363551830 * ___callback, Il2CppObject * ___object, const MethodInfo* method)
-{
-	static bool s_Il2CppMethodIntialized;
-	if (!s_Il2CppMethodIntialized)
-	{
-		il2cpp_codegen_initialize_method (EasingFunction_BeginInvoke_m3544781627_MetadataUsageId);
-		s_Il2CppMethodIntialized = true;
-	}
-	void *__d_args[4] = {0};
-	__d_args[0] = Box(Single_t958209021_il2cpp_TypeInfo_var, &___start);
-	__d_args[1] = Box(Single_t958209021_il2cpp_TypeInfo_var, &___end);
-	__d_args[2] = Box(Single_t958209021_il2cpp_TypeInfo_var, &___Value);
-	return (Il2CppObject *)il2cpp_delegate_begin_invoke((Il2CppDelegate*)__this, __d_args, (Il2CppDelegate*)___callback, (Il2CppObject*)___object);
-}
-// System.Single iTween/EasingFunction::EndInvoke(System.IAsyncResult)
-extern "C"  float EasingFunction_EndInvoke_m2764881035 (EasingFunction_t3158869571 * __this, Il2CppObject * ___result, const MethodInfo* method)
-{
-	Il2CppObject *__result = il2cpp_delegate_end_invoke((Il2CppAsyncResult*) ___result, 0);
-	return *(float*)UnBox ((Il2CppCodeGenObject*)__result);
 }
 #ifdef __clang__
 #pragma clang diagnostic pop

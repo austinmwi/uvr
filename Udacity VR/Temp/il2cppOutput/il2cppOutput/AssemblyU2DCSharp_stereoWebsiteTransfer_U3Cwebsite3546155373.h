@@ -33,16 +33,16 @@ struct stereoWebsiteTransfer_t3888997006;
 struct  U3CwebsiteTransitionU3Ec__Iterator4_t3546155373  : public Il2CppObject
 {
 public:
-	// UnityEngine.GameObject[] stereoWebsiteTransfer/<websiteTransition>c__Iterator4::<$s_31>__0
-	GameObjectU5BU5D_t3499186955* ___U3CU24s_31U3E__0_0;
-	// System.Int32 stereoWebsiteTransfer/<websiteTransition>c__Iterator4::<$s_32>__1
-	int32_t ___U3CU24s_32U3E__1_1;
+	// UnityEngine.GameObject[] stereoWebsiteTransfer/<websiteTransition>c__Iterator4::<$s_33>__0
+	GameObjectU5BU5D_t3499186955* ___U3CU24s_33U3E__0_0;
+	// System.Int32 stereoWebsiteTransfer/<websiteTransition>c__Iterator4::<$s_34>__1
+	int32_t ___U3CU24s_34U3E__1_1;
 	// UnityEngine.GameObject stereoWebsiteTransfer/<websiteTransition>c__Iterator4::<originalPanelObject>__2
 	GameObject_t4012695102 * ___U3CoriginalPanelObjectU3E__2_2;
-	// UnityEngine.GameObject[] stereoWebsiteTransfer/<websiteTransition>c__Iterator4::<$s_33>__3
-	GameObjectU5BU5D_t3499186955* ___U3CU24s_33U3E__3_3;
-	// System.Int32 stereoWebsiteTransfer/<websiteTransition>c__Iterator4::<$s_34>__4
-	int32_t ___U3CU24s_34U3E__4_4;
+	// UnityEngine.GameObject[] stereoWebsiteTransfer/<websiteTransition>c__Iterator4::<$s_35>__3
+	GameObjectU5BU5D_t3499186955* ___U3CU24s_35U3E__3_3;
+	// System.Int32 stereoWebsiteTransfer/<websiteTransition>c__Iterator4::<$s_36>__4
+	int32_t ___U3CU24s_36U3E__4_4;
 	// UnityEngine.GameObject stereoWebsiteTransfer/<websiteTransition>c__Iterator4::<originalPanelObject>__5
 	GameObject_t4012695102 * ___U3CoriginalPanelObjectU3E__5_5;
 	// System.String stereoWebsiteTransfer/<websiteTransition>c__Iterator4::url
@@ -57,21 +57,21 @@ public:
 	stereoWebsiteTransfer_t3888997006 * ___U3CU3Ef__this_10;
 
 public:
-	inline static int32_t get_offset_of_U3CU24s_31U3E__0_0() { return static_cast<int32_t>(offsetof(U3CwebsiteTransitionU3Ec__Iterator4_t3546155373, ___U3CU24s_31U3E__0_0)); }
-	inline GameObjectU5BU5D_t3499186955* get_U3CU24s_31U3E__0_0() const { return ___U3CU24s_31U3E__0_0; }
-	inline GameObjectU5BU5D_t3499186955** get_address_of_U3CU24s_31U3E__0_0() { return &___U3CU24s_31U3E__0_0; }
-	inline void set_U3CU24s_31U3E__0_0(GameObjectU5BU5D_t3499186955* value)
+	inline static int32_t get_offset_of_U3CU24s_33U3E__0_0() { return static_cast<int32_t>(offsetof(U3CwebsiteTransitionU3Ec__Iterator4_t3546155373, ___U3CU24s_33U3E__0_0)); }
+	inline GameObjectU5BU5D_t3499186955* get_U3CU24s_33U3E__0_0() const { return ___U3CU24s_33U3E__0_0; }
+	inline GameObjectU5BU5D_t3499186955** get_address_of_U3CU24s_33U3E__0_0() { return &___U3CU24s_33U3E__0_0; }
+	inline void set_U3CU24s_33U3E__0_0(GameObjectU5BU5D_t3499186955* value)
 	{
-		___U3CU24s_31U3E__0_0 = value;
-		Il2CppCodeGenWriteBarrier(&___U3CU24s_31U3E__0_0, value);
+		___U3CU24s_33U3E__0_0 = value;
+		Il2CppCodeGenWriteBarrier(&___U3CU24s_33U3E__0_0, value);
 	}
 
-	inline static int32_t get_offset_of_U3CU24s_32U3E__1_1() { return static_cast<int32_t>(offsetof(U3CwebsiteTransitionU3Ec__Iterator4_t3546155373, ___U3CU24s_32U3E__1_1)); }
-	inline int32_t get_U3CU24s_32U3E__1_1() const { return ___U3CU24s_32U3E__1_1; }
-	inline int32_t* get_address_of_U3CU24s_32U3E__1_1() { return &___U3CU24s_32U3E__1_1; }
-	inline void set_U3CU24s_32U3E__1_1(int32_t value)
+	inline static int32_t get_offset_of_U3CU24s_34U3E__1_1() { return static_cast<int32_t>(offsetof(U3CwebsiteTransitionU3Ec__Iterator4_t3546155373, ___U3CU24s_34U3E__1_1)); }
+	inline int32_t get_U3CU24s_34U3E__1_1() const { return ___U3CU24s_34U3E__1_1; }
+	inline int32_t* get_address_of_U3CU24s_34U3E__1_1() { return &___U3CU24s_34U3E__1_1; }
+	inline void set_U3CU24s_34U3E__1_1(int32_t value)
 	{
-		___U3CU24s_32U3E__1_1 = value;
+		___U3CU24s_34U3E__1_1 = value;
 	}
 
 	inline static int32_t get_offset_of_U3CoriginalPanelObjectU3E__2_2() { return static_cast<int32_t>(offsetof(U3CwebsiteTransitionU3Ec__Iterator4_t3546155373, ___U3CoriginalPanelObjectU3E__2_2)); }
@@ -83,21 +83,21 @@ public:
 		Il2CppCodeGenWriteBarrier(&___U3CoriginalPanelObjectU3E__2_2, value);
 	}
 
-	inline static int32_t get_offset_of_U3CU24s_33U3E__3_3() { return static_cast<int32_t>(offsetof(U3CwebsiteTransitionU3Ec__Iterator4_t3546155373, ___U3CU24s_33U3E__3_3)); }
-	inline GameObjectU5BU5D_t3499186955* get_U3CU24s_33U3E__3_3() const { return ___U3CU24s_33U3E__3_3; }
-	inline GameObjectU5BU5D_t3499186955** get_address_of_U3CU24s_33U3E__3_3() { return &___U3CU24s_33U3E__3_3; }
-	inline void set_U3CU24s_33U3E__3_3(GameObjectU5BU5D_t3499186955* value)
+	inline static int32_t get_offset_of_U3CU24s_35U3E__3_3() { return static_cast<int32_t>(offsetof(U3CwebsiteTransitionU3Ec__Iterator4_t3546155373, ___U3CU24s_35U3E__3_3)); }
+	inline GameObjectU5BU5D_t3499186955* get_U3CU24s_35U3E__3_3() const { return ___U3CU24s_35U3E__3_3; }
+	inline GameObjectU5BU5D_t3499186955** get_address_of_U3CU24s_35U3E__3_3() { return &___U3CU24s_35U3E__3_3; }
+	inline void set_U3CU24s_35U3E__3_3(GameObjectU5BU5D_t3499186955* value)
 	{
-		___U3CU24s_33U3E__3_3 = value;
-		Il2CppCodeGenWriteBarrier(&___U3CU24s_33U3E__3_3, value);
+		___U3CU24s_35U3E__3_3 = value;
+		Il2CppCodeGenWriteBarrier(&___U3CU24s_35U3E__3_3, value);
 	}
 
-	inline static int32_t get_offset_of_U3CU24s_34U3E__4_4() { return static_cast<int32_t>(offsetof(U3CwebsiteTransitionU3Ec__Iterator4_t3546155373, ___U3CU24s_34U3E__4_4)); }
-	inline int32_t get_U3CU24s_34U3E__4_4() const { return ___U3CU24s_34U3E__4_4; }
-	inline int32_t* get_address_of_U3CU24s_34U3E__4_4() { return &___U3CU24s_34U3E__4_4; }
-	inline void set_U3CU24s_34U3E__4_4(int32_t value)
+	inline static int32_t get_offset_of_U3CU24s_36U3E__4_4() { return static_cast<int32_t>(offsetof(U3CwebsiteTransitionU3Ec__Iterator4_t3546155373, ___U3CU24s_36U3E__4_4)); }
+	inline int32_t get_U3CU24s_36U3E__4_4() const { return ___U3CU24s_36U3E__4_4; }
+	inline int32_t* get_address_of_U3CU24s_36U3E__4_4() { return &___U3CU24s_36U3E__4_4; }
+	inline void set_U3CU24s_36U3E__4_4(int32_t value)
 	{
-		___U3CU24s_34U3E__4_4 = value;
+		___U3CU24s_36U3E__4_4 = value;
 	}
 
 	inline static int32_t get_offset_of_U3CoriginalPanelObjectU3E__5_5() { return static_cast<int32_t>(offsetof(U3CwebsiteTransitionU3Ec__Iterator4_t3546155373, ___U3CoriginalPanelObjectU3E__5_5)); }

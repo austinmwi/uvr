@@ -149,6 +149,8 @@
      <Compile Include="Assets\cubeScript.cs" />
      <Compile Include="Assets\framefix.cs" />
      <Compile Include="Assets\iTween.cs" />
+     <Compile Include="Assets\instructToTurn.cs" />
+     <Compile Include="Assets\menuReveal.cs" />
      <Compile Include="Assets\onboardingScreenController.cs" />
      <Compile Include="Assets\playmov.cs" />
      <Compile Include="Assets\testAnimationControl.cs" />
@@ -190,10 +192,10 @@
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\hmd.glslinc" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\shadows.glslinc" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Line.shader" />
-     <None Include="Assets\Materials\Island_Ocean.shader" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\header.glslinc" />
      <None Include="Assets\Plugins\iTween\ReadMe!\ReadMe!.txt" />
      <None Include="Assets\Project Scenes\UdacityModernApartment\Shaders\UnlitUndistorted.shader" />
+     <None Include="Assets\Materials\Island_Ocean-1.shader" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Storm.shader" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\GoogleVR\Resources\UI\GvrReticleShader.shader" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\harmonics.glslinc" />

@@ -28,10 +28,6 @@ public class sceneLogic : MonoBehaviour {
 	// Right now this has no adjustments for comfort.
 	void Update () {
 
-
-
-
-
 		float step = speed * Time.deltaTime;
 		if (autoMovement == true) { //If we are using our on-rails system
 			if (wayPoints.Length > 0) { //If we have at least one waypoint

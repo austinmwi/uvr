@@ -81,6 +81,8 @@
 <type fullname="cubeScript" preserve="all"/>
 <type fullname="framefix" preserve="all"/>
 <type fullname="iTween" preserve="all"/>
+<type fullname="instructToTurn" preserve="all"/>
+<type fullname="menuReveal" preserve="all"/>
 <type fullname="onboardingScreenController" preserve="all"/>
 <type fullname="playmov" preserve="all"/>
 <type fullname="testAnimationControl" preserve="all"/>

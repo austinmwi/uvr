@@ -40,8 +40,10 @@ public:
 	bool ___smoothTransitions_6;
 	// UnityEngine.GameObject[] revealMyTipset::animatedObjects
 	GameObjectU5BU5D_t3499186955* ___animatedObjects_7;
+	// UnityEngine.GameObject[] revealMyTipset::toggledObjects
+	GameObjectU5BU5D_t3499186955* ___toggledObjects_8;
 	// System.Boolean revealMyTipset::animationsHaveFired
-	bool ___animationsHaveFired_8;
+	bool ___animationsHaveFired_9;
 
 public:
 	inline static int32_t get_offset_of_player_2() { return static_cast<int32_t>(offsetof(revealMyTipset_t3928271264, ___player_2)); }
@@ -94,12 +96,21 @@ public:
 		Il2CppCodeGenWriteBarrier(&___animatedObjects_7, value);
 	}
 
-	inline static int32_t get_offset_of_animationsHaveFired_8() { return static_cast<int32_t>(offsetof(revealMyTipset_t3928271264, ___animationsHaveFired_8)); }
-	inline bool get_animationsHaveFired_8() const { return ___animationsHaveFired_8; }
-	inline bool* get_address_of_animationsHaveFired_8() { return &___animationsHaveFired_8; }
-	inline void set_animationsHaveFired_8(bool value)
+	inline static int32_t get_offset_of_toggledObjects_8() { return static_cast<int32_t>(offsetof(revealMyTipset_t3928271264, ___toggledObjects_8)); }
+	inline GameObjectU5BU5D_t3499186955* get_toggledObjects_8() const { return ___toggledObjects_8; }
+	inline GameObjectU5BU5D_t3499186955** get_address_of_toggledObjects_8() { return &___toggledObjects_8; }
+	inline void set_toggledObjects_8(GameObjectU5BU5D_t3499186955* value)
 	{
-		___animationsHaveFired_8 = value;
+		___toggledObjects_8 = value;
+		Il2CppCodeGenWriteBarrier(&___toggledObjects_8, value);
+	}
+
+	inline static int32_t get_offset_of_animationsHaveFired_9() { return static_cast<int32_t>(offsetof(revealMyTipset_t3928271264, ___animationsHaveFired_9)); }
+	inline bool get_animationsHaveFired_9() const { return ___animationsHaveFired_9; }
+	inline bool* get_address_of_animationsHaveFired_9() { return &___animationsHaveFired_9; }
+	inline void set_animationsHaveFired_9(bool value)
+	{
+		___animationsHaveFired_9 = value;
 	}
 };
 

@@ -1250,6 +1250,9 @@
 #include "AssemblyU2DCSharp_iTween_U3CTweenDelayU3Ec__Iterat1384169934.h"
 #include "AssemblyU2DCSharp_iTween_U3CTweenRestartU3Ec__Iter1621025027.h"
 #include "AssemblyU2DCSharp_iTween_U3CStartU3Ec__Iterator74138896574.h"
+#include "AssemblyU2DCSharp_instructToTurn1387286386.h"
+#include "AssemblyU2DCSharp_instructToTurn_U3CtourTransitionU632071708.h"
+#include "AssemblyU2DCSharp_menuReveal3824363020.h"
 #include "AssemblyU2DCSharp_onboardingScreenController3301330275.h"
 #include "AssemblyU2DCSharp_testAnimationControl613337579.h"
 #include "AssemblyU2DCSharp_U3CPrivateImplementationDetailsU3053238933.h"
@@ -1742,7 +1745,7 @@
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-extern const int32_t g_FieldOffsetTable[9868] = 
+extern const int32_t g_FieldOffsetTable[9883] = 
 {
 	0,
 	0,
@@ -11423,7 +11426,8 @@ extern const int32_t g_FieldOffsetTable[9868] =
 	revealMyTipset_t3928271264::get_offset_of_enlargeTime_5(),
 	revealMyTipset_t3928271264::get_offset_of_smoothTransitions_6(),
 	revealMyTipset_t3928271264::get_offset_of_animatedObjects_7(),
-	revealMyTipset_t3928271264::get_offset_of_animationsHaveFired_8(),
+	revealMyTipset_t3928271264::get_offset_of_toggledObjects_8(),
+	revealMyTipset_t3928271264::get_offset_of_animationsHaveFired_9(),
 	revealTooltip_t1644466038::get_offset_of_player_2(),
 	revealTooltip_t1644466038::get_offset_of_minDistance_3(),
 	revealTooltip_t1644466038::get_offset_of_maxDistance_4(),
@@ -11461,11 +11465,11 @@ extern const int32_t g_FieldOffsetTable[9868] =
 	stereoWebsiteTransfer_t3888997006::get_offset_of_transferPanel_2(),
 	stereoWebsiteTransfer_t3888997006::get_offset_of_normalPanels_3(),
 	stereoWebsiteTransfer_t3888997006::get_offset_of_timeToTransition_4(),
-	U3CwebsiteTransitionU3Ec__Iterator4_t3546155373::get_offset_of_U3CU24s_31U3E__0_0(),
-	U3CwebsiteTransitionU3Ec__Iterator4_t3546155373::get_offset_of_U3CU24s_32U3E__1_1(),
+	U3CwebsiteTransitionU3Ec__Iterator4_t3546155373::get_offset_of_U3CU24s_33U3E__0_0(),
+	U3CwebsiteTransitionU3Ec__Iterator4_t3546155373::get_offset_of_U3CU24s_34U3E__1_1(),
 	U3CwebsiteTransitionU3Ec__Iterator4_t3546155373::get_offset_of_U3CoriginalPanelObjectU3E__2_2(),
-	U3CwebsiteTransitionU3Ec__Iterator4_t3546155373::get_offset_of_U3CU24s_33U3E__3_3(),
-	U3CwebsiteTransitionU3Ec__Iterator4_t3546155373::get_offset_of_U3CU24s_34U3E__4_4(),
+	U3CwebsiteTransitionU3Ec__Iterator4_t3546155373::get_offset_of_U3CU24s_35U3E__3_3(),
+	U3CwebsiteTransitionU3Ec__Iterator4_t3546155373::get_offset_of_U3CU24s_36U3E__4_4(),
 	U3CwebsiteTransitionU3Ec__Iterator4_t3546155373::get_offset_of_U3CoriginalPanelObjectU3E__5_5(),
 	U3CwebsiteTransitionU3Ec__Iterator4_t3546155373::get_offset_of_url_6(),
 	U3CwebsiteTransitionU3Ec__Iterator4_t3546155373::get_offset_of_U24PC_7(),
@@ -11599,6 +11603,20 @@ extern const int32_t g_FieldOffsetTable[9868] =
 	U3CStartU3Ec__Iterator7_t4138896574::get_offset_of_U24PC_0(),
 	U3CStartU3Ec__Iterator7_t4138896574::get_offset_of_U24current_1(),
 	U3CStartU3Ec__Iterator7_t4138896574::get_offset_of_U3CU3Ef__this_2(),
+	instructToTurn_t1387286386::get_offset_of_transferPanel_2(),
+	instructToTurn_t1387286386::get_offset_of_normalPanels_3(),
+	instructToTurn_t1387286386::get_offset_of_timeToTransition_4(),
+	U3CtourTransitionU3Ec__Iterator8_t632071708::get_offset_of_U3CU24s_90U3E__0_0(),
+	U3CtourTransitionU3Ec__Iterator8_t632071708::get_offset_of_U3CU24s_91U3E__1_1(),
+	U3CtourTransitionU3Ec__Iterator8_t632071708::get_offset_of_U3CoriginalPanelObjectU3E__2_2(),
+	U3CtourTransitionU3Ec__Iterator8_t632071708::get_offset_of_scene_3(),
+	U3CtourTransitionU3Ec__Iterator8_t632071708::get_offset_of_U24PC_4(),
+	U3CtourTransitionU3Ec__Iterator8_t632071708::get_offset_of_U24current_5(),
+	U3CtourTransitionU3Ec__Iterator8_t632071708::get_offset_of_U3CU24U3Escene_6(),
+	U3CtourTransitionU3Ec__Iterator8_t632071708::get_offset_of_U3CU3Ef__this_7(),
+	menuReveal_t3824363020::get_offset_of_menuOverlay_2(),
+	menuReveal_t3824363020::get_offset_of_hideItems_3(),
+	menuReveal_t3824363020::get_offset_of_menuActive_4(),
 	onboardingScreenController_t3301330275::get_offset_of_screenCanvas_2(),
 	onboardingScreenController_t3301330275::get_offset_of_screenCount_3(),
 	onboardingScreenController_t3301330275::get_offset_of_currentScreen_4(),
@@ -11616,7 +11634,7 @@ extern const int32_t g_FieldOffsetTable[9868] =
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1960] = 
+extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1963] = 
 {
 	sizeof (U3CModuleU3E_t86524790), -1, 0, 0,
 	sizeof (Il2CppObject), -1, 0, 0,
@@ -13566,6 +13584,9 @@ extern const Il2CppTypeDefinitionSizes g_Il2CppTypeDefinitionSizesTable[1960] =
 	sizeof (U3CTweenDelayU3Ec__Iterator5_t1384169934), -1, 0, 0,
 	sizeof (U3CTweenRestartU3Ec__Iterator6_t1621025027), -1, 0, 0,
 	sizeof (U3CStartU3Ec__Iterator7_t4138896574), -1, 0, 0,
+	sizeof (instructToTurn_t1387286386), -1, 0, 0,
+	sizeof (U3CtourTransitionU3Ec__Iterator8_t632071708), -1, 0, 0,
+	sizeof (menuReveal_t3824363020), -1, 0, 0,
 	sizeof (onboardingScreenController_t3301330275), -1, 0, 0,
 	sizeof (playmov_t3801407328), -1, 0, 0,
 	sizeof (testAnimationControl_t613337579), -1, 0, 0,

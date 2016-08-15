@@ -11995,6 +11995,17 @@ extern "C" void InfoCanvas_set_title_m1172847732 ();
 extern "C" void InfoCanvas_Awake_m24289528 ();
 extern "C" void InfoCanvas_Update_m3704010264 ();
 extern "C" void InfoCanvas_Fade_m1370619531 ();
+extern "C" void instructToTurn__ctor_m2348989801 ();
+extern "C" void instructToTurn_Start_m1296127593 ();
+extern "C" void instructToTurn_Update_m1531101892 ();
+extern "C" void instructToTurn_gotToTour_m245146044 ();
+extern "C" void instructToTurn_tourTransition_m2282235410 ();
+extern "C" void U3CtourTransitionU3Ec__Iterator8__ctor_m2637316082 ();
+extern "C" void U3CtourTransitionU3Ec__Iterator8_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2083520032 ();
+extern "C" void U3CtourTransitionU3Ec__Iterator8_System_Collections_IEnumerator_get_Current_m6439348 ();
+extern "C" void U3CtourTransitionU3Ec__Iterator8_MoveNext_m3824987842 ();
+extern "C" void U3CtourTransitionU3Ec__Iterator8_Dispose_m328333231 ();
+extern "C" void U3CtourTransitionU3Ec__Iterator8_Reset_m283749023 ();
 extern "C" void Interaction__ctor_m1048024505 ();
 extern "C" void Interaction_Start_m4290129593 ();
 extern "C" void Interaction_Enter_m300395439 ();
@@ -12308,6 +12319,11 @@ extern "C" void manualPlayerMovement__ctor_m2272387909 ();
 extern "C" void manualPlayerMovement_Start_m1219525701 ();
 extern "C" void manualPlayerMovement_Update_m3451410536 ();
 extern "C" void manualPlayerMovement_moveToTarget_m1395246420 ();
+extern "C" void menuReveal__ctor_m3547627535 ();
+extern "C" void menuReveal_Start_m2494765327 ();
+extern "C" void menuReveal_Update_m34165982 ();
+extern "C" void menuReveal_revealMenu_m2017020929 ();
+extern "C" void menuReveal_hideMenu_m1237897910 ();
 extern "C" void MeshHelper__ctor_m3410919136 ();
 extern "C" void MeshHelper_GetNewVertex_m4072275462 ();
 extern "C" void MeshHelper_Subdivide_m784550611 ();
@@ -12941,6 +12957,7 @@ extern "C" void revealMyTipset_hideToolTipManual_m2515031520 ();
 extern "C" void revealMyTipset_revealTooltip_m2364909671 ();
 extern "C" void revealMyTipset_activateObjectAnimations_m3948669866 ();
 extern "C" void revealMyTipset_deactivateObjectAnimations_m723785451 ();
+extern "C" void revealMyTipset_toggleElements_m4225286772 ();
 extern "C" void revealTooltip__ctor_m692115125 ();
 extern "C" void revealTooltip_Start_m3934220213 ();
 extern "C" void revealTooltip_Update_m1707594488 ();
@@ -13120,7 +13137,7 @@ extern "C" void RotateSample__ctor_m328697322 ();
 extern "C" void RotateSample_Start_m3570802410 ();
 extern "C" void SampleInfo__ctor_m3206060983 ();
 extern "C" void SampleInfo_OnGUI_m2701459633 ();
-extern const methodPointerType g_MethodPointers[13109] = 
+extern const methodPointerType g_MethodPointers[13126] = 
 {
 	Locale_GetText_m2389348044,
 	Locale_GetText_m2218462520,
@@ -25106,6 +25123,17 @@ extern const methodPointerType g_MethodPointers[13109] =
 	InfoCanvas_Awake_m24289528,
 	InfoCanvas_Update_m3704010264,
 	InfoCanvas_Fade_m1370619531,
+	instructToTurn__ctor_m2348989801,
+	instructToTurn_Start_m1296127593,
+	instructToTurn_Update_m1531101892,
+	instructToTurn_gotToTour_m245146044,
+	instructToTurn_tourTransition_m2282235410,
+	U3CtourTransitionU3Ec__Iterator8__ctor_m2637316082,
+	U3CtourTransitionU3Ec__Iterator8_System_Collections_Generic_IEnumeratorU3CobjectU3E_get_Current_m2083520032,
+	U3CtourTransitionU3Ec__Iterator8_System_Collections_IEnumerator_get_Current_m6439348,
+	U3CtourTransitionU3Ec__Iterator8_MoveNext_m3824987842,
+	U3CtourTransitionU3Ec__Iterator8_Dispose_m328333231,
+	U3CtourTransitionU3Ec__Iterator8_Reset_m283749023,
 	Interaction__ctor_m1048024505,
 	Interaction_Start_m4290129593,
 	Interaction_Enter_m300395439,
@@ -25419,6 +25447,11 @@ extern const methodPointerType g_MethodPointers[13109] =
 	manualPlayerMovement_Start_m1219525701,
 	manualPlayerMovement_Update_m3451410536,
 	manualPlayerMovement_moveToTarget_m1395246420,
+	menuReveal__ctor_m3547627535,
+	menuReveal_Start_m2494765327,
+	menuReveal_Update_m34165982,
+	menuReveal_revealMenu_m2017020929,
+	menuReveal_hideMenu_m1237897910,
 	MeshHelper__ctor_m3410919136,
 	MeshHelper_GetNewVertex_m4072275462,
 	MeshHelper_Subdivide_m784550611,
@@ -26052,6 +26085,7 @@ extern const methodPointerType g_MethodPointers[13109] =
 	revealMyTipset_revealTooltip_m2364909671,
 	revealMyTipset_activateObjectAnimations_m3948669866,
 	revealMyTipset_deactivateObjectAnimations_m723785451,
+	revealMyTipset_toggleElements_m4225286772,
 	revealTooltip__ctor_m692115125,
 	revealTooltip_Start_m3934220213,
 	revealTooltip_Update_m1707594488,

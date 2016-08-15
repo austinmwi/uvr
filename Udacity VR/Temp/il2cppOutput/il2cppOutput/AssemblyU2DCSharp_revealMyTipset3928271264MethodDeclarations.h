@@ -36,3 +36,5 @@ extern "C"  void revealMyTipset_revealTooltip_m2364909671 (revealMyTipset_t39282
 extern "C"  void revealMyTipset_activateObjectAnimations_m3948669866 (revealMyTipset_t3928271264 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void revealMyTipset::deactivateObjectAnimations()
 extern "C"  void revealMyTipset_deactivateObjectAnimations_m723785451 (revealMyTipset_t3928271264 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void revealMyTipset::toggleElements()
+extern "C"  void revealMyTipset_toggleElements_m4225286772 (revealMyTipset_t3928271264 * __this, const MethodInfo* method) IL2CPP_METHOD_ATTR;

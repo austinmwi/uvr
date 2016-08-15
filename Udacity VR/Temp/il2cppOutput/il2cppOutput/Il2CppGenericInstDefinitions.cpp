@@ -1763,6 +1763,9 @@ extern const Il2CppGenericInst GenInst_GvrPostRender_t3571076089_0_0_0 = { 1, Ge
 extern const Il2CppType Rigidbody_t1972007546_0_0_0;
 static const Il2CppType* GenInst_Rigidbody_t1972007546_0_0_0_Types[] = { &Rigidbody_t1972007546_0_0_0 };
 extern const Il2CppGenericInst GenInst_Rigidbody_t1972007546_0_0_0 = { 1, GenInst_Rigidbody_t1972007546_0_0_0_Types };
+extern const Il2CppType sceneTransition_t3970179841_0_0_0;
+static const Il2CppType* GenInst_sceneTransition_t3970179841_0_0_0_Types[] = { &sceneTransition_t3970179841_0_0_0 };
+extern const Il2CppGenericInst GenInst_sceneTransition_t3970179841_0_0_0 = { 1, GenInst_sceneTransition_t3970179841_0_0_0_Types };
 extern const Il2CppType SpringJoint_t2446926506_0_0_0;
 static const Il2CppType* GenInst_SpringJoint_t2446926506_0_0_0_Types[] = { &SpringJoint_t2446926506_0_0_0 };
 extern const Il2CppGenericInst GenInst_SpringJoint_t2446926506_0_0_0 = { 1, GenInst_SpringJoint_t2446926506_0_0_0_Types };
@@ -1787,9 +1790,6 @@ extern const Il2CppGenericInst GenInst_sceneLogic_t2062900786_0_0_0 = { 1, GenIn
 extern const Il2CppType FlockRenderer_t1565251156_0_0_0;
 static const Il2CppType* GenInst_FlockRenderer_t1565251156_0_0_0_Types[] = { &FlockRenderer_t1565251156_0_0_0 };
 extern const Il2CppGenericInst GenInst_FlockRenderer_t1565251156_0_0_0 = { 1, GenInst_FlockRenderer_t1565251156_0_0_0_Types };
-extern const Il2CppType sceneTransition_t3970179841_0_0_0;
-static const Il2CppType* GenInst_sceneTransition_t3970179841_0_0_0_Types[] = { &sceneTransition_t3970179841_0_0_0 };
-extern const Il2CppGenericInst GenInst_sceneTransition_t3970179841_0_0_0 = { 1, GenInst_sceneTransition_t3970179841_0_0_0_Types };
 extern const Il2CppType Seagull_t3632671645_0_0_0;
 static const Il2CppType* GenInst_Seagull_t3632671645_0_0_0_Types[] = { &Seagull_t3632671645_0_0_0 };
 extern const Il2CppGenericInst GenInst_Seagull_t3632671645_0_0_0 = { 1, GenInst_Seagull_t3632671645_0_0_0_Types };
@@ -2455,6 +2455,7 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[642] =
 	&GenInst_GvrPreRender_t2492587030_0_0_0,
 	&GenInst_GvrPostRender_t3571076089_0_0_0,
 	&GenInst_Rigidbody_t1972007546_0_0_0,
+	&GenInst_sceneTransition_t3970179841_0_0_0,
 	&GenInst_SpringJoint_t2446926506_0_0_0,
 	&GenInst_GUITexture_t63494093_0_0_0,
 	&GenInst_Light_t1596303683_0_0_0,
@@ -2463,7 +2464,6 @@ extern const Il2CppGenericInst* const g_Il2CppGenericInstTable[642] =
 	&GenInst_Type_t2622299_0_0_0,
 	&GenInst_sceneLogic_t2062900786_0_0_0,
 	&GenInst_FlockRenderer_t1565251156_0_0_0,
-	&GenInst_sceneTransition_t3970179841_0_0_0,
 	&GenInst_Seagull_t3632671645_0_0_0,
 	&GenInst_Pointer_t1264047645_0_0_0_Pointer_t1264047645_0_0_0,
 	&GenInst_CustomAttributeNamedArgument_t318735129_0_0_0_CustomAttributeNamedArgument_t318735129_0_0_0,

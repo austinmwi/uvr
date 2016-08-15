@@ -8,6 +8,7 @@
 			<method name="changeScene"/>
 			<method name="changeScene"/>
 			<method name="changeScene"/>
+			<method name="changeScene"/>
 		</type>
 		<type fullname="onboardingScreenController">
 			<method name="progressForwards"/>
@@ -39,6 +40,9 @@
 			<method name="goToWebsite"/>
 			<method name="goToWebsite"/>
 		</type>
+		<type fullname="instructToTurn">
+			<method name="gotToTour"/>
+		</type>
 		<type fullname="stereoWebsiteTransfer">
 			<method name="goToWebsite"/>
 			<method name="goToWebsite"/>
@@ -48,11 +52,13 @@
 			<method name="beginManualMovement"/>
 			<method name="beginManualMovement"/>
 			<method name="beginManualMovement"/>
+			<method name="goToWebsite"/>
 			<method name="beginManualMovement"/>
 			<method name="beginManualMovement"/>
 			<method name="beginManualMovement"/>
 			<method name="beginManualMovement"/>
 			<method name="beginManualMovement"/>
+			<method name="goToWebsite"/>
 			<method name="changeScene"/>
 			<method name="goToWebsite"/>
 		</type>
@@ -81,6 +87,12 @@
 		<type fullname="lightsOff">
 			<method name="turnLightsOff"/>
 			<method name="turnLightsOn"/>
+		</type>
+		<type fullname="menuReveal">
+			<method name="hideMenu"/>
+			<method name="revealMenu"/>
+			<method name="hideMenu"/>
+			<method name="revealMenu"/>
 		</type>
 	</assembly>
 </linker>
