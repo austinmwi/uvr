@@ -10,7 +10,7 @@ public class Scene_Example_Ocean_Shader : MonoBehaviour
 		Ocean.gameObject.GetComponent<MeshRenderer>().material = ocean_material;
 		Ocean.gameObject.transform.localScale = Vector3.one * 64.0f ;
 
-		Ocean.gameObject.transform.position = new Vector3(0.0f,-3.0f,0.0f);
+		Ocean.gameObject.transform.position = new Vector3(0.0f,-3.6f,0.0f);
 
 	}
 }

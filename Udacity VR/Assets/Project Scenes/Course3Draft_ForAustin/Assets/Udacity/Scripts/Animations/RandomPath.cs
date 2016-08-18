@@ -19,15 +19,16 @@ public class RandomPath : MonoBehaviour
 
 	void Start () 
 	{
-		_origin = gameObject.transform.position;
+		_origin 	= gameObject.transform.localPosition;
+		_position 	= _origin;
 	}
 	
 
-	void Update () 
+	void FixedUpdate () 
 	{
 		if(Time.frameCount % Mathf.Max(target_duration, 1) == 0)
 		{
-			_target							= _origin + Random.onUnitSphere * radius;
+			_target				= _origin + Random.onUnitSphere * radius;
 			
 		}
 		_direction_to_target	= Vector3.Normalize(_target - _position);
@@ -35,13 +36,13 @@ public class RandomPath : MonoBehaviour
 	
 		_position				+= _direction * movement_speed;
 		
-		if(debug_lines)
-		{
-			Debug.DrawLine(_target, _position, Color.gray);		
-			Debug.DrawLine(_target, _origin, Color.green);		
-			Debug.DrawLine(gameObject.transform.position, _position, Color.white, 1.0f);
-		}
+//		if(debug_lines)
+//		{
+//			Debug.DrawLine(_target, _position, Color.gray);		
+//			Debug.DrawLine(_target, _origin, Color.green);		
+//			Debug.DrawLine(gameObject.transform.position, _position, Color.white, 1.0f);
+//		}
 
-		gameObject.transform.position = _position;
+		gameObject.transform.localPosition = _position;
 	}
 }

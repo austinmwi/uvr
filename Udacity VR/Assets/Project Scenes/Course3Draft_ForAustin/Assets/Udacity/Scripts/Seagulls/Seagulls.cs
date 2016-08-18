@@ -4,7 +4,7 @@ using System.Collections;
 public class Seagulls : MonoBehaviour 
 {
 	public GameObject seagull_prefab;
-	
+
 	private const int SEAGULL_COUNT 			= 10;
 
 	private static GameObject[] seagull_object	= new GameObject[SEAGULL_COUNT];
@@ -32,6 +32,7 @@ public class Seagulls : MonoBehaviour
 				position.y 									+= 25.0f;
 
 				seagull_object[i]							= GameObject.Instantiate(seagull_prefab);
+				
 				seagull_object[i].transform.parent			= _seagulls_object.transform;
 				seagull_object[i].transform.localPosition 	= position;
 				seagull_object[i].AddComponent<Seagull>();
@@ -81,10 +82,11 @@ public class Seagulls : MonoBehaviour
 			
 			if(!playing)
 			{
-				_sound_object[random_i].transform.position 		= seagull_object[random].transform.position;
-				_sound_object[random_i].transform.parent 		= seagull_object[random].transform;
+				_sound_object[random_i].transform.position 					= seagull_object[random].transform.position;
+				_sound_object[random_i].transform.parent 					= seagull_object[random].transform;
 				
-				_sound_object[random_i].GetComponent<AudioSource>().pitch = Random.value + 0.5f;
+				_sound_object[random_i].GetComponent<AudioSource>().pitch	= Random.value + 0.5f;
+				_sound_object[random_i].GetComponent<AudioSource>().volume	= (Random.value + 0.5f) * 0.25f;
 				_sound_object[random_i].GetComponent<AudioSource>().Play();
 
 				break;

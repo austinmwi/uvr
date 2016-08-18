@@ -148,16 +148,16 @@
 				//shift to avoid mirroring along xy axis in the hash
 				position.xz				+= float2(8., 5.);
 
-				//time for animation
-				float time				= -_Time.x*.7;
-				float2 noise			= (lerp(hash(position.zx), hash(1.+position.zx), cos(_Time.x * -2.16 * 4.)*.5+.5) - .5)*.2;
-				float wavesa 			= voronoi(7. + position.xz * -2.92 + time * 5.5);
+					//time for animation
+				float time				= _Time.x;
+				float2 noise			= (lerp(hash(position.xz), hash(1.+position.xz), cos(_Time.x * -3.16 * 4.)*.5+.5) - .5)*.1;
+				float wavesa 			= voronoi(7. + position.xz * -7.92 - time * 8.);
 
-				position.xz				= mul(rmat(wavesa * - .002 + time*.0025), position.xz);
+				position.xz				= mul(rmat(wavesa * - .005 + time*.0025), position.xz);
 
-				float wavesb			= voronoi(noise * 8. + 5. - position.zx * 8. + time * -17.15*(.5+shore)) * .132;
+				float wavesb			= voronoi(noise + 5. - position.xz * 32. + time * -9.15) * .32;
 			
-				float waves				= lerp(wavesa, wavesb, (cos(sin(_Time.x)*wavesa*wavesb)*.5+.5) * (.5-shore*1.+wavesb-noise*shore))-wavesb*.36;
+				float waves				= lerp(wavesa, wavesb, (cos(sin(_Time.x)*wavesa*wavesb)*.5+.5) * (.5-shore*1.+wavesb-noise*shore))-wavesa*.36;
 
 				return clamp(waves, -4., 4.) * _Waves;
 			}
@@ -241,9 +241,9 @@
 				//generate procedural geometry and normals
 				float3 position			= v.vertex.xyz;
 				float waves				= map(position);
-				float curvature			= length(position.xz) * 0.115;
+				float curvature			= length(position.xz) * 0.185;
 				float3 gradient			= map_gradient(position, _Normal);
-				float translation		= length(gradient) * 2.5;
+				float translation		= length(gradient) * 1.5;
 				
 				gradient.y				= abs(waves) * -.03 + .00625;
 				
@@ -252,12 +252,12 @@
 				float cutoff			= length(v.vertex.xz) > .495 ? 0.2 : 1.;
 
 
-				float shore				= clamp(pow(abs(length(v.vertex.xyz+float3(.05, 0., .035)-waves*5.)-1.179), 24.), 0., 1.)*.8;
+				float shore				= clamp(pow(abs(length(v.vertex.xyz+float3(.05, 0., .035)-waves*2.)-1.179), 24.), 0., 1.)*.8;
 
-				float displacement 		= waves + waves * abs(shore * 1.625);
+				float displacement 		= clamp(waves + waves * abs(shore * 1.625), -1., 1.);
 				displacement			+= curvature;
 				displacement			*= cutoff;
-				displacement			-= .028;
+				displacement			-= .0425;
 
 
 				//apply the transformation to the vertex position
@@ -289,34 +289,38 @@
 				float d					= distribution(index, half_exposure);
 				
 				float brdf				= abs(g*d*f)/(view_exposure * light_exposure * 4. + .1);
-
+				brdf 					*= clamp(1.-shore, 0., 1.);
 				float depth				= length(view_position - world_position);
 
 				
 				float3 light_color		= unity_LightColor[0].xyz;
 				
-				float surface_scatter	= .0625+clamp(waves * waves * 128. * depth * _Waves, 0., 1.)*32.;
-				float sub_scatter		= .35-.5 * distribution(.5, half_exposure);
+				float surface_scatter	= .0625 + clamp(waves * waves * 256. * depth * _Waves, 0., 1.) * 32.;
+				float sub_scatter		= distribution(.95, half_exposure)*(1.-shore);
+
+				float reflection		= clamp(fresnel(.1250-shore,reflect(light_direction, normal)), 0., 1.);
 
 				float density			= _Haze;
-				float haze				= fog(depth, density);
-				haze					= pow(clamp((f*.5+.5)-haze, 0., 1.), 3.85);
+				float haze				= pow(1.-fog(depth, density), 15.);
+				haze					*= haze * haze * haze + 1.;
+				//haze					= pow(clamp((f*.5+.5)-haze*8., 0., 8.), 8.);
 				
 				
 
 				//composite the light into an output color
 				o.color					= float4(0., 0., 0., 0.);
 				o.color.xyz				= (light_exposure * _WaterColor.xyz * light_exposure * _SunColor - haze)*.75;
-				o.color.xyz				= lerp(o.color.xyz, float3(1.03, 1., 1.),  min(shore * clamp(.65/sub_scatter,.1, 1.), .85));
-				o.color.xyz				+= surface_scatter * _WaterColor.xyz;
-				o.color.xyz				+= brdf*sub_scatter+.5*sub_scatter * _SunColor.xyz;
-				o.color.xyz				+= brdf * light_color * _SunColor.xyz;
-				o.color.xyz				+= haze * (.5+haze);
+				o.color.xyz				= .85 * lerp(o.color.xyz, float3(1.03, 1., 1.),  clamp(2.*shore * clamp(1./(.35+sub_scatter),.1, 1.),0., .95));
+				o.color.xyz				+= surface_scatter * _WaterColor.xyz;		
+				o.color.xyz				+=  light_exposure * n * brdf * _SunColor.xyz;
+				o.color.xyz				+= sub_scatter * _WaterColor.xyz * light_color * (1.-light_exposure) * 5.;		
+				o.color.xyz				+= reflection * float3(.8, .85, .9) * _Reflection;
+				o.color.xyz				+= abs(haze);
 				
 				
 
 				//gamma adjustment
-				o.color.xyz				= pow(o.color.xyz * 1.2 - clamp(f*.1, .1, .2), 1.9);
+				o.color.xyz				= pow(o.color.xyz * .925 - clamp(f*.1, .1, .2), 1.39);
 				o.color.a				= abs(f*.75+.5);
 
 
@@ -335,15 +339,15 @@
 				float2 uv 			= i.uv.xy;
 				float4 result		= i.color;
 				
-				if(_Reflection > 0.)
-				{
-					float3 n			= i.normal.xyz;
-					float3 v			= i.view.xyz;
-					float4 reflection	= UNITY_SAMPLE_TEXCUBE(unity_SpecCube0,  normalize(reflect(v, n)));
-					reflection.xyz		= DecodeHDR(reflection, unity_SpecCube0_HDR);
-					
-					result				= lerp(result, result + reflection, _Reflection * i.color.w);
-				}
+//				if(_Reflection > 0.)
+//				{
+//					float3 n			= i.normal.xyz;
+//					float3 v			= i.view.xyz;
+//					float4 reflection	= UNITY_SAMPLE_TEXCUBE(unity_SpecCube0,  normalize(reflect(v, n)));
+//					reflection.xyz		= DecodeHDR(reflection, unity_SpecCube0_HDR);
+//					
+//					result				= lerp(result, result + reflection, _Reflection * i.color.w);
+//				}
 				
 
 				return result;

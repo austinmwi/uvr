@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Ocean
 {
-	private const int MESH_RESOLUTION 										= 64; //max 255 (256*256 is too many verts per mesh in unity)
+	private const int MESH_RESOLUTION 										= 100; //max 255 (256*256 is too many verts per mesh in unity)
 
 	private static GameObject _gameObject 									= null;
 	public static GameObject gameObject
@@ -14,7 +14,7 @@ public class Ocean
 			{
 				_gameObject 													= new GameObject();
 				ProceduralMesh.Plane(MESH_RESOLUTION, _gameObject);
-				_gameObject.transform.localScale								= Vector3.one * 24.0f;
+				_gameObject.transform.localScale								= Vector3.one * 16.0f;
 				_gameObject.GetComponent<MeshRenderer>().material.shader 		= Shader.Find("Ocean");
 				_gameObject.GetComponent<MeshRenderer>().shadowCastingMode		= UnityEngine.Rendering.ShadowCastingMode.Off;
 				_gameObject.GetComponent<MeshRenderer>().receiveShadows			= false;

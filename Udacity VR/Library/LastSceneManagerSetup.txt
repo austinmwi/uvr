@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Opening Scenes/OpeningScreenPhotosphere.unity
+- path: Assets/Scenes/island.unity
   isLoaded: 1
   isActive: 1

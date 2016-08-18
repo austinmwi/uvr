@@ -295,15 +295,17 @@
 				float haze				= fog(depth, density);
 				haze					= pow(clamp((f*.5+.5)-haze, 0., 1.), 1.15);
 				
-
+				float reflection		= fresnel(.1, view_exposure);
 
 				//composite the light into an output color
 				o.color					= float4(0., 0., 0., 0.);
-				o.color.xyz				= (light_exposure * _WaterColor.xyz * light_exposure * _SunColor - haze)*.5;
-				o.color.xyz				+= surface_scatter * _WaterColor.xyz;
-				o.color.xyz				+= sub_scatter * _SunColor.xyz;
+				o.color.xyz				= (light_exposure * _WaterColor.xyz * light_exposure * _SunColor - haze)*.75;
+				o.color.xyz				+= surface_scatter * _WaterColor.xyz;		
 				o.color.xyz				+= brdf * light_color * _SunColor.xyz;
-				o.color.xyz				+= haze * (.5+haze);
+				o.color.xyz				+= reflection * float3(.8, .85, .9) * _Reflection;
+				o.color.xyz				+= haze;
+				
+				
 				
 
 				//gamma adjustment
@@ -326,17 +328,7 @@
 				float2 uv 			= i.uv.xy;
 				float4 result		= i.color;
 				
-				if(_Reflection > 0.)
-				{
-					float3 n			= i.normal.xyz;
-					float3 v			= i.view.xyz;
-					float4 reflection	= UNITY_SAMPLE_TEXCUBE(unity_SpecCube0,  normalize(reflect(v, n)));
-					reflection.xyz		= DecodeHDR(reflection, unity_SpecCube0_HDR);
-					
-					result				= lerp(result, result + reflection, _Reflection * i.color.w);
-				}
 				
-
 				return result;
 			}
 			ENDCG

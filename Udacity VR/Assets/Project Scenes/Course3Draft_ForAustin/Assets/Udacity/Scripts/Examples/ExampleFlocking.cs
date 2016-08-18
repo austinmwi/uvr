@@ -39,6 +39,7 @@ public class ExampleFlocking : MonoBehaviour
 //	private Color _centroid_line_color 		= new Color(0.5f, 1.0f, 0.5f, 0.25f);
 //	private Color _avoidance_line_color 	= new Color(1.0f, 0.5f, 0.5f, 0.25f);
 //
+//
 //	void Start () 
 //	{
 //		InitializeScene ();
@@ -49,6 +50,7 @@ public class ExampleFlocking : MonoBehaviour
 //		_centroid	= _target.transform.forward;
 //	}
 //	
+//
 //	void Update()
 //	{
 //		for(int i = 0; i < _cube.Length; i++)
@@ -58,6 +60,7 @@ public class ExampleFlocking : MonoBehaviour
 //
 //		UpdateSelection();
 //	}	
+//
 //
 //	void CheckNeighborhood(GameObject current_object)
 //	{
@@ -190,5 +193,5 @@ public class ExampleFlocking : MonoBehaviour
 //	void SetColor(GameObject game_object, bool in_range)
 //	{
 //		game_object.GetComponent<MeshRenderer>().material.color = in_range ? game_object == _target ? _target_color : _neighborhood_color : _default_color;
-//	}	
+//	}
 }

@@ -29,7 +29,7 @@ public class Seagull : MonoBehaviour
 	}
 
 
-	void LateUpdate () 
+	void FixedUpdate () 
 	{
 		 UpdatePosition();
 	}

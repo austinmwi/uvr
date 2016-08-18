@@ -4,7 +4,6 @@ using System.Collections;
 public class Scene4 : MonoBehaviour 
 {
 	public GameObject 		boat_object;
-	public Light 			directional_light;
 	public Material 		ocean_material;
 
 	private bool 			_rendering	= false;
@@ -21,7 +20,6 @@ public class Scene4 : MonoBehaviour
 	void Update () 
 	{
 	 	AnimateBoat();
-		AnimateLight();
 
 		if(!_rendering && GameObject.Find("Main Camera Left") != null)
 		{
@@ -50,13 +48,6 @@ public class Scene4 : MonoBehaviour
 
 		boat_object.transform.Rotate(rotation * 0.05f);
 	}
-
-
-	void AnimateLight() 
-	{
-		directional_light.transform.rotation = Quaternion.Euler(Vector3.Normalize(-Flock.center_of_flock));
-	}
-
 
 	void InitializeFlockRenderering() 
 	{

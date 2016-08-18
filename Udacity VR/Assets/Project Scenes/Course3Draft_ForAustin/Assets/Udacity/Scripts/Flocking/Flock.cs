@@ -3,7 +3,7 @@ using System.Collections;
 
 public static class Flock
 {
-	public const int COUNT 							= 4096;
+	public const int COUNT 							= 3000;
 	public const int MAX_LINES 						= 65536;
 	public const int MAX_NEIGHBOR_LINES 			= 64;
 

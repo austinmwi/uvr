@@ -19,7 +19,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_3_4;UNITY_5_3;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;ENABLE_RUNTIME_GI;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_NETWORK;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;ENABLE_TEXTUREID_MAP;PLAYERCONNECTION_LISTENS_FIXED_PORT;DEBUGGER_LISTENS_FIXED_PORT;PLATFORM_SUPPORTS_ADS_ID;SUPPORT_ENVIRONMENT_VARIABLES;PLATFORM_SUPPORTS_PROFILER;PLATFORM_HAS_NO_SUPPORT_FOR_BUCKET_ALLOCATOR;STRICTCPP_NEW_DELETE_SIGNATURES;WWW_USE_CURL;HAS_NEON_SKINNIG;UNITY_INPUT_SIMULATE_EVENTS;PLATFORM_ALWAYS_USES_STDOUT_FOR_LOG;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;UNITY_IOS;UNITY_IPHONE;UNITY_IPHONE_API;SUPPORT_MULTIPLE_DISPLAYS;ENABLE_IL2CPP;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_IOS_ON_DEMAND_RESOURCES;ENABLE_IOS_APP_SLICING;ENABLE_DUCK_TYPING</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_3_4;UNITY_5_3;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;ENABLE_RUNTIME_GI;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_NETWORK;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;ENABLE_TEXTUREID_MAP;PLAYERCONNECTION_LISTENS_FIXED_PORT;DEBUGGER_LISTENS_FIXED_PORT;PLATFORM_SUPPORTS_ADS_ID;SUPPORT_ENVIRONMENT_VARIABLES;PLATFORM_SUPPORTS_PROFILER;PLATFORM_HAS_NO_SUPPORT_FOR_BUCKET_ALLOCATOR;STRICTCPP_NEW_DELETE_SIGNATURES;WWW_USE_CURL;HAS_NEON_SKINNIG;UNITY_INPUT_SIMULATE_EVENTS;PLATFORM_ALWAYS_USES_STDOUT_FOR_LOG;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;UNITY_IOS;UNITY_IPHONE;UNITY_IPHONE_API;SUPPORT_MULTIPLE_DISPLAYS;ENABLE_IL2CPP;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_IOS_ON_DEMAND_RESOURCES;ENABLE_IOS_APP_SLICING;ENABLE_DUCK_TYPING</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -59,6 +59,7 @@
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Fade.shader" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\hashes.glslinc" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\DebugProceduralVertex.shader" />
+     <None Include="Assets\Materials\StandardUndistorted.shader" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\StormParticle.shader" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\GoogleVR\Distortion\GvrDistortion.cginc" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\curves.glslinc" />
@@ -74,6 +75,7 @@
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\decoders.glslinc" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\contours.glslinc" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\light.glslinc" />
+     <None Include="Assets\Materials\CardboardDistortion.cginc" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Island_Ocean.shader" />
      <None Include="Assets\Models\Updated Apartment\UdacityModernApartment\Shaders\UnlitUndistorted.shader" />
      <None Include="Assets\Project Scenes\UdacityModernApartment\Shaders\CardboardDistortion.cginc" />
@@ -85,6 +87,7 @@
      <None Include="Assets\fadeBetween.shader" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Clouds.shader" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\UI.shader" />
+     <None Include="Assets\Materials\Island_Ocean-2.shader" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Plugins\Android\AndroidManifest.xml" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\ProjectSettings\ProjectVersion.txt" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\OceanCollision.shader" />
@@ -95,8 +98,8 @@
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\header.glslinc" />
      <None Include="Assets\Plugins\iTween\ReadMe!\ReadMe!.txt" />
      <None Include="Assets\Project Scenes\UdacityModernApartment\Shaders\UnlitUndistorted.shader" />
-     <None Include="Assets\Materials\Island_Ocean-1.shader" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Storm.shader" />
+     <None Include="Assets\Materials\UnlitUndistorted.shader" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\GoogleVR\Resources\UI\GvrReticleShader.shader" />
      <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\harmonics.glslinc" />
      <None Include="Assets\Project Scenes\UdacityModernApartment\Shaders\StandardUndistorted.shader" />

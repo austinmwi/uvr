@@ -17,9 +17,18 @@ public class Scene3 : MonoBehaviour
 		Ocean.audio_source.Play();
 	}
 
+
 	void Update () 
 	{
 		Ocean.AdjustPitch();
 		Ocean.SetSoundPositionRelativeToViewer();
+		Framerate.Update();
+	}
+
+
+	void OnGUI()
+	{
+		GUI.skin.label.normal.textColor = Color.white;
+		GUI.Label(new Rect(16.0f, 0.0f, 128.0f, 24.0f), Framerate.Fps().ToString());
 	}
 }

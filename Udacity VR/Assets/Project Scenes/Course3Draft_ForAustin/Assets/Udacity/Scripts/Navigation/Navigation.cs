@@ -27,7 +27,7 @@ public class Navigation : MonoBehaviour
 		//now, find all the waypoints that have been placed in the scene
 		_waypoint						= FindAll();
 
-
+			
 		//and search them for the one nearest to the view object
 		_current						= Nearest();
 
@@ -46,27 +46,30 @@ public class Navigation : MonoBehaviour
 
 	void Update () 
 	{
-		//if so, check all the waypoints to see if one of them has been hit
- 		for(int i = 0; i < _waypoint.Length; i++)
+		if( _waypoint.Length > 0)
 		{
-			//if a waypoint has been hit, it's an active waypoint, and the person is pressing the trigger, activate it
-			if(_waypoint[i].triggered)
+			//if so, check all the waypoints to see if one of them has been hit
+ 			for(int i = 0; i < _waypoint.Length; i++)
 			{
-				//exit the current waypoint
-				_current.Depart();
-		
-				//set the current waypoint to be the new waypoint
-				_current	= _waypoint[i];
-					
-				//update all the waypoints to reflect their new active/inactive status
-				UpdateAll();
+				//if a waypoint has been hit, it's an active waypoint, and the person is pressing the trigger, activate it
+				if(_waypoint[i].triggered)
+				{
+					//exit the current waypoint
+					_current.Depart();
+			
+					//set the current waypoint to be the new waypoint
+					_current	= _waypoint[i];
+						
+					//update all the waypoints to reflect their new active/inactive status
+					UpdateAll();
+				}
+			}	
+			
+			//if the current waypoint isn't occupied (ie, it has been changed) and we aren't already on it, move towards it
+			if(_current.occupied == false && view_object.transform.position != _current.position)
+			{
+				MoveTo(_current);
 			}
-		}	
-
-		//if the current waypoint isn't occupied (ie, it has been changed) and we aren't already on it, move towards it
-		if(_current.occupied == false && view_object.transform.position != _current.position)
-		{
-			MoveTo(_current);
 		}
 	}
 

@@ -63,7 +63,7 @@ public class Flocking : MonoBehaviour
 
 	void Update()
 	{
-		if(Time.time < 4.0f)
+		if(Time.time < .125f)
 		{
 			Attract();
 			origin 							= new Vector3(0.0f, 512.0f, 0.0f);
@@ -77,10 +77,10 @@ public class Flocking : MonoBehaviour
 		
 		SetFlockParameters();
 
-//		if(GvrViewer.Instance.Triggered)
-//		{
-//			Attract();
-//		}
+		if(GvrViewer.Instance.Triggered)
+		{
+			Attract();
+		}
 
 		home 		= Mathf.Lerp(home, -0.0f, 0.125f);
 	}
@@ -109,8 +109,8 @@ public class Flocking : MonoBehaviour
 
 	void Attract()
 	{
-		origin 							= Camera.main.transform.position;
-		home							+= 32.0f;
+		origin 							= Camera.main.transform.position+Camera.main.transform.forward * 16.0f;
+		home							+= 64.0f;
 	}
 
 	void SetFlockParameters()
