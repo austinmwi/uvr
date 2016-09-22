@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{41D5E28F-9155-798D-5CA2-DD61AB9778F1}") = "Udacity VR copy", "Assembly-CSharp-firstpass.csproj", "{155625FD-976D-11BD-68F3-20D75C1C07BC}"
+EndProject
+Project("{41D5E28F-9155-798D-5CA2-DD61AB9778F1}") = "Udacity VR copy", "Assembly-CSharp.csproj", "{C0A0BC46-857B-4835-4BE3-1F2E4CFEF086}"
+EndProject
+Project("{41D5E28F-9155-798D-5CA2-DD61AB9778F1}") = "Udacity VR copy", "Assembly-CSharp-Editor.csproj", "{7C60C4C9-D27C-D1A6-FD16-B73992AA60B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{155625FD-976D-11BD-68F3-20D75C1C07BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{155625FD-976D-11BD-68F3-20D75C1C07BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{155625FD-976D-11BD-68F3-20D75C1C07BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{155625FD-976D-11BD-68F3-20D75C1C07BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0A0BC46-857B-4835-4BE3-1F2E4CFEF086}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0A0BC46-857B-4835-4BE3-1F2E4CFEF086}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0A0BC46-857B-4835-4BE3-1F2E4CFEF086}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0A0BC46-857B-4835-4BE3-1F2E4CFEF086}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C60C4C9-D27C-D1A6-FD16-B73992AA60B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C60C4C9-D27C-D1A6-FD16-B73992AA60B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C60C4C9-D27C-D1A6-FD16-B73992AA60B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C60C4C9-D27C-D1A6-FD16-B73992AA60B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

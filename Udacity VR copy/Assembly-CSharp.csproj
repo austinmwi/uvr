@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{C0A0BC46-857B-4835-4BE3-1F2E4CFEF086}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_3_4;UNITY_5_3;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;ENABLE_RUNTIME_GI;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_NETWORK;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;ENABLE_TEXTUREID_MAP;PLAYERCONNECTION_LISTENS_FIXED_PORT;DEBUGGER_LISTENS_FIXED_PORT;PLATFORM_SUPPORTS_ADS_ID;SUPPORT_ENVIRONMENT_VARIABLES;PLATFORM_SUPPORTS_PROFILER;PLATFORM_HAS_NO_SUPPORT_FOR_BUCKET_ALLOCATOR;STRICTCPP_NEW_DELETE_SIGNATURES;WWW_USE_CURL;HAS_NEON_SKINNIG;UNITY_INPUT_SIMULATE_EVENTS;PLATFORM_ALWAYS_USES_STDOUT_FOR_LOG;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;UNITY_IOS;UNITY_IPHONE;UNITY_IPHONE_API;SUPPORT_MULTIPLE_DISPLAYS;ENABLE_IL2CPP;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_IOS_ON_DEMAND_RESOURCES;ENABLE_IOS_APP_SLICING</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\GoogleVR\DemoScenes\ControllerDemo\ControllerDebugInfo.cs" />
+     <Compile Include="Assets\GoogleVR\DemoScenes\ControllerDemo\ControllerDemoManager.cs" />
+     <Compile Include="Assets\GoogleVR\DemoScenes\HeadsetDemo\FPS.cs" />
+     <Compile Include="Assets\GoogleVR\DemoScenes\HeadsetDemo\Teleport.cs" />
+     <Compile Include="Assets\GoogleVR\Legacy\Scripts\GvrHead.cs" />
+     <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\GvrCameraUtils.cs" />
+     <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\GvrEye.cs" />
+     <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\GvrPostRender.cs" />
+     <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\GvrPreRender.cs" />
+     <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\GvrProfile.cs" />
+     <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\StereoController.cs" />
+     <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\StereoRenderEffect.cs" />
+     <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\VRDevices\AndroidDevice.cs" />
+     <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\VRDevices\BaseAndroidDevice.cs" />
+     <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\VRDevices\BaseVRDevice.cs" />
+     <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\VRDevices\EditorDevice.cs" />
+     <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\VRDevices\GvrDevice.cs" />
+     <Compile Include="Assets\GoogleVR\Legacy\Scripts\Internal\VRDevices\iOSDevice.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\Audio\GvrAudio.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\Audio\GvrAudioListener.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\Audio\GvrAudioRoom.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\Audio\GvrAudioSoundfield.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\Audio\GvrAudioSource.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\Controller\GvrController.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\ControllerProviderFactory.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\ControllerProviders\AndroidNativeControllerProvider.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\ControllerProviders\DummyControllerProvider.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\ControllerProviders\EmulatorControllerProvider.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\ControllerState.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\Emulator\EmulatorClientSocket.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\Emulator\EmulatorConfig.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\Emulator\EmulatorDataTypes.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\Emulator\EmulatorManager.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\Emulator\PhoneEvent.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\Controller\Internal\IControllerProvider.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\GazeInputModule.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\GvrViewer.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\Pose3D.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\UI\GvrGaze.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\UI\GvrReticle.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\UI\IGvrGazePointer.cs" />
+     <Compile Include="Assets\GoogleVR\Scripts\UI\IGvrGazeResponder.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Animations\LeafAnimation.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Animations\RandomPath.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Audio\BasicAudioConcepts.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Debug\Debugging.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Debug\KeyboardMovement.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Effects\CollisionEffect.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Effects\EffectHilight.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Effects\FadeEffect.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Examples\ExampleEvent.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Examples\ExampleFlocking.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Examples\ExampleLoopVisualization.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Examples\ExampleParticles.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Examples\ExampleRayCast.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Examples\ExampleVertexDeformation.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Examples\PhysicsStuff.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Flocking\Flock.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Flocking\FlockRenderer.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Flocking\Flocking.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Navigation\Navigation.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Navigation\Waypoint.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Physics\Interaction.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Procedural\Clouds.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Procedural\Island.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Procedural\Ocean.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Procedural\ProceduralMesh.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Procedural\Textures.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Scene\Scene0.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Scene\Scene1.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Scene\Scene2.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Scene\Scene3.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Scene\Scene4.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Scene\Scene_Example_Ocean_Shader.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Seagulls\Seagull.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Seagulls\Seagulls.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\UI\InfoCanvas.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\UI\UI.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Utilities\Cypher.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Utilities\Framerate.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Utilities\MultipleInputProcessing.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\Utilities\Verification.cs" />
+     <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Scripts\View.cs" />
+     <Compile Include="Assets\Project Scenes\UdacityModernApartment\Scripts\CombineChildren.cs" />
+     <Compile Include="Assets\Project Scenes\UdacityModernApartment\Scripts\MeshHelper.cs" />
+     <Compile Include="Assets\Project Scenes\UdacityModernApartment\Scripts\TransformPreviewer.cs" />
+     <Compile Include="Assets\Scripts\displayFrames.cs" />
+     <Compile Include="Assets\Scripts\fadeMaterials.cs" />
+     <Compile Include="Assets\Scripts\furniturePlacement.cs" />
+     <Compile Include="Assets\Scripts\lightsOff.cs" />
+     <Compile Include="Assets\Scripts\lookAtPlayer.cs" />
+     <Compile Include="Assets\Scripts\looseFollow.cs" />
+     <Compile Include="Assets\Scripts\manualPlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\originalScale.cs" />
+     <Compile Include="Assets\Scripts\qualityAdjustment.cs" />
+     <Compile Include="Assets\Scripts\revealMyTipset.cs" />
+     <Compile Include="Assets\Scripts\revealTooltip.cs" />
+     <Compile Include="Assets\Scripts\sceneLogic.cs" />
+     <Compile Include="Assets\Scripts\sceneTransition.cs" />
+     <Compile Include="Assets\Scripts\starsOn.cs" />
+     <Compile Include="Assets\Scripts\startTour.cs" />
+     <Compile Include="Assets\Scripts\stereoWebsiteTransfer.cs" />
+     <Compile Include="Assets\Scripts\tempSwapper.cs" />
+     <Compile Include="Assets\Scripts\touchInputFixer.cs" />
+     <Compile Include="Assets\carboardTransition.cs" />
+     <Compile Include="Assets\cubeScript.cs" />
+     <Compile Include="Assets\force_landscape.cs" />
+     <Compile Include="Assets\framefix.cs" />
+     <Compile Include="Assets\iTween.cs" />
+     <Compile Include="Assets\instructToTurn.cs" />
+     <Compile Include="Assets\menuReveal.cs" />
+     <Compile Include="Assets\onboardingScreenController.cs" />
+     <Compile Include="Assets\orientation_fixer.cs" />
+     <Compile Include="Assets\playmov.cs" />
+     <Compile Include="Assets\scene_autotransition.cs" />
+     <Compile Include="Assets\spiralController.cs" />
+     <Compile Include="Assets\swipeDetection.cs" />
+     <Compile Include="Assets\testAnimationControl.cs" />
+     <Compile Include="Assets\videoClipPlay.cs" />
+     <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\derivatives.glslinc" />
+     <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Fade.shader" />
+     <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\hashes.glslinc" />
+     <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\DebugProceduralVertex.shader" />
+     <None Include="Assets\Materials\StandardUndistorted.shader" />
+     <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\StormParticle.shader" />
+     <None Include="Assets\GoogleVR\Distortion\GvrDistortion.cginc" />
+     <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\curves.glslinc" />
+     <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Waypoint.shader" />
+     <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Haze.shader" />
+     <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Ocean.shader" />
+     <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\Maps\terrain.glslinc" />
+     <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\editor.glslinc" />
+     <None Include="Assets\GoogleVR\Legacy\Resources\UnlitTexture.shader" />
+     <None Include="Assets\Models\Updated Apartment\UdacityModernApartment\Shaders\CardboardDistortion.cginc" />
+     <None Include="Assets\Materials\Ocean.shader" />
+     <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\fields.glslinc" />
+     <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\decoders.glslinc" />
+     <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\contours.glslinc" />
+     <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\light.glslinc" />
+     <None Include="Assets\Materials\CardboardDistortion.cginc" />
+     <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Island_Ocean.shader" />
+     <None Include="Assets\Models\Updated Apartment\UdacityModernApartment\Shaders\UnlitUndistorted.shader" />
+     <None Include="Assets\Project Scenes\UdacityModernApartment\Shaders\CardboardDistortion.cginc" />
+     <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\definitions.glslinc" />
+     <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\lattices.glslinc" />
+     <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\ambient_occlusion.glslinc" />
+     <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Shore.shader" />
+     <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\matrices.glslinc" />
+     <None Include="Assets\fadeBetween.shader" />
+     <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Clouds.shader" />
+     <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\UI.shader" />
+     <None Include="Assets\Materials\Island_Ocean-2.shader" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\Project Scenes\Course3Draft_ForAustin\ProjectSettings\ProjectVersion.txt" />
+     <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\OceanCollision.shader" />
+     <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\DebugVertex.shader" />
+     <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\hmd.glslinc" />
+     <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\shadows.glslinc" />
+     <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Line.shader" />
+     <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\header.glslinc" />
+     <None Include="Assets\Plugins\iTween\ReadMe!\ReadMe!.txt" />
+     <None Include="Assets\Project Scenes\UdacityModernApartment\Shaders\UnlitUndistorted.shader" />
+     <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Storm.shader" />
+     <None Include="Assets\Materials\UnlitUndistorted.shader" />
+     <None Include="Assets\GoogleVR\Resources\UI\GvrReticleShader.shader" />
+     <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\harmonics.glslinc" />
+     <None Include="Assets\Project Scenes\UdacityModernApartment\Shaders\StandardUndistorted.shader" />
+     <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\fft.glslinc" />
+     <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\noise.glslinc" />
+     <None Include="Assets\GoogleVR\Legacy\Resources\SolidColor.shader" />
+     <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Island.shader" />
+     <None Include="Assets\Models\Updated Apartment\UdacityModernApartment\Shaders\StandardUndistorted.shader" />
+     <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\ReflectionTest.shader" />
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.ProtocolBuffers">
+ <HintPath>/Users/austinmccasland/Dropbox/Udacity/Unity Projects/Udacity VR copy/Assets/Plugins/Google.ProtocolBuffers.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{155625FD-976D-11BD-68F3-20D75C1C07BC}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

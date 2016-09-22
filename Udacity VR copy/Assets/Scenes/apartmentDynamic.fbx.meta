@@ -1,0 +1,175 @@
+fileFormatVersion: 2
+guid: 1a2ce20d6093a408ba3e5d901b2ba376
+timeCreated: 1471564853
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Apple
+    100004: Apple.001
+    100006: ArmChair
+    100008: Bannana
+    100010: Bannana.001
+    100012: Bannana.002
+    100014: chairsAndTable
+    100016: Clock
+    100018: clock
+    100020: Clock_Handle_Hours
+    100022: Clock_Handle_Minutes
+    100024: Clock_Handle_Seconds
+    100026: Coffee_Book
+    100028: Coffee_Table
+    100030: Coffee_Table_Rug
+    100032: Couch
+    100034: fruitbowl
+    100036: Icosphere
+    100038: Orange
+    100040: Orange.001
+    100042: Pear
+    100044: Pear.001
+    400000: //RootNode
+    400002: Apple
+    400004: Apple.001
+    400006: ArmChair
+    400008: Bannana
+    400010: Bannana.001
+    400012: Bannana.002
+    400014: chairsAndTable
+    400016: Clock
+    400018: clock
+    400020: Clock_Handle_Hours
+    400022: Clock_Handle_Minutes
+    400024: Clock_Handle_Seconds
+    400026: Coffee_Book
+    400028: Coffee_Table
+    400030: Coffee_Table_Rug
+    400032: Couch
+    400034: fruitbowl
+    400036: Icosphere
+    400038: Orange
+    400040: Orange.001
+    400042: Pear
+    400044: Pear.001
+    2300000: Apple
+    2300002: Apple.001
+    2300004: ArmChair
+    2300006: Bannana
+    2300008: Bannana.001
+    2300010: Bannana.002
+    2300012: Clock
+    2300014: Clock_Handle_Hours
+    2300016: Clock_Handle_Minutes
+    2300018: Clock_Handle_Seconds
+    2300020: Coffee_Book
+    2300022: Coffee_Table
+    2300024: Coffee_Table_Rug
+    2300026: Couch
+    2300028: Icosphere
+    2300030: Orange
+    2300032: Orange.001
+    2300034: Pear
+    2300036: Pear.001
+    3300000: Apple
+    3300002: Apple.001
+    3300004: ArmChair
+    3300006: Bannana
+    3300008: Bannana.001
+    3300010: Bannana.002
+    3300012: Clock
+    3300014: Clock_Handle_Hours
+    3300016: Clock_Handle_Minutes
+    3300018: Clock_Handle_Seconds
+    3300020: Coffee_Book
+    3300022: Coffee_Table
+    3300024: Coffee_Table_Rug
+    3300026: Couch
+    3300028: Icosphere
+    3300030: Orange
+    3300032: Orange.001
+    3300034: Pear
+    3300036: Pear.001
+    4300000: Icosphere
+    4300002: Apple.001
+    4300004: Apple
+    4300006: Orange.001
+    4300008: Pear
+    4300010: Bannana
+    4300012: Bannana.002
+    4300014: Bannana.001
+    4300016: Pear.001
+    4300018: Orange
+    4300020: Clock_Handle_Seconds
+    4300022: Clock_Handle_Hours
+    4300024: Clock_Handle_Minutes
+    4300026: Clock
+    4300028: Coffee_Table
+    4300030: Coffee_Book
+    4300032: Couch
+    4300034: ArmChair
+    4300036: Coffee_Table_Rug
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

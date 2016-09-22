@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{961B3E4E-8421-F834-8D46-E3E23AECFC18}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectType>Editor:5</UnityProjectType>
+    <UnityBuildTarget>WebPlayer:6</UnityBuildTarget>
+    <UnityVersion>5.3.4f1</UnityVersion>
+    <RootNamespace></RootNamespace>
+    <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_3_4;UNITY_5_3;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_WEBPLAYER;ENABLE_SUBSTANCE;WEBPLUG;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_3_4;UNITY_5_3;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_WEBPLAYER;ENABLE_SUBSTANCE;WEBPLUG;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="UnityEngine">
+      <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Advertisements">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>Library\UnityAssemblies\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.EditorTestsRunner">
+      <HintPath>Library\UnityAssemblies\UnityEditor.EditorTestsRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library\UnityAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TreeEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.TreeEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
+      <HintPath>Library\UnityAssemblies\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.EditorTestsRunner">
+      <HintPath>Library\UnityAssemblies\UnityEditor.EditorTestsRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>Library\UnityAssemblies\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library\UnityAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Advertisements">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TreeEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.TreeEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.ProtocolBuffers">
+      <HintPath>Assets\Project Scenes\Course3Draft_ForAustin\Assets\Plugins\Google.ProtocolBuffers.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Udacity VR.CSharp.Plugins.csproj">
+      <Project>{A807D0F8-96D9-F257-5078-357DFB4CB05B}</Project>
+      <Name>Udacity VR.CSharp.Plugins</Name>
+    </ProjectReference>
+    <ProjectReference Include="Udacity VR.CSharp.csproj">
+      <Project>{E0B5E814-0D96-CFD8-E082-1C2A8EE0C828}</Project>
+      <Name>Udacity VR.CSharp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Models\Updated Apartment\UdacityModernApartment\Editor\CombineChildrenEditor.cs" />
+    <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\GoogleVR\Editor\GvrAudioListenerEditor.cs" />
+    <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\GoogleVR\Editor\GvrAudioRoomEditor.cs" />
+    <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\GoogleVR\Editor\GvrAudioSourceEditor.cs" />
+    <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\GoogleVR\Editor\GvrGazeEditor.cs" />
+    <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\GoogleVR\Editor\GvrMenu.cs" />
+    <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\GoogleVR\Editor\GvrViewerEditor.cs" />
+    <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\GoogleVR\Editor\StereoControllerEditor.cs" />
+    <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Editor\UdacityEditor.cs" />
+    <Compile Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Editor\WaypointVisualization.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Materials\CardboardDistortion.cginc" />
+    <None Include="Assets\Materials\Island_Ocean-2.shader" />
+    <None Include="Assets\Materials\Ocean.shader" />
+    <None Include="Assets\Materials\StandardUndistorted.shader" />
+    <None Include="Assets\Materials\UnlitUndistorted.shader" />
+    <None Include="Assets\Models\Updated Apartment\UdacityModernApartment\Shaders\CardboardDistortion.cginc" />
+    <None Include="Assets\Models\Updated Apartment\UdacityModernApartment\Shaders\StandardUndistorted.shader" />
+    <None Include="Assets\Models\Updated Apartment\UdacityModernApartment\Shaders\UnlitUndistorted.shader" />
+    <None Include="Assets\Plugins\iTween\ReadMe!\ReadMe!.txt" />
+    <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\GoogleVR\Distortion\GvrDistortion.cginc" />
+    <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\GoogleVR\Resources\SolidColor.shader" />
+    <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\GoogleVR\Resources\UI\GvrReticleShader.shader" />
+    <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\GoogleVR\Resources\UnlitTexture.shader" />
+    <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Plugins\Android\AndroidManifest.xml" />
+    <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Clouds.shader" />
+    <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\DebugProceduralVertex.shader" />
+    <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\DebugVertex.shader" />
+    <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Fade.shader" />
+    <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Haze.shader" />
+    <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\Maps\terrain.glslinc" />
+    <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\ambient_occlusion.glslinc" />
+    <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\contours.glslinc" />
+    <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\curves.glslinc" />
+    <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\decoders.glslinc" />
+    <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\definitions.glslinc" />
+    <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\derivatives.glslinc" />
+    <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\editor.glslinc" />
+    <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\fft.glslinc" />
+    <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\fields.glslinc" />
+    <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\harmonics.glslinc" />
+    <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\hashes.glslinc" />
+    <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\header.glslinc" />
+    <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\hmd.glslinc" />
+    <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\lattices.glslinc" />
+    <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\light.glslinc" />
+    <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\matrices.glslinc" />
+    <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\noise.glslinc" />
+    <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Includes\shadows.glslinc" />
+    <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Island.shader" />
+    <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Island_Ocean.shader" />
+    <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Line.shader" />
+    <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Ocean.shader" />
+    <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\OceanCollision.shader" />
+    <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\ReflectionTest.shader" />
+    <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Shore.shader" />
+    <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Storm.shader" />
+    <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\StormParticle.shader" />
+    <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\UI.shader" />
+    <None Include="Assets\Project Scenes\Course3Draft_ForAustin\Assets\Udacity\Shaders\Waypoint.shader" />
+    <None Include="Assets\Project Scenes\Course3Draft_ForAustin\ProjectSettings\ProjectVersion.txt" />
+    <None Include="Assets\Project Scenes\UdacityModernApartment\Shaders\CardboardDistortion.cginc" />
+    <None Include="Assets\Project Scenes\UdacityModernApartment\Shaders\StandardUndistorted.shader" />
+    <None Include="Assets\Project Scenes\UdacityModernApartment\Shaders\UnlitUndistorted.shader" />
+    <None Include="Assets\fadeBetween.shader" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
+</Project>
