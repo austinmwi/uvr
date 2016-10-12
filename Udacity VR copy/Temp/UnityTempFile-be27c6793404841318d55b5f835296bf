@@ -1,0 +1,220 @@
+-debug
+-target:library
+-nowarn:0169
+-out:'Temp/Assembly-CSharp.dll'
+-r:'/Applications/Unity/Unity.app/Contents/Managed/UnityEngine.dll'
+-r:'Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll'
+-r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll'
+-r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll'
+-r:'Assets/Plugins/Google.ProtocolBuffers.dll'
+-r:'/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll'
+-r:'/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll'
+-r:'/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll'
+-define:UNITY_5_3_OR_NEWER
+-define:UNITY_5_4_OR_NEWER
+-define:UNITY_5_4_1
+-define:UNITY_5_4
+-define:UNITY_5
+-define:ENABLE_NEW_BUGREPORTER
+-define:ENABLE_AUDIO
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:ENABLE_EDITOR_RETINA
+-define:ENABLE_RETINA_GUISTYLES
+-define:ENABLE_FRAME_DEBUGGER
+-define:ENABLE_GENERICS
+-define:ENABLE_HOME_SCREEN
+-define:ENABLE_IMAGEEFFECTS
+-define:ENABLE_LIGHT_PROBES_LEGACY
+-define:ENABLE_MICROPHONE
+-define:ENABLE_MULTIPLE_DISPLAYS
+-define:ENABLE_PHYSICS
+-define:ENABLE_PLUGIN_INSPECTOR
+-define:ENABLE_SHADOWS
+-define:ENABLE_SPRITERENDERER_FLIPPING
+-define:ENABLE_SPRITES
+-define:ENABLE_SPRITE_POLYGON
+-define:ENABLE_TERRAIN
+-define:ENABLE_RAKNET
+-define:ENABLE_UNET
+-define:ENABLE_UNITYEVENTS
+-define:ENABLE_VR
+-define:ENABLE_WEBCAM
+-define:ENABLE_WWW
+-define:ENABLE_CLOUD_SERVICES
+-define:ENABLE_CLOUD_SERVICES_COLLAB
+-define:ENABLE_CLOUD_SERVICES_ADS
+-define:ENABLE_CLOUD_HUB
+-define:ENABLE_CLOUD_PROJECT_ID
+-define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+-define:ENABLE_CLOUD_SERVICES_PURCHASING
+-define:ENABLE_CLOUD_SERVICES_ANALYTICS
+-define:ENABLE_CLOUD_SERVICES_UNET
+-define:ENABLE_CLOUD_SERVICES_BUILD
+-define:ENABLE_CLOUD_LICENSE
+-define:ENABLE_EDITOR_METRICS
+-define:ENABLE_EDITOR_METRICS_CACHING
+-define:INCLUDE_DYNAMIC_GI
+-define:INCLUDE_GI
+-define:INCLUDE_IL2CPP
+-define:INCLUDE_DIRECTX12
+-define:PLATFORM_SUPPORTS_MONO
+-define:INCLUDE_PUBNUB
+-define:ENABLE_LOCALIZATION
+-define:ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION
+-define:ENABLE_EDITOR_TESTS_RUNNER
+-define:UNITY_ANDROID
+-define:UNITY_ANDROID_API
+-define:ENABLE_SUBSTANCE
+-define:ENABLE_TEXTUREID_MAP
+-define:ENABLE_EGL
+-define:ENABLE_NETWORK
+-define:ENABLE_RUNTIME_GI
+-define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+-define:ENABLE_UNITYWEBREQUEST
+-define:PLATFORM_SUPPORTS_ADS_ID
+-define:UNITY_CAN_SHOW_SPLASH_SCREEN
+-define:ENABLE_UNITYADS_RUNTIME
+-define:UNITY_UNITYADS_API
+-define:ENABLE_MONO
+-define:ENABLE_PROFILER
+-define:DEBUG
+-define:TRACE
+-define:UNITY_ASSERTIONS
+-define:UNITY_EDITOR
+-define:UNITY_EDITOR_64
+-define:UNITY_EDITOR_OSX
+-define:UNITY_TEAM_LICENSE
+-define:UNITY_PRO_LICENSE
+-define:2
+'Assets/GoogleVR/DemoScenes/ControllerDemo/ControllerDebugInfo.cs'
+'Assets/GoogleVR/DemoScenes/ControllerDemo/ControllerDemoManager.cs'
+'Assets/GoogleVR/DemoScenes/HeadsetDemo/FPS.cs'
+'Assets/GoogleVR/DemoScenes/HeadsetDemo/Teleport.cs'
+'Assets/GoogleVR/Legacy/Scripts/GvrHead.cs'
+'Assets/GoogleVR/Legacy/Scripts/Internal/GvrCameraUtils.cs'
+'Assets/GoogleVR/Legacy/Scripts/Internal/GvrEye.cs'
+'Assets/GoogleVR/Legacy/Scripts/Internal/GvrPostRender.cs'
+'Assets/GoogleVR/Legacy/Scripts/Internal/GvrPreRender.cs'
+'Assets/GoogleVR/Legacy/Scripts/Internal/GvrProfile.cs'
+'Assets/GoogleVR/Legacy/Scripts/Internal/StereoController.cs'
+'Assets/GoogleVR/Legacy/Scripts/Internal/StereoRenderEffect.cs'
+'Assets/GoogleVR/Legacy/Scripts/Internal/VRDevices/AndroidDevice.cs'
+'Assets/GoogleVR/Legacy/Scripts/Internal/VRDevices/BaseAndroidDevice.cs'
+'Assets/GoogleVR/Legacy/Scripts/Internal/VRDevices/BaseVRDevice.cs'
+'Assets/GoogleVR/Legacy/Scripts/Internal/VRDevices/EditorDevice.cs'
+'Assets/GoogleVR/Legacy/Scripts/Internal/VRDevices/GvrDevice.cs'
+'Assets/GoogleVR/Legacy/Scripts/Internal/VRDevices/iOSDevice.cs'
+'Assets/GoogleVR/Scripts/Audio/GvrAudio.cs'
+'Assets/GoogleVR/Scripts/Audio/GvrAudioListener.cs'
+'Assets/GoogleVR/Scripts/Audio/GvrAudioRoom.cs'
+'Assets/GoogleVR/Scripts/Audio/GvrAudioSoundfield.cs'
+'Assets/GoogleVR/Scripts/Audio/GvrAudioSource.cs'
+'Assets/GoogleVR/Scripts/Controller/GvrController.cs'
+'Assets/GoogleVR/Scripts/Controller/Internal/ControllerProviderFactory.cs'
+'Assets/GoogleVR/Scripts/Controller/Internal/ControllerProviders/AndroidNativeControllerProvider.cs'
+'Assets/GoogleVR/Scripts/Controller/Internal/ControllerProviders/DummyControllerProvider.cs'
+'Assets/GoogleVR/Scripts/Controller/Internal/ControllerProviders/EmulatorControllerProvider.cs'
+'Assets/GoogleVR/Scripts/Controller/Internal/ControllerState.cs'
+'Assets/GoogleVR/Scripts/Controller/Internal/Emulator/EmulatorClientSocket.cs'
+'Assets/GoogleVR/Scripts/Controller/Internal/Emulator/EmulatorConfig.cs'
+'Assets/GoogleVR/Scripts/Controller/Internal/Emulator/EmulatorDataTypes.cs'
+'Assets/GoogleVR/Scripts/Controller/Internal/Emulator/EmulatorManager.cs'
+'Assets/GoogleVR/Scripts/Controller/Internal/Emulator/PhoneEvent.cs'
+'Assets/GoogleVR/Scripts/Controller/Internal/IControllerProvider.cs'
+'Assets/GoogleVR/Scripts/GazeInputModule.cs'
+'Assets/GoogleVR/Scripts/GvrViewer.cs'
+'Assets/GoogleVR/Scripts/Pose3D.cs'
+'Assets/GoogleVR/Scripts/UI/GvrGaze.cs'
+'Assets/GoogleVR/Scripts/UI/GvrReticle.cs'
+'Assets/GoogleVR/Scripts/UI/IGvrGazePointer.cs'
+'Assets/GoogleVR/Scripts/UI/IGvrGazeResponder.cs'
+'Assets/Pano Capture Tool/Capture360Pano.cs'
+'Assets/Pano Capture Tool/Capture360PanoEditor.cs'
+'Assets/Pano Capture Tool/EquiRect.cs'
+'Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/Animations/LeafAnimation.cs'
+'Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/Animations/RandomPath.cs'
+'Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/Audio/BasicAudioConcepts.cs'
+'Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/Debug/Debugging.cs'
+'Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/Debug/KeyboardMovement.cs'
+'Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/Effects/CollisionEffect.cs'
+'Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/Effects/EffectHilight.cs'
+'Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/Effects/FadeEffect.cs'
+'Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/Examples/ExampleEvent.cs'
+'Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/Examples/ExampleFlocking.cs'
+'Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/Examples/ExampleLoopVisualization.cs'
+'Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/Examples/ExampleParticles.cs'
+'Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/Examples/ExampleRayCast.cs'
+'Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/Examples/ExampleVertexDeformation.cs'
+'Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/Examples/PhysicsStuff.cs'
+'Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/Flocking/Flock.cs'
+'Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/Flocking/FlockRenderer.cs'
+'Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/Flocking/Flocking.cs'
+'Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/Navigation/Navigation.cs'
+'Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/Navigation/Waypoint.cs'
+'Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/Physics/Interaction.cs'
+'Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/Procedural/Clouds.cs'
+'Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/Procedural/Island.cs'
+'Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/Procedural/Ocean.cs'
+'Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/Procedural/ProceduralMesh.cs'
+'Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/Procedural/Textures.cs'
+'Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/Scene/Scene0.cs'
+'Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/Scene/Scene1.cs'
+'Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/Scene/Scene2.cs'
+'Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/Scene/Scene3.cs'
+'Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/Scene/Scene4.cs'
+'Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/Scene/Scene_Example_Ocean_Shader.cs'
+'Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/Seagulls/Seagull.cs'
+'Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/Seagulls/Seagulls.cs'
+'Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/UI/InfoCanvas.cs'
+'Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/UI/UI.cs'
+'Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/Utilities/Cypher.cs'
+'Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/Utilities/Framerate.cs'
+'Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/Utilities/MultipleInputProcessing.cs'
+'Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/Utilities/Verification.cs'
+'Assets/Project Scenes/Course3Draft_ForAustin/Assets/Udacity/Scripts/View.cs'
+'Assets/Project Scenes/UdacityModernApartment/Scripts/CombineChildren.cs'
+'Assets/Project Scenes/UdacityModernApartment/Scripts/MeshHelper.cs'
+'Assets/Project Scenes/UdacityModernApartment/Scripts/TransformPreviewer.cs'
+'Assets/Scripts/displayFrames.cs'
+'Assets/Scripts/fadeMaterials.cs'
+'Assets/Scripts/furniturePlacement.cs'
+'Assets/Scripts/lightsOff.cs'
+'Assets/Scripts/lookAtPlayer.cs'
+'Assets/Scripts/looseFollow.cs'
+'Assets/Scripts/manualPlayerMovement.cs'
+'Assets/Scripts/originalScale.cs'
+'Assets/Scripts/qualityAdjustment.cs'
+'Assets/Scripts/revealMyTipset.cs'
+'Assets/Scripts/revealTooltip.cs'
+'Assets/Scripts/sceneLogic.cs'
+'Assets/Scripts/sceneTransition.cs'
+'Assets/Scripts/starsOn.cs'
+'Assets/Scripts/startTour.cs'
+'Assets/Scripts/stereoWebsiteTransfer.cs'
+'Assets/Scripts/tempSwapper.cs'
+'Assets/Scripts/touchInputFixer.cs'
+'Assets/SimpleSwipe/ExampleScene/ExampleScene.cs'
+'Assets/SimpleSwipe/Scripts/SwipeControl.cs'
+'Assets/Swipe_detection_landscape.cs'
+'Assets/carboardTransition.cs'
+'Assets/cubeScript.cs'
+'Assets/force_landscape.cs'
+'Assets/framefix.cs'
+'Assets/iTween.cs'
+'Assets/inContextUISwap.cs'
+'Assets/instructToTurn.cs'
+'Assets/menuReveal.cs'
+'Assets/onboardingScreenController.cs'
+'Assets/onboardingScreenControllerPortrait.cs'
+'Assets/orientation_fixer.cs'
+'Assets/playmov.cs'
+'Assets/scene_autotransition.cs'
+'Assets/spiralController.cs'
+'Assets/swipeDetection.cs'
+'Assets/swipe_detection.cs'
+'Assets/tempOrienterLandscape.cs'
+'Assets/testAnimationControl.cs'
+'Assets/videoClipPlay.cs'
+-r:'/Applications/Unity/Unity.app/Contents/Mono/lib/mono/unity/System.Runtime.Serialization.dll'
+-r:'/Applications/Unity/Unity.app/Contents/Mono/lib/mono/unity/System.Xml.Linq.dll'
